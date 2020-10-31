@@ -1184,7 +1184,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 41, 1);
   padding: 60px 0;
 }
 
@@ -1194,7 +1194,7 @@ section {
   text-align: center;
   border-radius: 5px;
   background: #fff;
-  box-shadow: 0px 2px 15px rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 1);
 }
 
 .team .member .member-img {
@@ -1212,6 +1212,13 @@ section {
   transition: ease-in-out 0.3s;
   text-align: center;
   background: rgba(0, 0, 0, 0.85);
+}
+
+.team .animate1 :hover{
+  transition: transform 0.1s;
+}
+.team .animate1 :hover{
+  transform: scale(1.01);
 }
 
 .team .member .social a {
