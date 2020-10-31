@@ -30,101 +30,78 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/icomoon.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
+  <script>
+    $(document).ready(function () {
+        $('#navbar').load('navbar.html');
+        $('#footer').load('footer.html');
+       
+    })
+</script>
 
-      <!--<h1 class="logo mr-auto"><a href="index.html">Leo District 306 A2</a></h1>-->
-      <!-- Uncomment below if you prefer to use an image logo -->
-       <a href="index.html" class="logo mr-auto"><img src="assets/img/logo3.png" alt="" class="img-fluid"></a>
+<div id="navbar"></div>
 
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#counts">About</a></li>
-          <li><a href="team.html">Officers</a></li>
-          <li><a href="#services">Projects</a></li>
-          <li><a href="#portfolio">Gallery</a></li>
-          <!--<li><a href="#newsletters">Newsletters</a></li>-->
-          <!--<li class="drop-down"><a href="">Newsletters</a>-->
-            <!--<ul>-->
-              <!--<li><a href="#">Drop Down 1</a></li>-->
-              <!--<li class="drop-down"><a href="#">Deep Drop Down</a>-->
-                <!--<ul>-->
-                  <!--<li><a href="#">Deep Drop Down 1</a></li>-->
-                  <!--<li><a href="#">Deep Drop Down 2</a></li>-->
-                  <!--<li><a href="#">Deep Drop Down 3</a></li>-->
-                  <!--<li><a href="#">Deep Drop Down 4</a></li>-->
-                  <!--<li><a href="#">Deep Drop Down 5</a></li>-->
-                <!--</ul>-->
-              <!--</li>-->
-              <!--<li><a href="#">Drop Down 2</a></li>-->
-              <!--<li><a href="#">Drop Down 3</a></li>-->
-              <!--<li><a href="#">Drop Down 4</a></li>-->
-            <!--</ul>-->
-          <!--</li>-->
-          <!--<li><a href="#contact">Contact</a></li>-->
+<div id="mobile">
+<h1>sdsd</h1>
+<h1>sdsd</h1>
+<h1>sdsd</h1>
+</div>
 
-        </ul>
-      </nav><!-- .nav-menu -->
-      <div class="directory" data-toggle="modal" data-target="#directory-modal"><img
-              src="assets/img/directory/app_logo.png" alt="appmodal"></div>
-      <a href="#contact" class="get-started-btn">Get Involved</a>
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 
-    </div>
-  </header><!-- End Header -->
+    <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
 
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-      <div class="carousel-inner" role="listbox">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(assets/img/gp.jpg)">
-          <div class="carousel-container">
-            <div class="container">
-              <!--<h2 class="animate__animated animate__fadeInDown">Welcome to <span>Leo District 306 A2</span></h2>-->
-              <!--<p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>-->
-              <!--<a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>-->
-            </div>
+      <!-- Slide 1 -->
+      <div class="carousel-item active" style="background-image: url(assets/img/gp.jpg)">
+        <div class="carousel-container">
+          <div class="container">
+            <!--<h2 class="animate__animated animate__fadeInDown">Welcome to <span>Leo District 306 A2</span></h2>-->
+            <!--<p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>-->
+            <!--<a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>-->
           </div>
         </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(assets/img/campcover.jpg)">
-          <div class="carousel-container">
-            <div class="container">
-              <!--<h2 class="animate__animated animate__fadeInDown">Entering an era of Innovation</h2>-->
-              <!--<p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>-->
-              <!--<a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>-->
-            </div>
-          </div>
-        </div>
-
       </div>
 
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+      <!-- Slide 2 -->
+      <div class="carousel-item" style="background-image: url(assets/img/campcover.jpg)">
+        <div class="carousel-container">
+          <div class="container">
+            <!--<h2 class="animate__animated animate__fadeInDown">Entering an era of Innovation</h2>-->
+            <!--<p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>-->
+            <!--<a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>-->
+          </div>
+        </div>
+      </div>
 
     </div>
-  </section><!-- End Hero -->
+
+    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  </div>
+</section>
+<!-- End Hero -->
 
   <main id="main">
 
@@ -875,87 +852,7 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <!--<div class="footer-top">-->
-      <!--<div class="container">-->
-        <!--<div class="row">-->
-
-          <!--<div class="col-lg-4 col-md-6">-->
-            <!--<div class="footer-info">-->
-              <!--<h3>Multi</h3>-->
-              <!--<p class="pb-3"><em>Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi quod.</em></p>-->
-              <!--<p>-->
-                <!--A108 Adam Street <br>-->
-                <!--NY 535022, USA<br><br>-->
-                <!--<strong>Phone:</strong> +1 5589 55488 55<br>-->
-                <!--<strong>Email:</strong> info@example.com<br>-->
-              <!--</p>-->
-              <!--<div class="social-links mt-3">-->
-                <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>-->
-                <!--<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>-->
-                <!--<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>-->
-                <!--<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>-->
-                <!--<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</div>-->
-
-          <!--<div class="col-lg-2 col-md-6 footer-links">-->
-            <!--<h4>Useful Links</h4>-->
-            <!--<ul>-->
-              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>-->
-              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>-->
-              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>-->
-              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>-->
-              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>-->
-            <!--</ul>-->
-          <!--</div>-->
-
-          <!--<div class="col-lg-2 col-md-6 footer-links">-->
-            <!--<h4>Our Services</h4>-->
-            <!--<ul>-->
-              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>-->
-              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>-->
-              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>-->
-              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>-->
-              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>-->
-            <!--</ul>-->
-          <!--</div>-->
-
-          <!--<div class="col-lg-4 col-md-6 footer-newsletter">-->
-            <!--<h4>Our Newsletter</h4>-->
-            <!--<p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>-->
-            <!--<form action="" method="post">-->
-              <!--<input type="email" name="email"><input type="submit" value="Subscribe">-->
-            <!--</form>-->
-
-          <!--</div>-->
-
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Leo District 306 A2</span></strong>. All Rights Reserved
-        <div class="social-links mt-3">
-        <a href="https://www.facebook.com/leo306a2" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/a2leos/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
-          <a href="https://twitter.com/A2Buzz" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.linkedin.com/company/leo306a2/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/multi-responsive-bootstrap-template/ -->
-        <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
+  <div id="footer"></div>
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
