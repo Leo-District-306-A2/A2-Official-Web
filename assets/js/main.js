@@ -233,4 +233,4 @@
 
 })(jQuery);
 // Directory modal show by default
-$('#directory-modal').modal('show');
+// $('#directory-modal').modal('show');
