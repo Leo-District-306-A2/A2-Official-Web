@@ -41,11 +41,59 @@
 <body>
     <script>
         $(document).ready(function () {
-            $('#navbar').load('navbar.html');
+       
             $('#footer').load('footer.html');
         })
     </script>
-    <div id="navbar"></div>
+    <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top ">
+    <div class="container-fluid">
+  
+      <div class="row justify-content-center">
+        <div class="col-xl-9 d-flex align-items-center justify-content-between">
+          
+      <a href="index.html" class="logo mr-auto"><img src="assets/img/logo3.png" alt="" class="img-fluid"></a>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  
+          <nav class="nav-menu d-none d-lg-block">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class="drop-down"><a href="#">Leaders</a>
+                <ul>
+                  <li><a href="team.html">Current Leaders</a></li>
+                  <!-- <li class="drop-down"><a href="#">Deep Drop Down</a>
+                    <ul>
+                      <li><a href="#">Deep Drop Down 1</a></li>
+                      <li><a href="#">Deep Drop Down 2</a></li>
+                      <li><a href="#">Deep Drop Down 3</a></li>
+                      <li><a href="#">Deep Drop Down 4</a></li>
+                      <li><a href="#">Deep Drop Down 5</a></li>
+                    </ul>
+                  </li> -->
+                  <li><a href="pdp.html">Past District Presidents</a></li>
+              
+                </ul>
+              </li>
+              <li><a href="projects.html">Project</a></li>
+              <li><a href="calendar.html">Calendar</a></li>
+              <li class="active"><a href="portfolio.html">Gallery</a></li>
+              <li><a href="download.html">Downloads</a></li>
+              <!-- <li><a href="#contact">Contact</a></li> -->
+              <li><div class="directory" data-toggle="modal" data-target="#directory-modal"><img
+                src="assets/img/directory/app_logo.png" alt="appmodal"></div></li>
+              <!-- <li><a href="#contact" class="get-started-btn scrollto">Get Started</a></a></li> -->
+  
+  
+            </ul>
+          </nav><!-- .nav-menu -->
+  
+          <!-- <a href="#about" class="get-started-btn scrollto">Get Started</a> -->
+        </div>
+      </div>
+  
+    </div>
+  </header><!-- End Header -->
     <!-- ======= Gallery Section ======= -->
     <section id="portfolio" class="portfolio">
         <div class="container" data-aos="fade-up">
@@ -190,6 +238,50 @@
         </div>
     </section><!-- End Portfolio Section -->
     <div id="footer"></div>
+
+    <div class="modal fade" id="directory-modal" tabindex="-1" role="dialog" aria-labelledby="directory-modal-title"
+    aria-hidden="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" title="Close" class="close modal-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="row">
+            <div class="col-md-6 left-content">
+              <img src="assets/img/directory/modal_logo.png" class="modal-logo">
+            </div>
+            <div class="col-md-6 right-content">
+              <div class="right-content-wrapper">
+                <img src="assets/img/directory/app_logo.png" class="directory-modal-app-logo mx-auto d-block mb-3">
+                <h2 class="text-center directory-modal-header mb-2">A2 Directory</h2>
+                <p class="text-justify directory-modal-content">A2 Directory by Leo District 306 A2 is the place where
+                  you can find
+                  all information of A2 leos. This app opens the door to communicate with leos and lions
+                  via phone call or email in a faster and easier way- all from your mobile device.</p>
+                <h6 class="text-center directory-modal-header">Download Now</h6>
+                <div class="row">
+                  <div class="col-md-6 mr-0 pr-1 store-link link-andorid">
+                    <a class="play-store-link" target="_blank" title="Google Play Store"
+                      href="https://play.google.com/store/apps/details?id=a2.it.team.leos">
+                      <img src="assets/img/directory/play_store_download_btn.png">
+                    </a>
+                  </div>
+                  <div class="col-md-6 ml-0 pl-1 store-link link-android
+                  ">
+                    <a class="play-store-link" title="Apple Store" target="_blank"
+                      href="https://apps.apple.com/lk/app/a2-directory/id1525568981">
+                      <img src="assets/img/directory/ios_store_download_btn.png">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
     <!-- Vendor JS Files -->
