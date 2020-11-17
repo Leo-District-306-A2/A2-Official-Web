@@ -28,6 +28,21 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.outer-img{
+  z-index: 1;
+  position: absolute !important;
+  
+}
+.inner-img{
+  z-index: 2;
+  position: absolute !important;
+  height: 100px;
+  width: 100px;
+  top: -100px;
+  padding: 0px !important;
+  
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -1647,11 +1662,24 @@ font-family:  sans-serif;
 
 .btn-theme :hover{
   text-decoration: none;
-  color:#4CAF50;
+  color:#3b65a7;;
 }
 
 .download-btn{
-  background-color: #4CAF50; /* Green */
+  background-color: rgba(255, 255,255, 0.1); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  cursor: pointer;
+  width: 100%;
+}
+.download-btn :hover{
+  background-color: #3b65a7; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
