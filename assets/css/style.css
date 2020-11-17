@@ -718,7 +718,7 @@ section {
 .counts .count-box i {
   display: block;
   font-size: 30px;
-  color: #edd12e;
+  color: #fff;
   float: left;
 }
 
@@ -742,7 +742,7 @@ section {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #7cb341  ;
+  color: #fff  ;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
@@ -771,7 +771,7 @@ section {
 .why-us .content h3 {
   font-weight: 400;
   font-size: 34px;
-  color: #edd12e;
+  color: #fff;
 }
 
 .why-us .content h4 {
@@ -825,7 +825,7 @@ section {
 }
 
 .why-us .accordion-list span {
-  color: #edd12e;
+  color: #fff;
   font-weight: 600;
   font-size: 18px;
   padding-right: 10px;
@@ -852,7 +852,7 @@ section {
 }
 
 .why-us .accordion-list a.collapsed:hover {
-  color:  #edd12e;
+  color:  #aaaaaa;
 }
 
 .why-us .accordion-list a.collapsed .icon-show {
@@ -1258,7 +1258,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: #7cb341;
+  color: #1a5298;
 }
 
 .team .member .social i {
