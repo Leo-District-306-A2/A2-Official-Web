@@ -2,4 +2,61 @@ body{
     padding-top: 100px;
     background-color: rgba(0, 0, 0, 0.8);
 }
+.profile-area{
+    padding: 80px 0;
 
+}
+.card{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 15px;
+
+}
+
+.img11 img{
+    height: 250px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.img22 img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 7px solid #3b65a7;
+    margin-top: -80px;
+}
+
+.main-text{
+    padding: 5px 0;
+    text-align: center;
+}
+
+.main-text p i{
+    text-transform: initial;
+}
+
+.main-text h4{
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+.socials{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.socials i{
+    font-size: 20px;
+    color: darkslategrey;
+    padding: 0 10px;
+}
