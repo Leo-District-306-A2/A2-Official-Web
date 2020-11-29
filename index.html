@@ -14,695 +14,469 @@
   <link href="assets/img/leologo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-  <!-- JQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/icomoon.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+  <link href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- JQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+  <!-- =======================================================
+  * Template Name: Medilab - v2.0.0
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
 
-  <script>
-    $(document).ready(function () {
-        $('#footer').load('footer.html');
-        $('#directory-modal').modal('show');
-       
-    })
-</script>
+  <style>
+    body{
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+  </style>
 
-<!-- <div id="navbar"></div> -->
-
- <!-- ======= Header ======= -->
- <header id="header" class="fixed-top ">
-  <div class="container-fluid">
-
-    <div class="row justify-content-center">
-      <div class="col-xl-9 d-flex align-items-center justify-content-between">
-        
-    <a href="index.html" class="logo mr-auto"><img src="assets/img/logo3.png" alt="" class="img-fluid"></a>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-        <nav class="nav-menu d-none d-lg-block">
-          <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li class="drop-down"><a href="#">Leaders</a>
-              <ul>
-                <li><a href="team.html">Current Leaders</a></li>
-                <!-- <li class="drop-down"><a href="#">Deep Drop Down</a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li> -->
-                <li><a href="pdp.html">Past District Presidents</a></li>
-            
-              </ul>
-            </li>
-            <li><a href="projects.html">Project</a></li>
-            <li><a href="calendar.html">Calendar</a></li>
-            <li><a href="portfolio.html">Gallery</a></li>
-            <li><a href="download.html">Downloads</a></li>
-            <!-- <li><a href="#contact">Contact</a></li> -->
-            <li><div class="directory" data-toggle="modal" data-target="#directory-modal"><img
-              src="assets/img/directory/app_logo.png" alt="appmodal"></div></li>
-            <li><a href="#contact" class="get-started-btn scrollto">Get Started</a></a></li>
-
-
-          </ul>
-        </nav><!-- .nav-menu -->
-
-        <!-- <a href="#about" class="get-started-btn scrollto">Get Started</a> -->
+  <!-- ======= Top Bar ======= -->
+  <!-- <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
+        <i class="icofont-phone"></i> +1 5589 55488 55
+        <i class="icofont-google-map"></i> A108 Adam Street, NY
+      </div>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="skype"><i class="icofont-skype"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
       </div>
     </div>
+  </div> -->
 
-  </div>
-</header><!-- End Header -->
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
 
-<!-- ======= Hero Section ======= -->
-<section id="hero">
-  <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <!-- <h1 class="logo mr-auto"><a href="index.html">Medilab</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo mr-auto"><img src="assets/img/logo3.png" alt="" class="img-fluid"></a>
 
-    <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li class="drop-down"><a href="team.html">Our Leaders</a>
+            <ul>
+              <!-- <li><a href="#">Drop Down 1</a></li> -->
+              <li class="drop-down"><a href="team.html">Current Leaders</a>
+                <ul>
+                  <li><a href="team.html#team1">District Executive Officers</a></li>
+                  <li><a href="team.html#team2">Chief Council Coordinators</a></li>
+                  <li><a href="team.html#team3">Region Directors</a></li>
+                  <li><a href="team.html#team4">Zonal Directors</a></li>
+                  <li><a href="team.html#team5">District Directors</a></li>
+                  <li><a href="team.html#team6">Orientation Team</a></li>
+                  <li><a href="team.html#team7">Administration Team</a></li>
+                  <li><a href="team.html#team8">Foundraising Team</a></li>
+                  <li><a href="team.html#team9">Editorial Panel</a></li>
+                  <li><a href="team.html#team10">IT Team</a></li>
+                  <li><a href="team.html#team11">Media Unit</a></li>
+                  <li><a href="team.html#team12">Cabinet Executives</a></li>
+                </ul>
+              </li>
+              <li><a href="pdp.html">Past District Presidents</a></li>
+            </ul>
+          </li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li class="drop-down"><a href="downloads.html">Downloads</a>
+            <ul>
+              <li><a href="https://fliphtml5.com/bookcase/tqcne">Ally - Official Newsletter</a></li>
+              <li><a href="downloads.html#guestIntroductions">Guest Introductions</a></li>
+              <li class="drop-down"><a href="downloads.html#administrativeDocumets">Administrative Documents</a>
+                <ul>
+                  <li><a href="assets/pdf/Documents/Standard Leo Club Constitution.pdf">Standard Leo Club Constitution &
+                      By-laws</a></li>
+                  <li class="drop-down"><a
+                      href="assets/pdf/Documents/Installation Ceremony of Leo Club Officers.pdf">Installation Ceremony
+                      of Leo Club Officers</a>
+                    <ul>
+                      <li><a href="assets/pdf/Documents/ලියෝ සමාජයේ නිලධාරීන් ස්ථාපනය කිරී1.pdf">සිංහල</a></li>
+                      <li><a href="assets/pdf/Documents/Installation Ceremony of Leo Club Officers.pdf">English</a></li>
+                    </ul>
+                  </li>
+                  <li class="drop-down"><a href="assets/pdf/Documents/Initiation Ceremony of New Members.pdf">Initiation
+                      Ceremony of New Members</a>
+                    <ul>
+                      <li><a href="assets/pdf/Documents/ලියෝ සමාජයේ නව සාමාජිකයින් ස්ථාපනය කිරීම.pdf">සිංහල</a></li>
+                      <li><a href="assets/pdf/Documents/Initiation Ceremony of New Members.pdf">English</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="assets/pdf/Documents/Leo Club Protocol.pdf">Leo Club Protocol</a></li>
+                  <li><a href="assets/pdf/Documents/General Meeting Agenda.pdf">General Meeting Agenda</a></li>
+                  <li><a href="assets/pdf/Documents/Board Meeting Agenda.pdf">Board Meeting Agenda</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
 
-    <div class="carousel-inner" role="listbox">
-
-      <!-- Slide 1 -->
-      <div class="carousel-item active" style="background-image: url(assets/img/gp.jpg)">
-        <div class="carousel-container">
-          <div class="container">
-            <!--<h2 class="animate__animated animate__fadeInDown">Welcome to <span>Leo District 306 A2</span></h2>-->
-            <!--<p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>-->
-            <!--<a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>-->
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item" style="background-image: url(assets/img/campcover.jpg)">
-        <div class="carousel-container">
-          <div class="container">
-            <!--<h2 class="animate__animated animate__fadeInDown">Entering an era of Innovation</h2>-->
-            <!--<p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>-->
-            <!--<a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>-->
-          </div>
-        </div>
-      </div>
+        </ul>
+      </nav><!-- .nav-menu -->
+      <div class="directory" data-toggle="modal" data-target="#directory-modal"><img
+        src="assets/img/directory/app_logo.png" alt="appmodal"></div>
+      <a href="#contact" class="appointment-btn scrollto">Get Started</a>
 
     </div>
+  </header><!-- End Header -->
 
-    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-
-    <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-
-  </div>
-</section>
-<!-- End Hero -->
-
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <!-- <div class="container">
+      <h1>Welcome to Medilab</h1>
+      <h2>We are team of talanted designers making websites with Bootstrap</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div> -->
+  </section><!-- End Hero -->
 
   <main id="main">
 
+    <!-- ======= Why Us Section ======= -->
+    <!-- <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3>Why Choose Medilab?</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+              </p>
+              <div class="text-center">
+                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-receipt"></i>
+                    <h4>Corporis voluptates sit</h4>
+                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-cube-alt"></i>
+                    <h4>Ullamco laboris ladore pan</h4>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-images"></i>
+                    <h4>Labore consequatur</h4>
+                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Why Us Section -->
+
+    <!-- ======== About Us Section ======== -->
+    <section class="features">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Welcome to <strong>Leo District 306 A2</strong></h2>
+          <p class="title-des">
+            Leos of 306A2, conducting various activities to the needy, Less fortunate as well as for the betterment of
+            the Movement and its Members..
+          </p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-7">
+            <img src="assets/img/aboutpng.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-5 pt-4 des">
+            <h3>Leo District 306A2 is one of the leading Leo districts in Sri Lanka</h3>
+            <p class="font-italic">
+              It's sponsored by Lions District 306A2. Currently 26 Leo clubs are actively serving the community with the
+              contribution of more than 900 Leos in 26 different clubs.
+            </p>
+            <h3>Consists of Well passionate, creative and efficient young leos</h3>
+            <p class="font-italic">
+              Under the guidance of a multi-talented executive officers, A2 leos are always work with a aim to serve the
+              commiunity.
+            </p>
+            <h3>Many success commiunity service sare conducting every year with new ideas </h3>
+            <p class="font-italic">
+              Activities conducted by Leo District 306 A2 include Childcare, Elders, Sports, Environmental, Healthcare
+              and Leadership Development Projects. A three days residential youth camp, a Leo Job Bank and PR campaigns
+              also add up into making the Leo movement the voluntary youth service organization to be in.
+            </p>
+            <!-- <ul>
+              <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Abot Us Section -->
+
     <!-- ======= About Section ======= -->
-    <!--<section id="about" class="about">-->
-      <!--<div class="container" data-aos="fade-up">-->
+    <!-- <section id="about" class="about">
+      <div class="container-fluid">
 
-        <!--<div class="section-title">-->
-          <!--<h2>About</h2>-->
-          <!--<p>About Us</p>-->
-        <!--</div>-->
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch">
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
+              data-autoplay="true"></a>
+          </div>
 
-        <!--<div class="row content">-->
-          <!--<div class="col-lg-6">-->
-            <!--<p>-->
-              <!--The Leo District 306A2 is one of the leading Leo districts in Sri Lanka. It's sponsored by Lions District 306A2. Currently 26 Leo clubs are actively serving the community. <br>-->
-              <!--The Leo movement, which was initiated way back in 1957, is considered as the Youth Project of Lions Clubs International. True to its motto of Leadership, Experience, and-->
-              <!--Opportunity, the Leo movement provides youth from ages 14 to 28 with the opportunity for development and contribution, individually and collectively, as responsible members-->
-              <!--of the local, national, and international community.-->
-            <!--</p>-->
-            <!--<ul>-->
-              <!--<li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>-->
-              <!--<li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>-->
-              <!--<li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>-->
-            <!--</ul>-->
-          <!--</div>-->
-          <!--<div class="col-lg-6 pt-4 pt-lg-0">-->
-            <!--&lt;!&ndash;<p>&ndash;&gt;-->
-              <!--&lt;!&ndash;Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate&ndash;&gt;-->
-              <!--&lt;!&ndash;velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in&ndash;&gt;-->
-              <!--&lt;!&ndash;culpa qui officia deserunt mollit anim id est laborum.&ndash;&gt;-->
-            <!--&lt;!&ndash;</p>&ndash;&gt;-->
-            <!--&lt;!&ndash;<a href="#team" class="btn-learn-more">Learn More</a>&ndash;&gt;-->
-            <!--<div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");' data-aos="zoom-in" data-aos-delay="100">-->
-              <!--<a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
+          <div
+            class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
+            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus
+              laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla
+              tenetur. Suscipit aut voluptate.</p>
 
-      <!--</div>-->
-    <!--</section>&lt;!&ndash; End About Section &ndash;&gt;-->
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                occaecati cupiditate non provident</p>
+            </div>
 
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-gift"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-atom"></i></div>
+              <h4 class="title"><a href="">Dine Pad</a></h4>
+              <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut
+                deserunt minus aut eligendi omnis</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End About Section -->
+
+
+    <!-- ===========Team Section========= -->
+
+    <!------ Include the above in your HEAD tag ---------->
+
+    <!-- Team -->
+
+    <!-- Team -->
+    <!-- =========== End Team Section ========== -->
 
     <!-- ======= Counts Section ======= -->
+    <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
+        <div class="row counters">
 
-        <div class="row no-gutters ">
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-simple-smile"></i>
-              <span data-toggle="counter-up">3</span>
-              <!--<p><strong>Happy Clients</strong> consequuntur quae qui deca rode</p>-->
-              <a style="pointer-events: none; cursor: default;"href="">Regions</a>
-            </div>
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">3</span>
+            <p>Regions</p>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-document-folder"></i>
-              <span data-toggle="counter-up">800</span>
-              <!--<p><strong>Projects</strong> adipisci atque cum quia aut numquam delectus</p>-->
-              <a style="pointer-events: none; cursor: default;"href="">Projects</a>
-            </div>
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">800</span>
+            <p>Projects</p>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-live-support"></i>
-              <span data-toggle="counter-up">900</span>
-              <!--<p><strong>Hours Of Support</strong> aut commodi quaerat. Aliquam ratione</p>-->
-              <a style="pointer-events: none; cursor: default;"href="#">Leos</a>
-            </div>
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">900</span>
+            <p>Leos</p>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-users-alt-5"></i>
-              <span data-toggle="counter-up">26</span>
-              <!--<p><strong>Hard Workers</strong> rerum asperiores dolor molestiae doloribu</p>-->
-              <a style="pointer-events: none; cursor: default;"href="#">Clubs</a>
-            </div>
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">26</span>
+            <p>Clubs</p>
           </div>
 
         </div>
 
       </div>
     </section><!-- End Counts Section -->
+    <!-- End Counts Section -->
 
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg">
-      <div class="container-fluid" data-aos="fade-up">
 
-        <div class="row">
 
-          <div class="col-lg-5 align-items-stretch video-box map" style='background-image: url("assets/img/aboutpng.png");' data-aos="zoom-in" data-aos-delay="100">
-            <!--<a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>-->
-          </div>
 
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
-
-            <div class="content">
-              <h3>Welcome to <strong>Leo District 306 A2</strong></h3>
-              <p>
-                Leos of 306A2, conducting various activities to the needy, Less fortunate as well as for the betterment of the Movement and its Members..</p>
-            </div>
-
-            <div class="accordion-list">
-              <ul>
-                <li>
-                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span>Leo District 306A2 is one of the leading Leo districts in Sri Lanka<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
-                    <p>
-                      It's sponsored by Lions District 306A2. Currently 26 Leo clubs are actively serving the community with the contribution of more than 900 Leos in 26 different clubs.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span>Consists of Well passionate, creative and efficient young leos<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
-                    <p>
-                      Under the guidance of a multi-talented executive officers, A2 leos are always work with a aim to serve the commiunity.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span>Many success commiunity service sare conducting every year with new ideas<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
-                    <p>
-                      Activities conducted by Leo District 306 A2 include Childcare, Elders, Sports, Environmental, Healthcare and Leadership Development Projects. A three days residential youth camp, a Leo Job Bank and PR campaigns also add up into making the Leo movement the voluntary youth service organization to be in.
-                    </p>
-                  </div>
-                </li>
-
-              </ul>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
-
-    <!-- ======= Team Section ======= -->
-    <!-- <section id="team" class="team">
+    <section id="contact" class="wow fadeInUp">
       <div class="container">
-
         <div class="section-title">
-          <h2>Team</h2>
-          <h3>Our District Executive <span>Officers</span></h3>
+          <h2>Get Started</h2>
+          <h3>Contact Us</h3>
         </div>
 
-        <div class="row">
+        <div class="row contact-info">
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch shadow">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/vindika.png" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://www.facebook.com/pramindav" target="_blank"><i class="icofont-facebook"></i></a>
-                  <a href="#team"><i class="icofont-instagram"></i></a>
-                  <a href="#team"><i class="icofont-twitter"></i></a>
-                  <a href="https://www.linkedin.com/in/vindika-kularathna-127882157/" target="_blank"><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Leo Praminda Vindika</h4>
-                <span>District President</span>
-              </div>
+          <div class="col-md-3">
+            <div class="contact-address">
+              <i class="icofont-facebook"></i>
+              <h3>Like Us</h3>
+              <p><a href="https://www.facebook.com/leo306a2">www.facebook.com/leo306a2</a></p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/navod.png" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://www.facebook.com/navod.kiriwaththuduwa" target="_blank"><i class="icofont-facebook"></i></a>
-                  <a href="#team"><i class="icofont-instagram"></i></a>
-                  <a href="#team"><i class="icofont-twitter"></i></a>
-                  <a href="https://www.linkedin.com/in/navod-kiriwaththuduwa-b72499153/" target="_blank"><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Leo Navod Kiriwaththuduwa</h4>
-                <span>District Vice President</span>
-              </div>
+         
+
+          <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="icofont-instagram"></i>
+              <h3>Follow Us</h3>
+              <p><a href="https://www.instagram.com/a2leos/">@a2leos</a></p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/mudith.png" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://www.facebook.com/mbjayasekara" target="_blank"><i class="icofont-facebook"></i></a>
-                  <a href="#team"><i class="icofont-instagram"></i></a>
-                  <a href="https://twitter.com/mudithjay" target="_blank"><i class="icofont-twitter"></i></a>
-                  <a href="https://www.linkedin.com/in/mudithjay/ "target="_blank"><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Leo Mudith Jayasekara</h4>
-                <span>Imm. Past District President</span>
-              </div>
+          <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="icofont-twitter"></i>
+              <h3>Tweet with us</h3>
+              <p><a href="https://twitter.com/A2Buzz">#A2Buzz</a></p>
+            </div>
+          </div>
+         
+
+         
+          <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="icofont-linkedin"></i>
+              <h3>Stay with Us</h3>
+              <p><a href="https://www.linkedin.com/company/leo306a2/">leo306a2</a></p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/anura.png" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://www.facebook.com/anura.goonetilleke" target="_blank"><i class="icofont-facebook"></i></a>
-                  <a href="#team"><i class="icofont-instagram"></i></a>
-                  <a href="#team"><i class="icofont-twitter"></i></a>
-                  <a href="#team"><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Lion Anura Goonetilleke</h4>
-                <span>District Chairman for Leos</span>
-              </div>
+          <!-- <div class="col-md-3">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">info@example.com</a></p>
             </div>
+          </div> -->
+
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <section id="counts" class="counts2">
+      <div class="container">
+        <div class="row justify-content-center counters">
+
+          <div class="col-lg-7 col-6 text-center">
+            <span>INSPIRE INNOVATION</span>
+            <h4>Leo District 306 A2</h4>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/raseema.png" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://www.facebook.com/rasi.sugandi/" target="_blank"><i class="icofont-facebook"></i></a>
-                  <a href="#team"><i class="icofont-instagram"></i></a>
-                  <a href="#team"><i class="icofont-twitter"></i></a>
-                  <a href="https://www.linkedin.com/in/raseema-sugandi-826620166/" target="_blank"><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Leo Raseema Sugandi</h4>
-                <span>District Secretary </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/rama.png" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://www.facebook.com/kasunmadhusankha.ramanayaka" target="_blank"><i class="icofont-facebook"></i></a>
-                  <a href="#team"><i class="icofont-instagram"></i></a>
-                  <a href="https://twitter.com/KasunMa84387701" target="_blank"><i class="icofont-twitter"></i></a>
-                  <a href="https://www.linkedin.com/in/kasun-ramanayaka/" target="_blank"><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Leo Kasun Ramanayaka</h4>
-                <span>District Treasurer</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/dinendri.png" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://www.facebook.com/deenendri.wa" target="_blank"><i class="icofont-facebook"></i></a>
-                  <a href="#team"><i class="icofont-instagram"></i></a>
-                  <a href="#team"><i class="icofont-twitter"></i></a>
-                  <a href="https://www.linkedin.com/in/dinendri-wilegoda-arachchige-327663183/" target="_blank"><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Leo Dinendri Wilegoda Arachchige</h4>
-                <span>District Assistant Secretary</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/vihan.png" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://www.facebook.com/vihan.rashmika.7" target="_blank"><i class="icofont-facebook"></i></a>
-                  <a href="#team"><i class="icofont-instagram"></i></a>
-                  <a href="https://twitter.com/ManageVihan" target="_blank"><i class="icofont-twitter"></i></a>
-                  <a href="#" ><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Leo Vihan Manage</h4>
-                <span>District Assistant Treasurer</span>
-              </div>
-            </div>
-          </div>
+      
 
         </div>
 
       </div>
-    </section> -->
+    </section>
 
-    <!-- ======= Projects Section ======= -->
-        <!--&lt;!&ndash; ======= NewsLetters Section ======= &ndash;&gt;-->
-    <!--<section id="services" class="services">-->
-      <!--<div class="container" data-aos="fade-up">-->
-
-        <!--<div class="section-title">-->
-          <!--<h2>Projects</h2>-->
-          <!--<p>Check our Projects</p>-->
-        <!--</div>-->
-
-        <!--<div class="row">-->
-          <!--<div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" style="background-image: url(assets/img/logo.png)">-->
-            <!--<p>kikhoh</p>-->
-          <!--</div>-->
-
-          <!--<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">-->
-            <!--<div class="icon-box">-->
-              <!--<div class="icon"><i class="bx bx-file"></i></div>-->
-              <!--<h4><a href="">Sed ut perspiciatis</a></h4>-->
-              <!--<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>-->
-            <!--</div>-->
-          <!--</div>-->
-
-          <!--<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">-->
-            <!--<div class="icon-box">-->
-              <!--<div class="icon"><i class="bx bx-tachometer"></i></div>-->
-              <!--<h4><a href="">Magni Dolores</a></h4>-->
-              <!--<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>-->
-            <!--</div>-->
-          <!--</div>-->
-
-          <!--<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">-->
-            <!--<div class="icon-box">-->
-              <!--<div class="icon"><i class="bx bx-world"></i></div>-->
-              <!--<h4><a href="">Nemo Enim</a></h4>-->
-              <!--<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>-->
-            <!--</div>-->
-          <!--</div>-->
-
-          <!--<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">-->
-            <!--<div class="icon-box">-->
-              <!--<div class="icon"><i class="bx bx-slideshow"></i></div>-->
-              <!--<h4><a href="">Dele cardo</a></h4>-->
-              <!--<p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>-->
-            <!--</div>-->
-          <!--</div>-->
-
-          <!--<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">-->
-            <!--<div class="icon-box">-->
-              <!--<div class="icon"><i class="bx bx-arch"></i></div>-->
-              <!--<h4><a href="">Divera don</a></h4>-->
-              <!--<p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>-->
-            <!--</div>-->
-          <!--</div>-->
-
-        <!--</div>-->
-
-      <!--</div>-->
-    <!--</section>&lt;!&ndash; End Services Section &ndash;&gt;-->
-
-    <!--&lt;!&ndash; ======= Cta Section ======= &ndash;&gt;-->
-    <!--<section id="cta" class="cta">-->
-      <!--<div class="container" data-aos="zoom-in">-->
-
-        <!--<div class="text-center">-->
-          <!--<h3>Call To Action</h3>-->
-          <!--<p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-          <!--<a class="cta-btn" href="#">Call To Action</a>-->
-        <!--</div>-->
-
-      <!--</div>-->
-    <!--</section>&lt;!&ndash; End Cta Section &ndash;&gt;-->
-
-    <!-- ======= Gallery Section ======= -->
     
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2 data-aos="fade-in">Contact</h2>
-          <h3>Contact <span>Us</span></h3>
-        </div>
-
-          <section class="ftco-section contact-section t" style="padding: 20px" id="contact-section">
-            <div class="container1">
-              <div class="row justify-content-center mb-5 pb-3">
-                <!--<div class="col-md-10 heading-section text-center ftco-animate">-->
-                  <!--<span class="subheading">Contact</span>-->
-                  <!--<h2 class="mb-4">Contact Us</h2>&lt;!&ndash;-->
-            <!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p> &ndash;&gt;-->
-                <!--</div>-->
-              </div>
-              <div class="row d-flex contact-info mb-5">
 
 
-
-
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                  <div class="align-self-stretch box p-4 text-center contact-icon">
-                    <a href="https://www.facebook.com/leo306a2" target="_blank"> <div class="icon d-flex align-items-center justify-content-center">
-                      <!-- <span class="icon-facebook"></span> -->
-                      <i class="icofont-facebook icofont-4x"></i>
-                    </div>
-                    <p class="icon-d">Like Us</p>
-                      <p class="icon-d">facebook.com/leo306a2</p></a>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                  <div class="align-self-stretch box p-4 text-center contact-icon">
-                    <a href="https://www.instagram.com/a2leos/" target="_blank"><div class="icon d-flex align-items-center justify-content-center">
-                      <!-- <span class="icon-instagram"></span> -->
-                      <i class="icofont-instagram icofont-4x"></i>
-                      
-                    </div>
-                    <p class="icon-d">Follow Us</p>
-                      <p class="icon-d">@a2leos</p></a>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                  <div class="align-self-stretch box p-4 text-center contact-icon">
-                    <a href="https://twitter.com/A2Buzz" target="_blank"><div class="icon d-flex align-items-center justify-content-center">
-                      <!-- <span class="icon-twitter"></span> -->
-                      <i class="icofont-twitter icofont-4x"></i>
-                    </div>
-                    <p class="icon-d">Tweet with us </p>
-                      <p class="icon-d">#A2Buzz</p></a>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                  <div class="align-self-stretch box p-4 text-center contact-icon">
-                    <a href="https://www.linkedin.com/company/leo306a2/" target="_blank"><div class="icon d-flex align-items-center justify-content-center">
-                      <!-- <span class="icon-linkedin"></span> -->
-                      <i class="icofont-linkedin icofont-4x"></i>
-                    </div>
-                    <p class="icon-d">Stay with Us</p>
-                      <p class="icon-d">leo306a2</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </section>
-
-          <!--<div class="col-lg-6">-->
-
-            <!--<div class="row">-->
-              <!--<div class="col-md-12">-->
-                <!--<div class="info-box">-->
-                  <!--<i class="bx bx-map"></i>-->
-                  <!--<h3>Our Address</h3>-->
-                  <!--<p>A108 Adam Street, New York, NY 535022</p>-->
-                <!--</div>-->
-              <!--</div>-->
-              <!--<div class="col-md-6">-->
-                <!--<div class="info-box mt-4">-->
-                  <!--<i class="bx bx-envelope"></i>-->
-                  <!--<h3>Email Us</h3>-->
-                  <!--<p>info@example.com<br>contact@example.com</p>-->
-                <!--</div>-->
-              <!--</div>-->
-              <!--<div class="col-md-6">-->
-                <!--<div class="info-box mt-4">-->
-                  <!--<i class="bx bx-phone-call"></i>-->
-                  <!--<h3>Call Us</h3>-->
-                  <!--<p>+1 5589 55488 55<br>+1 6678 254445 41</p>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-
-          <!--</div>-->
-
-          <!--<div class="col-lg-6">-->
-            <!--<form action="forms/contact.php" method="post" role="form" class="php-email-form">-->
-              <!--<div class="form-row">-->
-                <!--<div class="col form-group">-->
-                  <!--<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />-->
-                  <!--<div class="validate"></div>-->
-                <!--</div>-->
-                <!--<div class="col form-group">-->
-                  <!--<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />-->
-                  <!--<div class="validate"></div>-->
-                <!--</div>-->
-              <!--</div>-->
-              <!--<div class="form-group">-->
-                <!--<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />-->
-                <!--<div class="validate"></div>-->
-              <!--</div>-->
-              <!--<div class="form-group">-->
-                <!--<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>-->
-                <!--<div class="validate"></div>-->
-              <!--</div>-->
-              <!--<div class="mb-3">-->
-                <!--<div class="loading">Loading</div>-->
-                <!--<div class="error-message"></div>-->
-                <!--<div class="sent-message">Your message has been sent. Thank you!</div>-->
-              <!--</div>-->
-              <!--<div class="text-center"><button type="submit">Send Message</button></div>-->
-            <!--</form>-->
-          <!--</div>-->
-
-        </div>
-
-
-    </section><!-- End Contact Section -->
 
 
   </main><!-- End #main -->
 
-  <div id="footer"></div>
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
+  <!-- ======= Footer ======= -->  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Leo District 306 A2</h3>
+      <p>Catch us on Social Media</p>
+      <div class="social-links">
+        <a href="https://twitter.com/A2Buzz" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/leo306a2" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/a2leos/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/leo306a2/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Leo District 306 A2</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/ -->
+      
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  
   <div class="modal fade" id="directory-modal" tabindex="-1" role="dialog" aria-labelledby="directory-modal-title"
-    aria-hidden="false">
-    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" title="Close" class="close modal-close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="row">
-            <div class="col-md-6 left-content">
-              <img src="assets/img/directory/modal_logo.png" class="modal-logo">
-            </div>
-            <div class="col-md-6 right-content">
-              <div class="right-content-wrapper">
-                <img src="assets/img/directory/app_logo.png" class="directory-modal-app-logo mx-auto d-block mb-3">
-                <h2 class="text-center directory-modal-header mb-2">A2 Directory</h2>
-                <p class="text-justify directory-modal-content">A2 Directory by Leo District 306 A2 is the place where
-                  you can find
-                  all information of A2 leos. This app opens the door to communicate with leos and lions
-                  via phone call or email in a faster and easier way- all from your mobile device.</p>
-                <h6 class="text-center directory-modal-header">Download Now</h6>
-                <div class="row">
-                  <div class="col-md-6 mr-0 pr-1 store-link link-andorid">
-                    <a class="play-store-link" target="_blank" title="Google Play Store"
-                      href="https://play.google.com/store/apps/details?id=a2.it.team.leos">
-                      <img src="assets/img/directory/play_store_download_btn.png">
-                    </a>
-                  </div>
-                  <div class="col-md-6 ml-0 pl-1 store-link link-android
-                  ">
-                    <a class="play-store-link" title="Apple Store" target="_blank"
-                      href="https://apps.apple.com/lk/app/a2-directory/id1525568981">
-                      <img src="assets/img/directory/ios_store_download_btn.png">
-                    </a>
-                  </div>
+  aria-hidden="false">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" title="Close" class="close modal-close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="row">
+          <div class="col-md-6 left-content">
+            <img src="assets/img/directory/modal_logo.png" class="modal-logo">
+          </div>
+          <div class="col-md-6 right-content">
+            <div class="right-content-wrapper">
+              <img src="assets/img/directory/app_logo.png" class="directory-modal-app-logo mx-auto d-block mb-3">
+              <h2 class="text-center directory-modal-header mb-2">A2 Directory</h2>
+              <p class="text-justify directory-modal-content">A2 Directory by Leo District 306 A2 is the place where
+                you can find
+                all information of A2 leos. This app opens the door to communicate with leos and lions
+                via phone call or email in a faster and easier way- all from your mobile device.</p>
+              <h6 class="text-center directory-modal-header">Download Now</h6>
+              <div class="row">
+                <div class="col-md-6 mr-0 pr-1 store-link link-andorid">
+                  <a class="play-store-link" target="_blank" title="Google Play Store"
+                    href="https://play.google.com/store/apps/details?id=a2.it.team.leos">
+                    <img src="assets/img/directory/play_store_download_btn.png">
+                  </a>
+                </div>
+                <div class="col-md-6 ml-0 pl-1 store-link link-android
+                ">
+                  <a class="play-store-link" title="Apple Store" target="_blank"
+                    href="https://apps.apple.com/lk/app/a2-directory/id1525568981">
+                    <img src="assets/img/directory/ios_store_download_btn.png">
+                  </a>
                 </div>
               </div>
             </div>
@@ -711,18 +485,21 @@
       </div>
     </div>
   </div>
+</div>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
