@@ -82,6 +82,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.dp5points .points h2{
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  font-weight: 900; 
+  padding-top: 30px;
+}
+.dp5points .points h2:hover{
+  color: wheat;
+}
+
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -290,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down li {
-  min-width: 350px;
+  min-width: 450px;
   position: relative;
 }
 
@@ -397,7 +408,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 768px) {
   #contact .contact-phone {
-    border-left: 1px solid #ddd;
+    /* border-left: 1px solid #ddd; */
    
   }
 }
@@ -724,9 +735,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+.features .img-size-fit img{
+  /* height: 80%; */
+  /* width: auto; */
+  max-width: 90%;
+}
+.features .section-title{
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
+.home-title{
+  margin-top: 0px;
+}
 
 section {
   padding: 60px 0;
@@ -1419,7 +1445,9 @@ section {
   font-size: 48px;
   display: block;
   font-weight: 700;
-  color: whitesmoke;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .counts .counters p {
@@ -2121,6 +2149,12 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+#footer  .contact{
+  color: white;
+}
+#footer  .contact :hover{
+  color: whitesmoke;
+}
 #footer {
   background: #0f0f0f;
   color: #fff;
@@ -2143,11 +2177,11 @@ section {
   font-size: 15;
   font-style: italic;
   padding: 0;
-  margin: 0 0 40px 0;
+  margin: 20px 0 10px 0;
 }
 
 #footer .social-links {
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
 }
 
 #footer .social-links a {
