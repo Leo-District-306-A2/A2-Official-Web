@@ -476,17 +476,19 @@ h1, h2, h3, h4, h5, h6 {
 
 #contact .php-email-form input, #contact .php-email-form textarea {
   padding: 10px 14px;
-  border-radius: 0;
+  border-radius: 5px;
   box-shadow: none;
   font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
 #contact .php-email-form input::focus, #contact .php-email-form textarea::focus {
-  background-color: #50d8af;
+  background-color: #1c97cf;
 }
 
 #contact .php-email-form button[type="submit"] {
-  background: #50d8af;
+  background: #1c97cf;
   border: 0;
   border-radius: 3px;
   padding: 10px 30px;
@@ -496,7 +498,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #contact .php-email-form button[type="submit"]:hover {
-  background: #2dc899;
+  background: #1c97cf;
 }
 
 @-webkit-keyframes animate-loading {
@@ -653,17 +655,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-
 #hero {
   width: 100%;
   height: 90vh;
-  background: url("../img/gp.jpg") center center;
+  background:url("../img/gp.jpg") center center;
   background-size: cover;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: -150px;
+
 }
 
 #hero .container {
@@ -983,10 +986,9 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
-
 .why-us .content {
   padding: 30px;
-  background: #1977cc;
+  background: #3b65a7;
   border-radius: 4px;
   color: #fff;
 }
@@ -1042,33 +1044,93 @@ section {
 
 .why-us .icon-boxes .icon-box p {
   font-size: 15px;
-  color: #dfd9d9;
+  color: #848484;
 }
-.why-us .icon-box .description {
-  line-height: 24px;
+
+/* xxxxxxxxx */
+.projects .content {
+  padding: 30px;
+  background: #1977cc;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.projects .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.projects .content p {
+  margin-bottom: 30px;
+
+}
+
+.projects .content .more-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 30px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.projects .content .more-btn i {
   font-size: 14px;
-  text-align: justify;
-  text-indent: 40px;
-  color: #d8dee4;
 }
-.why-us .project-title h3{
+
+.projects .content .more-btn:hover {
+  color: #1977cc;
+  background: #fff;
+}
+
+.projects .icon-boxes .icon-box {
+  text-align: center;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  width: 100%;
+}
+
+.projects .icon-boxes .icon-box i {
+  font-size: 40px;
+  color: #1977cc;
+  margin-bottom: 30px;
+}
+
+.projects .icon-boxes .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.projects .icon-boxes .icon-box p {
+  font-size: 15px;
+  color: #848484;
+}
+
+.projects h3{
   color: white;
 }
 
-.why-us .section-title{
-  margin-top: 30px;
-}
-.why-us .project-title  :hover{
+.projects h3:hover{
   color: #1c97cf;
 }
-
-.why-us .video-box img{
-  border-left: 3px solid #7cb341;
-  border-bottom: 3px solid #7cb341;
+.projects p{
+  color: whitesmoke;
+  text-align: justify;
+}
+.projects img{
   border-top: 3px solid #1c97cf;
   border-right: 3px solid #1c97cf;
+  border-bottom: 3px solid #7cb341;
+  border-left: 3px solid #7cb341;
 }
 
+.projects h2{
+  margin-top: 20px;
+}
 
 /*--------------------------------------------------------------
 # Portfolio

@@ -76,7 +76,7 @@
 
       <nav class="nav-menu d-none d-lg-block">
           <ul>
-              <li><a href="index.html">Home</a></li>
+              <li class="active "><a href="index.html">Home</a></li>
               <li class="drop-down"><a href="team.html">Our Leaders</a>
                   <ul>
                       <!-- <li><a href="#">Drop Down 1</a></li> -->
@@ -102,7 +102,7 @@
               <li><a href="projects.html">Projects</a></li>
               <!-- <li><a href="calendar.html">Calendar</a></li> -->
               <li><a href="gallery.html">Gallery</a></li>
-              <li class="active drop-down"><a>Downloads</a>
+              <li class="drop-down"><a>Downloads</a>
                   <ul>
                       <li><a href="newsletter.html" target="_blank">Ally - Official Newsletter</a></li>
                       <li class="drop-down"><a>Guest Introductions</a>
@@ -233,7 +233,7 @@
       </nav><!-- .nav-menu -->
       <div class="directory" data-toggle="modal" data-target="#directory-modal"><img
               src="assets/img/directory/app_logo.png" alt="appmodal"></div>
-      <a href="index.html#contact" class="appointment-btn scrollto">Join Now</a>
+      <a href="index.html#contactUs" class="appointment-btn scrollto">Join Now</a>
 
   </div>
 </header><!-- End Header -->
@@ -254,86 +254,35 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="col-lg-12 d-flex align-items-stretch">
             <div class="content">
-              <h3>Why Choose Medilab?</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
-              </p>
-              <div class="text-center">
-                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
-              </div>
+              <h2 class="text-center">Welcome to <strong>Leo District 306 A2</strong></h2>
+              <p class="text-center">
+                Leos of 306 A2, conducting various activities to the needy, Less fortunate as well as for the betterment of
+                the Movement and its Members..</p>              
             </div>
           </div>
-          <div class="col-lg-8 d-flex align-items-stretch">
-            <div class="icon-boxes d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-receipt"></i>
-                    <h4>Corporis voluptates sit</h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                  </div>
-                </div>
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-cube-alt"></i>
-                    <h4>Ullamco laboris ladore pan</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                  </div>
-                </div>
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-images"></i>
-                    <h4>Labore consequatur</h4>
-                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
 
       </div>
     </section>
     <!-- End Why Us Section -->
 
-    <section id="why-us" class="why-us">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-12 d-flex">
-            <div class="content">
-              <h3>Why Choose Medilab?</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
-              </p>
-              <div class="text-center">
-                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
-              </div>
-            </div>
-          </div>
-          
-          </div>
-        </div>
-
-      </div>
-    </section>
+   
    
 
     <!-- ======== About Us Section ======== -->
     <section class="features">
       <div class="container">
 
-        <div class="section-title home-title">
+        <!-- <div class="section-title home-title">
           <h2>Welcome to <strong>Leo District 306 A2</strong></h2>
           <p class="title-des">
             Leos of 306 A2, conducting various activities to the needy, Less fortunate as well as for the betterment of
             the Movement and its Members..
           </p>
-        </div>
+        </div> -->
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-6 order-1 order-lg-2 d-flex flex-column justify-content-center video-box img-size-fit">
@@ -580,7 +529,63 @@
       </div>
     </section>
 
-    
+    <div id="contactUs"></div>
+    <section  id="contact" class="wow fadeInUp">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <!-- <h3></h3> -->
+      </div>
+      <div class="form">
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:2" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group col-md-6">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validate"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <input type="text" name="contactNumber" class="form-control" id="contactNumber" placeholder="Your Contact Number" data-rule="minlen:10" data-msg="Please enter valid contact number" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group col-md-4">
+              <input type="text" class="form-control" name="homeTown" id="homeTown" placeholder="Your Home Town" data-rule="minlen:1" data-msg="Please valid home town" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group col-md-4">
+              <input type="number" class="form-control" name="age" id="age" placeholder="Your Age" data-rule="number" data-msg="Please enter a number" />
+              <div class="validate"></div>
+            </div>
+          </div>
+
+
+          <!-- <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+            <div class="validate"></div>
+          </div> -->
+
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+
+          <div class="text-center"><button type="submit">Submit</button></div>
+        </form>
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
 
 
 
