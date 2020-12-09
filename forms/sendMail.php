@@ -2,15 +2,24 @@
 
 require '../mailer/PHPMailerAutoload.php';
 
-$name = $_POST['name'];
+$receivingEmail = 'sapsdilshan@gmail.com';
+$sendingEmail = 'web.leodistrict306a2@gmail.com';
+$password = 'A2@123Leos';
+$showingName = 'A2 WEB'
+
 $email = $_POST['email'];
+$name = $_POST['name'];
 $contactNumber = $_POST['contactNumber'];
 $homeTown = $_POST['homeTown'];
 $age = $_POST['age'];
 
 $to = "sapsdilshan@gmail.com";
 $subject = "New Member Request";
-$body = "Here is a new user";
+$body = "<strong>Name</strong>: ".$name."<br>".
+        "<strong>Email</strong>: ".$email."<br>".
+        "<strong>Contact Number</strong>: ".$contactNumber."<br>".
+        "<strong>Home Town</strong>: ".$homeTown."<br>".
+        "<strong>Age</strong>: ".$age."<br>".;
 
 if(isset($_POST['name'])){
 
@@ -22,15 +31,15 @@ if(isset($_POST['name'])){
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'travelme.developer@gmail.com';                 // SMTP username
-    $mail->Password = 'TravelMe@123';                           // SMTP password
+    $mail->Username = $sendingEmail;                 // SMTP username
+    $mail->Password = 'A2@123Leos';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
 
-    $mail->setFrom('travelme.developer@gmail.com', 'Mailer');
-    $mail->addAddress('sapsdilshan@gmail.com');     // Add a recipient
+    $mail->setFrom($sendingEmail, $showingName);
+    $mail->addAddress($receivingEmail);     // Add a recipient
     // $mail->addAddress('ellen@example.com');               // Name is optional
-    $mail->addReplyTo('travelme.developer@gmail.com');
+    $mail->addReplyTo($sendingEmail);
     // $mail->addCC('cc@example.com');
     // $mail->addBCC('bcc@example.com');
 
@@ -38,9 +47,9 @@ if(isset($_POST['name'])){
     // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
     $mail->isHTML(true);                                  // Set email format to HTML
 
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    $mail->Subject = $subject;
+    $mail->Body    = $body;
+    $mail->AltBody = '';
 
     if(!$mail->send()) {
         echo 'Message could not be sent.';
@@ -48,6 +57,8 @@ if(isset($_POST['name'])){
     } else {
         echo 'Message has been sent';
     }
+}else{
+    echo 'Please fill the form'
 }
 
 
