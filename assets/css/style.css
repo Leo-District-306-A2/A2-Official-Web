@@ -85,14 +85,21 @@ h1, h2, h3, h4, h5, h6 {
 .dp5points .points h2{
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-  font-weight: 900; 
+  font-weight: 800; 
   padding-top: 30px;
+  
 }
 .dp5points .points h2:hover{
   color: wheat;
 }
 
-
+.dp5points .home-title{
+  margin-bottom: 0 !important;
+}
+.dp5points img{
+  margin-top: 0px !important;
+  width: 80%;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -301,7 +308,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down li {
-  min-width: 450px;
+  min-width: 400px;
   position: relative;
 }
 
@@ -738,11 +745,27 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
+.logos img{
+  height: 400px !important;
+  width: 400px !important;
+  object-fit: cover !important;
+}
 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+.features .bullets li{
+  color: whitesmoke;
+  padding-left: 40px;
+  padding-top: 20px;
+  /* font-style: italic; */
+}
+.features .bullets i{
+  color: whitesmoke;
+  padding-right: 10px;
+  
+}
+
 .features .img-size-fit img{
   /* height: 80%; */
   /* width: auto; */
@@ -874,9 +897,90 @@ section {
     display: inline-block;
   }
 }
+/* logos start */
+.logos {
+  background: rgba(0, 0, 0, 0.7 );
+  padding-bottom: 30px;
+}
+
+.logos .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.logos .member .member-img {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgb(122, 122, 122);
+}
+
+.logos .member .social {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  right: 0;
+  height: 40px;
+  opacity: 0;
+  transition: bottom ease-in-out 0.4s;
+  text-align: center;
+  background: rgba(30, 67, 86, 0.8);
+}
+
+.logos .member .social a {
+  transition: color 0.3s;
+  color: #fff;
+  margin: 0 10px;
+  padding-top: 8px;
+  display: inline-block;
+}
+
+.logos .member .social a:hover {
+  color: #68A4C4;
+}
+
+.logos .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.logos .member .member-info h4 {
+  font-weight: 700;
+  margin: 15px 0 5px 0;
+  font-size: 18px;
+}
+
+.logos .member .member-info span {
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #68A4C4;
+}
+
+.logos .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #666;
+}
+
+.logos .member:hover .social {
+  bottom: 0;
+  opacity: 1;
+  transition: bottom ease-in-out 0.4s;
+
+  /* logos end */
+}
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+
+.team .logo .member-img {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgb(122, 122, 122);
+}
 .team {
   background: rgba(0, 0, 0, 0.7 );
   padding-bottom: 30px;

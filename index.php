@@ -1,4 +1,6 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -42,7 +44,7 @@
 <body>
 
   <style>
-    body{
+    body {
       background-color: rgba(0, 0, 0, 0.9);
     }
   </style>
@@ -65,9 +67,8 @@
     </div>
   </div> -->
 
-   <!-- ======= Header ======= -->
-<!-- ======= Header ======= -->
-<header id="header" class="fixed-top">
+ <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top">
   <div class="container d-flex align-items-center">
 
       <!-- <h1 class="logo mr-auto"><a href="index.html">Medilab</a></h1> -->
@@ -76,7 +77,7 @@
 
       <nav class="nav-menu d-none d-lg-block">
           <ul>
-              <li class="active "><a href="index.html">Home</a></li>
+              <li class="active"><a href="index.html">Home</a></li>
               <li class="drop-down"><a href="team.html">Our Leaders</a>
                   <ul>
                       <!-- <li><a href="#">Drop Down 1</a></li> -->
@@ -104,33 +105,35 @@
               <li><a href="gallery.html">Gallery</a></li>
               <li class="drop-down"><a>Downloads</a>
                   <ul>
-                      <li><a href="newsletter.html" target="_blank">Ally - Official Newsletter</a></li>
+                      <li><a href="newsletter.html" target="_blank">Official District Newsletters</a></li>
+                      <li><a data-toggle="modal" data-target="#directory-modal">A2 Directory App</a></li>
                       <li class="drop-down"><a>Guest Introductions</a>
                           <ul>
                               <li class="drop-down"><a>Executive Officers</a>
                                   <ul>
-                                      <li><a href="assets/pdf/ExecutiveOfficers/1. DP - Leo Praminda Vindika.pdf">District
+                                      <li><a href="assets/pdf/ExecutiveOfficers/1. DP - Leo Praminda Vindika.pdf"
+                                              target="_blank">District
                                               President - Leo Praminda Vindika</a></li>
-                                      <li><a
-                                              href="assets/pdf/ExecutiveOfficers/2. IPDP - Leo Mudith Jayasekara.pdf">Immediate
+                                      <li><a href="assets/pdf/ExecutiveOfficers/2. IPDP - Leo Mudith Jayasekara.pdf"
+                                              target="_blank">Immediate
                                               Past District President - Leo Mudith Jayasekara</a></li>
-                                      <li><a
-                                              href="assets/pdf/ExecutiveOfficers/3. DVP - Leo Navod Kiriwaththuduwa.pdf">District
+                                      <li><a href="assets/pdf/ExecutiveOfficers/3. DVP - Leo Navod Kiriwaththuduwa.pdf"
+                                              target="_blank">District
                                               Vice President - Leo Navod Kiriwaththuduwa</a></li>
-                                      <li><a
-                                              href="assets/pdf/ExecutiveOfficers/4. District Secretary - Leo Raseema Sugandi.pdf">District
+                                      <li><a href="assets/pdf/ExecutiveOfficers/4. District Secretary - Leo Raseema Sugandi.pdf"
+                                              target="_blank">District
                                               Secretary - Leo Raseema Sugandi</a></li>
-                                      <li><a
-                                              href="assets/pdf/ExecutiveOfficers/5. District Treasurer - Leo Kasun Ramanayake.pdf">District
+                                      <li><a href="assets/pdf/ExecutiveOfficers/5. District Treasurer - Leo Kasun Ramanayake.pdf"
+                                              target="_blank">District
                                               Treasurer - Leo Kasun Ramanayake</a></li>
-                                      <li><a
-                                              href="assets/pdf/ExecutiveOfficers/6. Dist. Ast. Sect. - Leo Dinendri W.pdf">District
+                                      <li><a href="assets/pdf/ExecutiveOfficers/6. Dist. Ast. Sect. - Leo Dinendri W.pdf"
+                                              target="_blank">District
                                               Assistant Secretary - Leo Dinendri Wilegoda Arachchige</a></li>
-                                      <li><a
-                                              href="assets/pdf/ExecutiveOfficers/7. Dist. Ast. Tres. - Leo Vihan Manage.pdf">District
+                                      <li><a href="assets/pdf/ExecutiveOfficers/7. Dist. Ast. Tres. - Leo Vihan Manage.pdf"
+                                              target="_blank">District
                                               Assistant Treasurer - Leo Vihan Manage</a></li>
-                                      <li><a
-                                              href="assets/pdf/ExecutiveOfficers/8. District Chairman for Leo_s - Lion Anura Goonetilleke.pdf">District
+                                      <li><a href="assets/pdf/ExecutiveOfficers/8. District Chairman for Leo_s - Lion Anura Goonetilleke.pdf"
+                                              target="_blank">District
                                               Chairman for Leos - Lion Anura Goonetilleke</a></li>
 
                                   </ul>
@@ -138,94 +141,132 @@
                               <!-- <li class="drop-down"><a>Past District Presidents</a></li> -->
                               <li class="drop-down"><a>Chief Coordinators</a>
                                   <ul>
-                                      <li><a href="assets/pdf/ChiefCoordinators/C.C- Admin. - Leo Tikuli Pitigala.pdf">Chief Coordinator - Administration - Leo Tikuli Pitigala</a></li>
-                                      <li><a href="assets/pdf/ChiefCoordinators/C.C- Council - Leo Santhrushika De Silva.pdf">Chief Coordinator - Council - Leo Santhrushika De Silva</a></li>
-                                      <li><a href="assets/pdf/ChiefCoordinators/C.C- Line Officers- Leo Shehan Akmeemana.pdf">Chief Coordinator – Line Officer - Leo Shehan Akmeemana</a></li>
-                                      <li><a href="assets/pdf/ChiefCoordinators/C.C- Memb. grw _ ret. - Leo Isuri Udithamala.pdf">Chief Coordinator – Membership Growth & Retention - Leo Isuri Udithamala</a></li>
+                                      <li><a href="assets/pdf/ChiefCoordinators/C.C- Admin. - Leo Tikuli Pitigala.pdf"
+                                              target="_blank">Chief Coordinator - Administration - Leo Tikuli
+                                              Pitigala</a></li>
+                                      <li><a href="assets/pdf/ChiefCoordinators/C.C- Council - Leo Santhrushika De Silva.pdf"
+                                              target="_blank">Chief Coordinator - Council - Leo Santhrushika De
+                                              Silva</a></li>
+                                      <li><a href="assets/pdf/ChiefCoordinators/C.C- Line Officers- Leo Shehan Akmeemana.pdf"
+                                              target="_blank">Chief Coordinator – Line Officer - Leo Shehan
+                                              Akmeemana</a></li>
+                                      <li><a href="assets/pdf/ChiefCoordinators/C.C- Memb. grw _ ret. - Leo Isuri Udithamala.pdf"
+                                              target="_blank">Chief Coordinator – Membership Growth & Retention -
+                                              Leo Isuri Udithamala</a></li>
                                   </ul>
                               </li>
                               <li class="drop-down"><a>Regional & Zonal Directors</a>
                                   <ul>
-                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Region A - Leo Ravindu Vishan.pdf">Region Director – Region A - Leo Ravindu Vishan</a></li>
-                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Region B - Leo Stephan Melder.pdf">Region Director – Region B - Leo Stephan Melder</a></li>
-                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Region C - Leo Yasiru Nilan.pdf">Region Director – Region C - Leo Yasiru Nilan</a></li>
-                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Zone A1 - Leo Kavishka Herath.pdf">Zone Director – Zone A1 - Leo Kavishka Herath</a></li>
-                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Zone A2 - Leo Savumi Wadduwage.pdf">Zone Director – Zone A2 - Leo Savumi Wadduwage</a></li>
-                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Zone B1 - Leo Malki Parawithana.pdf">Zone Director – Zone B1 - Leo Malki Paranawithana</a></li>
-                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Zone B2 - Leo Dilitha Ranjuna.pdf">Zone Director – Zone B2 - Leo Dilitha Ranjuna</a></li>
-                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Zone C1 - Leo Dithira Wellappuli.pdf">Zone Director – Zone C1 - Leo Dithira Wellappuli</a></li>
-                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Zone C2 - Leo Dulan Wickramarathne.pdf">Zone Director – Zone C2 - Leo Dulan Wickramarathne</a></li>
+                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Region A - Leo Ravindu Vishan.pdf"
+                                              target="_blank">Region Director – Region A - Leo Ravindu Vishan</a>
+                                      </li>
+                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Region B - Leo Stephan Melder.pdf"
+                                              target="_blank">Region Director – Region B - Leo Stephan Melder</a>
+                                      </li>
+                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Region C - Leo Yasiru Nilan.pdf"
+                                              target="_blank">Region Director – Region C - Leo Yasiru Nilan</a>
+                                      </li>
+                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Zone A1 - Leo Kavishka Herath.pdf"
+                                              target="_blank">Zone Director – Zone A1 - Leo Kavishka Herath</a>
+                                      </li>
+                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Zone A2 - Leo Savumi Wadduwage.pdf"
+                                              target="_blank">Zone Director – Zone A2 - Leo Savumi Wadduwage</a>
+                                      </li>
+                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Zone B1 - Leo Malki Parawithana.pdf"
+                                              target="_blank">Zone Director – Zone B1 - Leo Malki
+                                              Paranawithana</a></li>
+                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Zone B2 - Leo Dilitha Ranjuna.pdf"
+                                              target="_blank">Zone Director – Zone B2 - Leo Dilitha Ranjuna</a>
+                                      </li>
+                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Zone C1 - Leo Dithira Wellappuli.pdf"
+                                              target="_blank">Zone Director – Zone C1 - Leo Dithira Wellappuli</a>
+                                      </li>
+                                      <li><a href="assets/pdf/Regional _ ZonalDirectors/Zone C2 - Leo Dulan Wickramarathne.pdf"
+                                              target="_blank">Zone Director – Zone C2 - Leo Dulan
+                                              Wickramarathne</a></li>
                                   </ul>
                               </li>
                               <li class="drop-down"><a>District Directors</a>
-                              <ul>
-                                  <li><a href="assets/pdf/DistrictDirectors/Dist. Contest  - Leo Tharini Subasinghe.pdf">District Director – District Contest - Leo Tharini Subasinghe</a></li>
-                                  <li><a href="assets/pdf/DistrictDirectors/Editorial Panel - Leo Dhanushi Wijewardana.pdf">District Director – Editorial Panel - Leo Dhanushi Wijewardana</a></li>
-                                  <li><a href="assets/pdf/DistrictDirectors/Edu. _ Lit. - Leo Crystal Vanburen.pdf">District Director – Education & Literacy - Leo Crystal Vanburen</a></li>
-                                  <li><a href="assets/pdf/DistrictDirectors/Fundraising - Leo Pavan Perera.pdf">District Director – Fundraising - Leo Pavan Perera</a></li>
-                                  <li><a href="assets/pdf/DistrictDirectors/IT _ PR - Leo Thilina Prasad.pdf">District Director – IT & PR - Leo Thilina Prasad</a></li>
-                                  <li><a href="assets/pdf/DistrictDirectors/Leo Lion Relationship - Leo Osura Perera.pdf">District Director –Leo Lion Relationship - Leo Osura Perera</a></li>
-                                  <li><a href="assets/pdf/DistrictDirectors/Mem. Grw _ Ret. - Leo Yuran Deshaka.pdf">District Director – Membership Growth & Retention - Leo Yuran Deshan</a></li>
-                                  <li><a href="assets/pdf/DistrictDirectors/Service - Leo Navodya Weerapura.pdf">District Director – Service - Leo Navodya Weerapura</a></li>
-                                  <li><a href="assets/pdf/DistrictDirectors/Sports _ Fellowship - Leo Athila Senal.pdf">District Director – Sports & Fellowship - Leo Athila Senal</a></li>
-                              
-                              </ul>
+                                  <ul>
+                                      <li><a href="assets/pdf/DistrictDirectors/Dist. Contest  - Leo Tharini Subasinghe.pdf"
+                                              target="_blank">District Director – District Contest - Leo Tharini
+                                              Subasinghe</a></li>
+                                      <li><a href="assets/pdf/DistrictDirectors/Editorial Panel - Leo Dhanushi Wijewardana.pdf"
+                                              target="_blank">District Director – Editorial Panel - Leo Dhanushi
+                                              Wijewardana</a></li>
+                                      <li><a
+                                              href="assets/pdf/DistrictDirectors/Edu. _ Lit. - Leo Crystal Vanburen.pdf">
+                                              target="_blank"District Director – Education & Literacy - Leo
+                                              Crystal Vanburen</a></li>
+                                      <li><a href="assets/pdf/DistrictDirectors/Fundraising - Leo Pavan Perera.pdf"
+                                              target="_blank">District Director – Fundraising - Leo Pavan
+                                              Perera</a></li>
+                                      <li><a href="assets/pdf/DistrictDirectors/IT _ PR - Leo Thilina Prasad.pdf"
+                                              target="_blank">District Director – IT & PR - Leo Thilina Prasad</a>
+                                      </li>
+                                      <li><a href="assets/pdf/DistrictDirectors/Leo Lion Relationship - Leo Osura Perera.pdf"
+                                              target="_blank">District Director –Leo Lion Relationship - Leo Osura
+                                              Perera</a></li>
+                                      <li><a href="assets/pdf/DistrictDirectors/Mem. Grw _ Ret. - Leo Yuran Deshaka.pdf"
+                                              target="_blank">District Director – Membership Growth & Retention -
+                                              Leo Yuran Deshan</a></li>
+                                      <li><a href="assets/pdf/DistrictDirectors/Service - Leo Navodya Weerapura.pdf"
+                                              target="_blank">District Director – Service - Leo Navodya
+                                              Weerapura</a></li>
+                                      <li><a href="assets/pdf/DistrictDirectors/Sports _ Fellowship - Leo Athila Senal.pdf"
+                                              target="_blank">District Director – Sports & Fellowship - Leo Athila
+                                              Senal</a></li>
+
+                                  </ul>
                               </li>
                           </ul>
                       </li>
                       <li class="drop-down"><a>Administrative
                               Documents</a>
                           <ul>
-                              <li><a href="assets/pdf/Documents/Standard Leo Club Constitution.pdf">Standard Leo
-                                      Club
-                                      Constitution & By-laws</a></li>
-                              <li class="drop-down"><a
-                                      href="assets/pdf/Documents/Installation Ceremony of Leo Club Officers.pdf">Installation
+                              <li class="drop-down"><a>Standard Leo Club Constitution & By-laws</a>
+                                  <ul>
+                                      <li><a href="assets/pdf/Documents/සම්මත ලියෝ සමාජ ව්‍යවස්ථාව.pdf" target="_blank">සිංහල</a></li>
+                                      <li><a href="assets/pdf/Documents/Standard Leo Club Constitution.pdf" target="_blank">English</a></li>
+                                  </ul>
+                              </li>
+                              <li class="drop-down"><a>Installation
                                       Ceremony of Leo Club Officers</a>
                                   <ul>
-                                      <li><a
-                                              href="assets/pdf/Documents/ලියෝ සමාජයේ නිලධාරීන් ස්ථාපනය කිරී1.pdf">සිංහල</a>
+                                      <li><a href="assets/pdf/Documents/ලියෝ සමාජයේ නිලධාරීන් ස්ථාපනය කිරී1.pdf"
+                                              target="_blank">සිංහල</a>
                                       </li>
-                                      <li><a
-                                              href="assets/pdf/Documents/Installation Ceremony of Leo Club Officers.pdf">English</a>
+                                      <li><a href="assets/pdf/Documents/Installation Ceremony of Leo Club Officers.pdf"
+                                              target="_blank">English</a>
                                       </li>
                                   </ul>
                               </li>
                               <li class="drop-down"><a
-                                      href="assets/pdf/Documents/Initiation Ceremony of New Members.pdf">Initiation
+                                      href="assets/pdf/Documents/Initiation Ceremony of New Members.pdf"
+                                      target="_blank">Initiation
                                       Ceremony of New Members</a>
                                   <ul>
-                                      <li><a
-                                              href="assets/pdf/Documents/ලියෝ සමාජයේ නව සාමාජිකයින් ස්ථාපනය කිරීම.pdf">සිංහල</a>
+                                      <li><a href="assets/pdf/Documents/ලියෝ සමාජයේ නව සාමාජිකයින් ස්ථාපනය කිරීම.pdf"
+                                              target="_blank">සිංහල</a>
                                       </li>
-                                      <li><a
-                                              href="assets/pdf/Documents/Initiation Ceremony of New Members.pdf">English</a>
+                                      <li><a href="assets/pdf/Documents/Initiation Ceremony of New Members.pdf"
+                                              target="_blank">English</a>
                                       </li>
                                   </ul>
                               </li>
-                              <li><a href="assets/pdf/Documents/Leo Club Protocol.pdf">Leo Club Protocol</a></li>
-                              <li><a href="assets/pdf/Documents/General Meeting Agenda.pdf">General Meeting
+                              <li><a href="assets/pdf/Documents/Leo Club Protocol.pdf" target="_blank">Leo Club
+                                      Protocol</a></li>
+                              <li><a href="assets/pdf/Documents/General Meeting Agenda.pdf"
+                                      target="_blank">General Meeting
                                       Agenda</a>
                               </li>
-                              <li><a href="assets/pdf/Documents/Board Meeting Agenda.pdf">Board Meeting Agenda</a>
+                              <li><a href="assets/pdf/Documents/Board Meeting Agenda.pdf" target="_blank">Board
+                                      Meeting Agenda</a>
                               </li>
                           </ul>
                       </li>
-                      <li class="drop-down"><a>Logos</a>
-                          <ul>
-                              <li><a href="assets/img/logos/LCI_emblem_2color_web.png" download>Lions Club International</a></li>
-                              <li><a href="assets/img/logos/Logo_rgb_Leo_2C.png" download>Leo Logo</a></li>
-                              <li><a href="assets/img/logos/A2 Logo - 2020.png" download>Leo District 306 A2 Logo 2020/21</a></li>
-                              <li><a href="assets/img/logos/Leo Multiple 2020-21 Logo.png" download>Leo Multiple District Logo 2020/21</a></li>
-                              <li class="drop-down"><a>Leos of Sri Lanka Logo</a>
-                              <ul>
-                                  <li><a href="assets/img/logos/Leos of Sri Lanka 3 - monochrome.png" download>Monochrome</a></li>
-                                  <li><a href="assets/img/logos/Leos of Sri Lanka 3 gradient - black.png" download>Gradient - Black</a></li>
-                                  <li><a href="assets/img/logos/Leos of Sri Lanka 3 gradient.png" download>Gradient</a></li>
-                              </ul>
-                              </li>
-                          </ul>
-                      </li>
+                      <li><a href="logos.html" target="_blank">Logos</a></li>
+
                   </ul>
               </li>
 
@@ -236,7 +277,7 @@
       <a href="index.html#contactUs" class="appointment-btn scrollto">Join Now</a>
 
   </div>
-</header><!-- End Header -->
+</header>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -257,20 +298,25 @@
           <div class="col-lg-12 d-flex align-items-stretch">
             <div class="content">
               <h2 class="text-center">Welcome to <strong>Leo District 306 A2</strong></h2>
-              <p class="text-center">
-                Leos of 306 A2, conducting various activities to the needy, Less fortunate as well as for the betterment of
-                the Movement and its Members..</p>              
+              <p class="text-justify">
+                Leo District 306 A2 is one of the leading Leo District in Sri Lanka. It is sponsored by the
+                International Association of Lions Club District 306 A2 and presently 25 Leo clubs are actively serving
+                the community with the contribution of more than 950 Leos under the guidance of multi-talented executive
+                officers. Activities conducted by Leo District 306 A2 include Childcare, Eldercare, Sports,
+                Environmental, Healthcare, Leadership Development Projects and many more. A three days residential youth
+                camp, a Leo Job Bank and PR campaigns also add up to making the Leo movement the voluntary youth service
+                organization to be in. </p>
             </div>
           </div>
-          
+
         </div>
 
       </div>
     </section>
     <!-- End Why Us Section -->
 
-   
-   
+
+
 
     <!-- ======== About Us Section ======== -->
     <section class="features">
@@ -289,22 +335,15 @@
             <img src="assets/img/aboutpng.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center p-1 des">
-            <h3>Leo District 306 A2 is one of the leading Leo districts in Sri Lanka</h3>
-            <p class="font-italic text-justify">
-              It's sponsored by Lions District 306 A2. Currently 26 Leo clubs are actively serving the community with the
-              contribution of more than 900 Leos in 26 different clubs.
-            </p>
-            <h3>Consists of Well passionate, creative and efficient young leos</h3>
-            <p class="font-italic text-justify">
-              Under the guidance of a multi-talented executive officers, A2 leos are always work with a aim to serve the
-              commiunity.
-            </p>
-            <h3>Many success commiunity service sare conducting every year with new ideas </h3>
-            <p class="font-italic text-justify">
-              Activities conducted by Leo District 306 A2 include Childcare, Elders, Sports, Environmental, Healthcare
-              and Leadership Development Projects. A three days residential youth camp, a Leo Job Bank and PR campaigns
-              also add up into making the Leo movement the voluntary youth service organization to be in.
-            </p>
+            <h3>Leo Multiple District 306 is divided into six Leo districts for the purpose of the district division is to make Leo club administration easy.</h3>
+            <ul class="bullets">
+              <li><i class="icofont-tick-boxed"></i></i>First Leo Club in Sri Lanka was formed in 1969</li>
+              <li><i class="icofont-tick-boxed"></i>Leo District 306 formed in 1971/1972</li>
+              <li><i class="icofont-tick-boxed"></i>Re-district into 306 A and 306 B in 1978/1979</li>
+              <li><i class="icofont-tick-boxed"></i>Leo Multiple District 306 formed in 1984/1985</li>
+              <li><i class="icofont-tick-boxed"></i>Re-district into 306 A, 306 B and 306 C in 1989/1990</li>
+              <li><i class="icofont-tick-boxed"></i>Re-district again into 306 A1, A2, B1, B2, C1 and C2 in 2005/2006</li>
+            </ul>
             <!-- <ul>
               <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
@@ -374,9 +413,9 @@
     <section id="dp5points" class="dp5points">
       <div class="container">
         <div class="section-title home-title">
-          <h2>District President's Five-Point Program</h2>          
+          <h2>District President's Five-Point Program</h2>
         </div>
-        
+
         <div class="row" data-aos="fade-up">
           <div class="col-lg-6 order-1 order-lg-1 d-flex flex-column justify-content-center video-box">
             <img src="assets/img/logos/A2 Logo - 2020.png" class="img-fluid" alt="">
@@ -387,8 +426,8 @@
             <h2>3. Dream Big</h2>
             <h2>4. Strong Basics</h2>
             <h2>5. Sustainable Movement</h2>
-            
-            
+
+
             <!-- <ul>
               <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
@@ -417,7 +456,7 @@
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">1000</span>
+            <span data-toggle="counter-up">950</span>
             <p>Leos</p>
           </div>
 
@@ -454,7 +493,7 @@
             </div>
           </div>
 
-         
+
 
           <div class="col-md-3 col">
             <div class="contact-phone">
@@ -485,9 +524,9 @@
               <p><a href="https://www.youtube.com/user/leo306a2">Leo District 306 A2</a></p>
             </div>
           </div>
-         
 
-         
+
+
           <div class="col-md-2">
             <div class="contact-phone">
               <a href="https://www.linkedin.com/company/leo306a2/">
@@ -522,7 +561,7 @@
             <h4>Leo District 306 A2</h4>
           </div>
 
-      
+
 
         </div>
 
@@ -530,42 +569,48 @@
     </section>
 
     <div id="contactUs"></div>
-    <section  id="contact" class="wow fadeInUp">
-    <div class="container">
-      <div class="section-title">
-        <h2>Contact Us</h2>
-        <!-- <h3></h3> -->
-      </div>
-      <div class="form">
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:2" data-msg="Please enter at least 4 chars" />
-              <div class="validate"></div>
+    <section id="contact" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-title">
+          <h2>JOIN US</h2>
+          <!-- <h3></h3> -->
+        </div>
+        <div class="form">
+          <form action="forms/sendMail.php" method="post" role="form" class="php-email-form">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                  data-rule="minlen:2" data-msg="Please enter at least 4 chars" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                  data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validate"></div>
+              </div>
             </div>
-            <div class="form-group col-md-6">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-              <div class="validate"></div>
-            </div>
-          </div>
 
-          <div class="form-row">
-            <div class="form-group col-md-4">
-              <input type="text" name="contactNumber" class="form-control" id="contactNumber" placeholder="Your Contact Number" data-rule="minlen:10" data-msg="Please enter valid contact number" />
-              <div class="validate"></div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <input type="text" name="contactNumber" class="form-control" id="contactNumber"
+                  placeholder="Your Contact Number" data-rule="minlen:10"
+                  data-msg="Please enter valid contact number" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control" name="homeTown" id="homeTown" placeholder="Your Home Town"
+                  data-rule="minlen:1" data-msg="Please valid home town" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group col-md-4">
+                <input type="number" class="form-control" name="age" id="age" placeholder="Your Age" data-rule="number"
+                  data-msg="Please enter a number" />
+                <div class="validate"></div>
+              </div>
             </div>
-            <div class="form-group col-md-4">
-              <input type="text" class="form-control" name="homeTown" id="homeTown" placeholder="Your Home Town" data-rule="minlen:1" data-msg="Please valid home town" />
-              <div class="validate"></div>
-            </div>
-            <div class="form-group col-md-4">
-              <input type="number" class="form-control" name="age" id="age" placeholder="Your Age" data-rule="number" data-msg="Please enter a number" />
-              <div class="validate"></div>
-            </div>
-          </div>
 
 
-          <!-- <div class="form-group">
+            <!-- <div class="form-group">
             <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
             <div class="validate"></div>
           </div>
@@ -574,37 +619,41 @@
             <div class="validate"></div>
           </div> -->
 
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
+            <div class="mb-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
 
-          <div class="text-center"><button type="submit">Submit</button></div>
-        </form>
+            <div class="text-center"><button type="submit">Submit</button></div>
+          </form>
+           <?php
+           echo "aaaaaaaaaaaa";
+           echo $name;
+           ?>
+        </div>
+
       </div>
-
-    </div>
-  </section><!-- End Contact Section -->
-
+    </section><!-- End Contact Section -->
 
 
 
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->  <!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
       <h3>Leo District 306 A2</h3>
       <a class="contact" href="mailto:secretariat@leodistrict306a2.org">
-      <i class="icofont-email icofont-2x"></i>
-      <div>
-        
+        <i class="icofont-email icofont-2x"></i>
+        <div>
+
           secretariat@leodistrict306a2.org
-       
-      </div>
-    </a>
+
+        </div>
+      </a>
       <p>Catch us on Social Media</p>
       <div class="social-links">
         <a href="https://twitter.com/A2Buzz" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -621,45 +670,46 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/ -->
-      
+
       </div>
     </div>
   </footer><!-- End Footer -->
-  
+
   <div class="modal fade" id="directory-modal" tabindex="-1" role="dialog" aria-labelledby="directory-modal-title"
-  aria-hidden="false">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <button type="button" title="Close" class="close modal-close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <div class="row">
-          <div class="col-md-6 left-content">
-            <img src="assets/img/directory/modal_logo.png" class="modal-logo">
-          </div>
-          <div class="col-md-6 right-content">
-            <div class="right-content-wrapper">
-              <img src="assets/img/directory/app_logo.png" class="directory-modal-app-logo mx-auto d-block mb-3">
-              <h2 class="text-center directory-modal-header mb-2">A2 Directory</h2>
-              <p class="text-justify directory-modal-content">A2 Directory by Leo District 306 A2 is the place where
-                you can find
-                all information of A2 leos. This app opens the door to communicate with leos and lions
-                via phone call or email in a faster and easier way- all from your mobile device.</p>
-              <h6 class="text-center directory-modal-header">Download Now</h6>
-              <div class="row">
-                <div class="col-md-6 mr-0 pr-1 store-link link-andorid">
-                  <a class="play-store-link" target="_blank" title="Google Play Store"
-                    href="https://play.google.com/store/apps/details?id=a2.it.team.leos">
-                    <img src="assets/img/directory/play_store_download_btn.png">
-                  </a>
-                </div>
-                <div class="col-md-6 ml-0 pl-1 store-link link-android
+    aria-hidden="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" title="Close" class="close modal-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="row">
+            <div class="col-md-6 left-content">
+              <img src="assets/img/directory/modal_logo.png" class="modal-logo">
+            </div>
+            <div class="col-md-6 right-content">
+              <div class="right-content-wrapper">
+                <img src="assets/img/directory/app_logo.png" class="directory-modal-app-logo mx-auto d-block mb-3">
+                <h2 class="text-center directory-modal-header mb-2">A2 Directory</h2>
+                <p class="text-justify directory-modal-content">A2 Directory by Leo District 306 A2 is the place where
+                  you can find
+                  all information of A2 leos. This app opens the door to communicate with leos and lions
+                  via phone call or email in a faster and easier way- all from your mobile device.</p>
+                <h6 class="text-center directory-modal-header">Download Now</h6>
+                <div class="row">
+                  <div class="col-md-6 mr-0 pr-1 store-link link-andorid">
+                    <a class="play-store-link" target="_blank" title="Google Play Store"
+                      href="https://play.google.com/store/apps/details?id=a2.it.team.leos">
+                      <img src="assets/img/directory/play_store_download_btn.png">
+                    </a>
+                  </div>
+                  <div class="col-md-6 ml-0 pl-1 store-link link-android
                 ">
-                  <a class="play-store-link" title="Apple Store" target="_blank"
-                    href="https://apps.apple.com/lk/app/a2-directory/id1525568981">
-                    <img src="assets/img/directory/ios_store_download_btn.png">
-                  </a>
+                    <a class="play-store-link" title="Apple Store" target="_blank"
+                      href="https://apps.apple.com/lk/app/a2-directory/id1525568981">
+                      <img src="assets/img/directory/ios_store_download_btn.png">
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -668,7 +718,6 @@
       </div>
     </div>
   </div>
-</div>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
@@ -690,3 +739,4 @@
 </body>
 
 </html>
+
