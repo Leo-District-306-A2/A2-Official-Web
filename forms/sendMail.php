@@ -5,7 +5,9 @@ require '../mailer/PHPMailerAutoload.php';
 $receivingEmail = 'sapsdilshan@gmail.com';
 $sendingEmail = 'web.leodistrict306a2@gmail.com';
 $password = 'A2@123Leos';
-$showingName = 'A2 WEB'
+$showingName = 'A2 WEB';
+
+$footerMsg = 'This email was sent by: '.$_SERVER['HTTP_HOST'];
 
 $email = $_POST['email'];
 $name = $_POST['name'];
@@ -15,11 +17,14 @@ $age = $_POST['age'];
 
 $to = "sapsdilshan@gmail.com";
 $subject = "New Member Request";
-$body = "<strong>Name</strong>: ".$name."<br>".
+$body = '<h4>New member request has been captured from Leo District 306 A2 web site</h4><div><strong>Name</strong>: '.$name."<br>".
         "<strong>Email</strong>: ".$email."<br>".
         "<strong>Contact Number</strong>: ".$contactNumber."<br>".
         "<strong>Home Town</strong>: ".$homeTown."<br>".
-        "<strong>Age</strong>: ".$age."<br>".;
+        "<strong>Age</strong>: ".$age.'</div>
+        <div style="margin-top: 20px">
+        '.$footerMsg.
+        '</div>';
 
 if(isset($_POST['name'])){
 
@@ -58,7 +63,7 @@ if(isset($_POST['name'])){
         echo 'Message has been sent';
     }
 }else{
-    echo 'Please fill the form'
+    echo 'Please fill the form';
 }
 
 
