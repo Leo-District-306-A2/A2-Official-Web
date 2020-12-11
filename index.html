@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -248,7 +246,7 @@
       </nav><!-- .nav-menu -->
       <div class="directory" data-toggle="modal" data-target="#directory-modal"><img
           src="assets/img/directory/app_logo.png" alt="appmodal"></div>
-      <a href="index.html#contactUs" class="appointment-btn scrollto">Join Now</a>
+      <a href="index.html#contactUs" class="appointment-btn scrollto ">Join Now</a>
 
     </div>
   </header>
@@ -327,7 +325,7 @@
     <!--====== dp 5 points end=======-->
 
     <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
+    <section id="counts-1" class="counts">
       <div class="container">
         <div class="row counters">
 
@@ -422,7 +420,7 @@
 
 
 
-    <section id="counts" class="counts2">
+    <section id="counts-2" class="counts2">
       <div class="container">
         <div class="row justify-content-center counters">
 
@@ -512,8 +510,8 @@
         <a href="https://www.linkedin.com/company/leo306a2/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         <a href="https://www.youtube.com/user/leo306a2" class="youtube"><i class="bx bxl-youtube"></i></a>
       </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>Leo District 306 A2</span></strong>. All Rights Reserved
+      <div class="copyright" id="copyright-text">
+        <!--Content loaded from js-->
       </div>
       <div class="credits">
        
@@ -527,14 +525,14 @@
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-body">
-          <button type="button" title="Close" class="close modal-close" data-dismiss="modal" aria-label="Close">
+          <button type="button" title="Close" class="close modal-close text-white" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
           <div class="row">
             <div class="col-md-6 left-content">
               <img src="assets/img/directory/modal_logo.png" class="modal-logo">
             </div>
-            <div class="col-md-6 right-content">
+            <div class="col-md-6 right-content text-white">
               <div class="right-content-wrapper">
                 <img src="assets/img/directory/app_logo.png" class="directory-modal-app-logo mx-auto d-block mb-3">
                 <h2 class="text-center directory-modal-header mb-2">A2 Directory</h2>
@@ -550,9 +548,9 @@
                       <img src="assets/img/directory/play_store_download_btn.png">
                     </a>
                   </div>
-                  <div class="col-md-6 ml-0 pl-1 store-link link-android
+                  <div class="col-md-6 ml-0 pl-1 store-link link-android link-ios
                 ">
-                    <a class="play-store-link" title="Apple Store" target="_blank"
+                    <a class="play-store-link" title="Apple App Store" target="_blank"
                       href="https://apps.apple.com/lk/app/a2-directory/id1525568981">
                       <img src="assets/img/directory/ios_store_download_btn.png">
                     </a>
@@ -583,6 +581,9 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    $('#copyright-text').html(`Copyright &copy;${ (new Date()).getFullYear() } <strong><span>Leo District 306 A2</span></strong>. All Rights Reserved!`);
+  </script>
 </body>
 
 </html>
