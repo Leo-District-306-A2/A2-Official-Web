@@ -61,7 +61,7 @@ class GoogleAuth {
                     $.alert({
                         title: 'Unauthorised',
                         columnClass: 'medium',
-                        content: `Sorry! ${ this.auth.currentUser.get().getBasicProfile().getName() } <br>You are not allowed to access <b>Leo District 306 A2</b> official web site.<br> <div class="small-text">(*If you want to get access please contact <a href="secretariat@leodistrict306a2.org" class="contact">secretariat@leodistrict306a2.org)</a></div>`,
+                        content: `Sorry! ${ this.auth.currentUser.get().getBasicProfile().getName() } <br>You are not allowed to access <b>Leo District 306 A2</b> official web site.<br> <div class="small-text">(*If you want to get access please contact <a href="mailto:secretariat@leodistrict306a2.org" class="contact">secretariat@leodistrict306a2.org)</a></div>`,
                         theme: 'dark',
                         type:"blue"
                     });
