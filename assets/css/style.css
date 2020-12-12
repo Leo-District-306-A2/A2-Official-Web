@@ -74,10 +74,11 @@ A2 CLUBS SECTION
 ------------------------------------------------------------ */
 
 .slider{
+  top: 0 !important;
   width: 100%;
   height: 100vh;
   margin-bottom: -200px;
-  position: relative;
+  /* position: relative; */
 }
 
 .slider img{
