@@ -35,6 +35,39 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   
 }
+/* ----------------------------------
+A2 CLUBS SECTION
+---------------------------------- */
+.side-logo {
+  height: 250px;
+}
+
+.vertical-center {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.a2-clubs .club-list{
+  margin-top: 30px;
+  text-align: left;
+}
+
+.a2-clubs .club-list ul{
+  list-style: none;
+  
+}
+.a2-clubs .club-list li{
+  padding-top: 10px;
+  color: #fff;
+}
+
+.a2-clubs .club-list i{
+ padding-right: 10px;
+}
+
+.section-title p{
+  text-transform: none;
+  color: whitesmoke;
+}
 
 /* ----------------------------------------------------------
 #SLIDER SECTION
