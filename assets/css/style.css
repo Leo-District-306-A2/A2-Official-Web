@@ -1645,7 +1645,7 @@ section {
 .counts::before {
   content: "";
   position: absolute;
-  background: #121212;
+  background:rgba(22, 22, 22, 0.6);;
   left: 0;
   right: 0;
   top: 0;
