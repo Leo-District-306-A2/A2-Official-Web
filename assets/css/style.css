@@ -943,12 +943,16 @@ section {
 }
 
 .logos .member .social a:hover {
-  color: #68A4C4;
+  color: #1977cc;
 }
 
 .logos .member .social i {
   font-size: 18px;
   margin: 0 2px;
+}
+
+.member-info {
+  text-align: center;
 }
 
 .logos .member .member-info h4 {
@@ -1014,7 +1018,7 @@ section {
   opacity: 0;
   transition: bottom ease-in-out 0.4s;
   text-align: center;
-  background: rgba(30, 67, 86, 0.8);
+  background: #333333;
 }
 
 .team .member .social a {
@@ -1046,7 +1050,7 @@ section {
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 15px;
-  color: #68A4C4;
+  color: white;
 }
 
 .team .member .member-info p {
