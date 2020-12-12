@@ -1001,6 +1001,7 @@ section {
 .team .member {
   margin-bottom: 20px;
   overflow: hidden;
+  cursor: pointer!important;
 }
 
 .team .member .member-img {
