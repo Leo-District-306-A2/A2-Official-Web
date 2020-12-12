@@ -7,10 +7,21 @@ class GoogleAuth {
         img: null,
         email: null
     };
+    configFilePath = 'configs.json';
+    allowedUsers = [];
 
     constructor() {
         this.isSignedIn = sessionStorage.getItem("isSignedIn");
         this.signedUser = JSON.parse(sessionStorage.getItem("signedUser"));
+
+        if($("title").text() !== 'A2 | Home') {
+            this.configFilePath = '../../' + this.configFilePath;
+        }
+
+        $.getJSON(this.configFilePath, (json) => {
+            this.allowedUsers = json['allowedUsers'];
+        });
+
         if (!this.isSignedIn) {
             this.initialise();
         } else {
@@ -32,19 +43,29 @@ class GoogleAuth {
     }
 
     signIn() {
-        if (this.auth && !this.isSignedIn) {
+        if (this.auth && !this.isSignedIn && this.allowedUsers) {
             this.auth.signIn().then(() => {
-                this.signedUser = {
-                    id: this.auth.currentUser.get().getId(),
-                    name: this.auth.currentUser.get().getBasicProfile().getName(),
-                    img: this.auth.currentUser.get().getBasicProfile().getImageUrl(),
-                    email: this.auth.currentUser.get().getBasicProfile().getEmail()
+                if(this.allowedUsers.indexOf(this.auth.currentUser.get().getBasicProfile().getEmail()) >= 0) {
+                    this.signedUser = {
+                        id: this.auth.currentUser.get().getId(),
+                        name: this.auth.currentUser.get().getBasicProfile().getName(),
+                        img: this.auth.currentUser.get().getBasicProfile().getImageUrl(),
+                        email: this.auth.currentUser.get().getBasicProfile().getEmail()
+                    }
+                    sessionStorage.setItem("isSignedIn", true);
+                    sessionStorage.setItem("signedUser", JSON.stringify(this.signedUser));
+                    $('#signed-user-img').attr('src', this.signedUser.img);
+                    $('#sign-in').hide();
+                    $('#sign-out').show();
+                } else {
+                    $.alert({
+                        title: 'Unauthorised',
+                        columnClass: 'medium',
+                        content: `Sorry! ${ this.auth.currentUser.get().getBasicProfile().getName() } <br>You are not allowed to access <b>Leo District 306 A2</b> official web site.<br> <div class="small-text">(*If you want to get access please contact <a href="secretariat@leodistrict306a2.org" class="contact">secretariat@leodistrict306a2.org)</a></div>`,
+                        theme: 'dark',
+                        type:"blue"
+                    });
                 }
-                sessionStorage.setItem("isSignedIn", true);
-                sessionStorage.setItem("signedUser", JSON.stringify(this.signedUser));
-                $('#signed-user-img').attr('src', this.signedUser.img);
-                $('#sign-in').hide();
-                $('#sign-out').show();
             });
         }
     }
@@ -67,5 +88,23 @@ $("#sign-in").click(function () {
 });
 
 $("#sign-out").click(function () {
-    googleAuth.signOut();
+    $.confirm({
+        title: 'Sign out',
+        columnClass: 'medium',
+        content: `Are you sure you want to sign out?`,
+        theme: 'dark',
+        type:"blue",
+        buttons: {
+            signOut: {
+                text: 'Sign out',
+                btnClass: 'btn-blue',
+                keys: ['enter'],
+                action: function(){
+                    googleAuth.signOut();
+                }
+            },
+            cancel: function () {}
+        }
+    });
 });
+
