@@ -46,6 +46,11 @@ A2 CLUBS SECTION
   margin-top: auto;
   margin-bottom: auto;
 }
+
+.a2-clubs {
+  padding-bottom: 0px!important;
+}
+
 .a2-clubs .club-list{
   margin-top: 30px;
   text-align: left;
@@ -1247,6 +1252,10 @@ section {
 
 .projects .content .more-btn i {
   font-size: 14px;
+}
+
+.projects .container {
+  padding-top: 30px;
 }
 
 .projects .content .more-btn:hover {
