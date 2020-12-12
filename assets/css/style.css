@@ -12,7 +12,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #121221;
 }
 
 a {
@@ -33,6 +33,59 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 25px;
   margin-right: 15px;
   cursor: pointer;
+  
+}
+/* ----------------------------------
+A2 CLUBS SECTION
+---------------------------------- */
+.side-logo {
+  height: 250px;
+}
+
+.vertical-center {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.a2-clubs .club-list{
+  margin-top: 30px;
+  text-align: left;
+}
+
+.a2-clubs .club-list ul{
+  list-style: none;
+  
+}
+.a2-clubs .club-list li{
+  padding-top: 10px;
+  color: #fff;
+}
+
+.a2-clubs .club-list i{
+ padding-right: 10px;
+}
+
+.section-title p{
+  text-transform: none;
+  color: whitesmoke;
+}
+
+/* ----------------------------------------------------------
+#SLIDER SECTION
+------------------------------------------------------------ */
+
+.slider{
+  top: 0 !important;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: -200px;
+  /* position: relative; */
+}
+
+.slider img{
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  
 }
 
 /*--------------------------------------------------------------
@@ -47,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: rgba(0,0,0, 0.8);
+  background: #121212;
 }
 
 #preloader:before {
@@ -214,7 +267,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 
 #header {
-  background: rgba(0, 0, 0, 0.8);
+  background:#121212;
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
@@ -303,7 +356,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   visibility: hidden;
   /* padding: 10px 0; */
-  background: rgba(0, 0, 0, 1);
+  background: #121212;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -493,7 +546,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   box-shadow: none;
   font-size: 15px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color:#121212;
   color: white;
 }
 
@@ -590,7 +643,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
   z-index: 9999;
   overflow-y: auto;
-  background: rgba(0,0,0,1);
+  background: #121212;
   transition: ease-in-out 0.2s;
   opacity: 0;
   visibility: hidden;
@@ -651,7 +704,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(28, 47, 65, 0.6);
+  background: #121212;
   overflow: hidden;
   display: none;
   transition: ease-in-out 0.2s;
@@ -907,7 +960,7 @@ section {
 }
 /* logos start */
 .logos {
-  background: rgba(0, 0, 0, 0.7 );
+  background:#121212;
   padding-bottom: 30px;
 }
 
@@ -1592,7 +1645,7 @@ section {
 .counts::before {
   content: "";
   position: absolute;
-  background: rgba(17, 17, 17, 0.8);
+  background: #121212;
   left: 0;
   right: 0;
   top: 0;
