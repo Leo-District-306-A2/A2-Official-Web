@@ -12,7 +12,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 a {
@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   visibility: hidden;
   /* padding: 10px 0; */
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 1);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -590,12 +590,13 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
   z-index: 9999;
   overflow-y: auto;
-  background: #fff;
+  background: rgba(0,0,0,1);
   transition: ease-in-out 0.2s;
   opacity: 0;
   visibility: hidden;
   border-radius: 10px;
   padding: 10px 0;
+  color: white;
 }
 
 .mobile-nav * {
@@ -607,7 +608,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #2c4964;
+  color: white;
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
@@ -2447,6 +2448,7 @@ section {
 
 #directory-modal .modal-content {
   background-color: #0f0f0f;
+  color: white;
 }
 
 /*Iphone 5*/
