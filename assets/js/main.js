@@ -211,4 +211,4 @@
 
 
 // Copyright text
-$('#copyright-text').html(`Copyright &copy;${ (new Date()).getFullYear() } <strong><span>Leo District 306 A2</span></strong>. All Rights Reserved!`);
+$('#copyright-text').html(`&copy;${ (new Date()).getFullYear() } <strong><span>Leo District 306 A2</span></strong> All Rights Reserved.`);
