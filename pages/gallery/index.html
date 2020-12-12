@@ -244,7 +244,11 @@
       </nav><!-- .nav-menu -->
       <div class="directory" data-toggle="modal" data-target="#directory-modal"><img
               src="../../assets/img/directory/app_logo.png" alt="appmodal"></div>
-      <a href="../../#contactUs" class="appointment-btn scrollto">Join Now</a>
+      <a href="#contactUs" class="appointment-btn join-now scrollto ">Join Now</a>
+      <a href="#sign-in" id="sign-in" class="appointment-btn sign-in" title="Sign in">Sign In</a>
+      <a href="#sign-out" id="sign-out" class="appointment-btn signed-user" >
+        <img alt="Signed user image" id="signed-user-img" title="Sign out">
+      </a>
 
     </div>
   </header>
@@ -603,9 +607,11 @@
   <script src="../../assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
   <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
 
   <!-- Template Main JS File -->
   <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/google-auth.js"></script>
 </body>
 
 </html>
