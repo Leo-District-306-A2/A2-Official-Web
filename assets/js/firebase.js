@@ -65,7 +65,6 @@ function sendToFCM(notification) {
 
 function sendNotification(notification) {
     saveNotification(notification).then(() => {
-        console.log("asa");
         sendToFCM(notification);
     });
 }
@@ -106,7 +105,7 @@ function getNotificationFromInput() {
             body: body,
             icon: icon,
             sentBy: JSON.parse(sessionStorage.getItem('signedUser')),
-            timeCreated: (new Date())
+            datetime: (new Date().toString())
         }
     }
 }
@@ -126,7 +125,6 @@ $('#send-notification').click(() => {
                     btnClass: 'btn-blue',
                     keys: ['enter'],
                     action: function(){
-                        console.log(notification);
                         sendNotification(notification);                    }
                 },
                 no: function () {}
