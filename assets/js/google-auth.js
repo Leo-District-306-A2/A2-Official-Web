@@ -9,7 +9,7 @@ class GoogleAuth {
     };
     configFilePath = 'configs.json';
     allowedUsers = [];
-
+    host = "";
     constructor() {
         this.isSignedIn = sessionStorage.getItem("isSignedIn");
         this.signedUser = JSON.parse(sessionStorage.getItem("signedUser"));
@@ -20,6 +20,7 @@ class GoogleAuth {
 
         $.getJSON(this.configFilePath, (json) => {
             this.allowedUsers = json['allowedUsers'];
+            this.host = json['host'];
         });
 
         if (!this.isSignedIn) {
@@ -28,6 +29,7 @@ class GoogleAuth {
             $('#signed-user-img').attr('src', this.signedUser.img);
             $('#sign-in').hide();
             $('#sign-out').show();
+            $('#notifications-nav-item').show();
         }
     }
 
@@ -57,6 +59,7 @@ class GoogleAuth {
                     $('#signed-user-img').attr('src', this.signedUser.img);
                     $('#sign-in').hide();
                     $('#sign-out').show();
+                    $("#notifications-nav-item").show();
                 } else {
                     $.alert({
                         title: 'Unauthorised',
@@ -78,6 +81,11 @@ class GoogleAuth {
         sessionStorage.removeItem('signedUser');
         $('#sign-in').show();
         $('#sign-out').hide();
+        $("#notifications-nav-item").hide();
+
+        if($("title").text() === 'A2 | Notifications') {
+            window.location.replace(this.host);
+        }
     }
 }
 
