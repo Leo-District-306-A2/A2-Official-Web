@@ -31,7 +31,6 @@ $body = '<h4>New member request has been captured from Leo District 306 A2 web s
 
 if(isset($_POST['name'])){
 
-
     $mail = new PHPMailer;
 
     // $mail->SMTPDebug = 4;                               
@@ -57,10 +56,10 @@ if(isset($_POST['name'])){
         echo 'Message could not be sent.';
         echo 'Mailer Error: ' . $mail->ErrorInfo;
     } else {
-        echo 'Message has been sent';
+        echo 'OK';
     }
-}else{
-    echo 'Please fill the form';
+} else {
+    echo 'Please complete the form data!';
 }
 
 ?>

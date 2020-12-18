@@ -1848,11 +1848,10 @@ section {
 
 .appointment .php-email-form .error-message {
   display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
+  color: #ed3c0d;
+  text-align: center;
+  padding: 5px 15px 0 15px;
+  font-size: 14px;
 }
 
 .appointment .php-email-form .error-message br+br {
@@ -1861,11 +1860,10 @@ section {
 
 .appointment .php-email-form .sent-message {
   display: none;
-  color: #fff;
-  background: #18d26e;
+  color: #18d26e;
   text-align: center;
-  padding: 15px;
-  font-weight: 600;
+  padding: 5px 15px 0 15px;
+  font-size: 14px;
 }
 
 .appointment .php-email-form .loading {
