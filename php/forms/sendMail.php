@@ -2,7 +2,7 @@
 
 require '../mailer/PHPMailerAutoload.php';
 
-$receivingEmail = 'sapsdilshan@gmail.com';
+$receivingEmail = 'secretariat@leodistrict306a2.org';
 $sendingEmail = 'web.leodistrict306a2@gmail.com';
 $password = 'A2@123Leos';
 $showingName = 'A2 WEB';
@@ -17,7 +17,6 @@ $homeTown = $_POST['homeTown'];
 $age = $_POST['age'];
 $message = $_POST['message'];
 
-$to = "sapsdilshan@gmail.com";
 $subject = "New Member Request";
 $body = '<h4>New member request has been captured from Leo District 306 A2 web site</h4><div><strong>Name</strong>: '.$name.'<br>'.
         '<strong>Email</strong>: '.$email.'<br>'.
@@ -41,15 +40,13 @@ if(isset($_POST['name'])){
     $mail->Host = 'smtp.gmail.com';  
     $mail->SMTPAuth = true;                              
     $mail->Username = $sendingEmail;                 
-    $mail->Password = 'A2@123Leos';                          
+    $mail->Password = $password;                          
     $mail->SMTPSecure = 'tls';                          
     $mail->Port = 587;                                    
 
     $mail->setFrom($sendingEmail, $showingName);
-    $mail->addAddress($receivingEmail);     
-              
-    $mail->addReplyTo($sendingEmail);
-   
+    $mail->addAddress($receivingEmail);                
+    $mail->addReplyTo($sendingEmail);   
     $mail->isHTML(true);                                  
 
     $mail->Subject = $subject;
