@@ -249,7 +249,7 @@
       </nav><!-- .nav-menu -->
       <div class="directory" data-toggle="modal" data-target="#directory-modal"><img
           src="assets/img/directory/app_logo.png" alt="appmodal"></div>
-      <a href="#contactUs" class="appointment-btn join-now scrollto ">Join Now</a>
+      <a href="#" class="appointment-btn join-now scrollto" data-toggle="modal" data-target="#join-us-modal">Join Us</a>
       <a href="#sign-in" id="sign-in" class="appointment-btn sign-in" title="Sign in">Sign In</a>
       <a href="#sign-out" id="sign-out" class="appointment-btn signed-user">
         <img alt="Signed user image" id="signed-user-img" title="Sign out">
@@ -294,7 +294,7 @@
         <div class="row">
           <div class="col-lg-12 d-flex align-items-stretch">
             <div class="content">
-              <h2 class="text-center">Welcome to <strong class="dancing-script">Leo District 306 A2</strong></h2>
+              <h2 class="text-center">Welcome to <strong>Leo District 306 A2</strong></h2>
               <p class="text-center">
                 Leo District 306 A2 is one of the leading Leo Districts in Sri Lanka. It is sponsored by the Lions Clubs
                 International, District 306 A2 and presently 25 Leo clubs are actively serving the community with the
@@ -631,67 +631,6 @@
 
       </div>
     </section>
-
-    <!-- CONTACT US -->
-    <div id="contactUs"></div>
-    <section id="contact" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-title">
-          <h2>JOIN US</h2>
-        </div>
-        <div class="form">
-          <form action="php/forms/sendMail.php" method="post" role="form" class="php-email-form">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                  data-rule="minlen:2" data-msg="Please enter at least 4 chars" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                  data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validate"></div>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group col-md-4">
-                <input type="text" name="contactNumber" class="form-control" id="contactNumber"
-                  placeholder="Your Contact Number" data-msg="Please enter valid contact number" />
-                <!-- <div class="validate"></div> -->
-              </div>
-              <div class="form-group col-md-4">
-                <input type="text" class="form-control" name="homeTown" id="homeTown" placeholder="Your Home Town"
-                  data-rule="minlen:1" data-msg="Please valid home town" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group col-md-4">
-                <input type="number" class="form-control" name="age" id="age" placeholder="Your Age" data-rule="number"
-                  data-msg="Please enter a number" />
-                <div class="validate"></div>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-12">
-                <textarea name="message" rows="3" class="form-control" id="message"
-                  placeholder="Add a message" data-msg="Please enter valid contact number"></textarea>
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-
-            <div class="text-center"><button type="submit">Submit</button></div>
-          </form>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Contact Section -->
   </main>
 
   <!-- ======= Footer ======= -->
@@ -766,6 +705,77 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="join-us-modal" tabindex="-1" role="dialog" aria-labelledby="join-us-modal-title"
+       aria-hidden="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" title="Close" class="close modal-close text-white" data-dismiss="modal"
+                  aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="row">
+            <div class="container appointment">
+              <div class="section-title">
+                <h2>JOIN US</h2>
+              </div>
+              <div class="form">
+                <form action="php/forms/sendMail.php" method="post" role="form" class="php-email-form">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                             data-rule="minlen:2" data-msg="Please enter at least 4 chars" />
+                      <div class="validate"></div>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                             data-rule="email" data-msg="Please enter a valid email" />
+                      <div class="validate"></div>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <input type="text" name="contactNumber" class="form-control" id="contactNumber"
+                             placeholder="Your Contact Number" data-msg="Please enter valid contact number" />
+                      <!-- <div class="validate"></div> -->
+                    </div>
+                    <div class="form-group col-md-4">
+                      <input type="text" class="form-control" name="homeTown" id="homeTown" placeholder="Your Home Town"
+                             data-rule="minlen:1" data-msg="Please valid home town" />
+                      <div class="validate"></div>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <input type="number" class="form-control" name="age" id="age" placeholder="Your Age" data-rule="number"
+                             data-msg="Please enter a number" />
+                      <div class="validate"></div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-12">
+                <textarea name="message" rows="3" class="form-control" id="message"
+                          placeholder="Add a message" data-msg="Please enter valid contact number"></textarea>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="loading">Sending....</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+
+                  <div class="text-center"><button type="submit" class="btn btn-primary">Submit</button></div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <div id="preloader">
     <img id="preloader-image" src="assets/img/logos/A2_Logo_2020_21.png">

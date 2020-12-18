@@ -606,7 +606,7 @@ A2 CLUBS SECTION
 .join-now {
   background: linear-gradient(to right, #1c97cf, #7cb341);
   border-radius: 50px 0 0 50px;
-
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .signed-user {
@@ -622,6 +622,7 @@ A2 CLUBS SECTION
 .sign-in, .signed-user {
   border-radius: 0 50px 50px 0;
   background: linear-gradient(to left, #1c97cf, #7cb341);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .join-now:hover {
@@ -2559,11 +2560,6 @@ section {
 .link-andorid {
   padding-right: 3px!important;
   text-align: right;
-}
-
-#directory-modal .modal-content {
-  background-color: #0f0f0f;
-  color: white;
 }
 
 /*Iphone 5*/
