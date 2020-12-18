@@ -150,10 +150,9 @@ A2 CLUBS SECTION
 
 .dp5points .points h2{
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-  font-weight: 800; 
-  padding-top: 30px;
-  
+  font-weight: 800;
+  padding: 5px;
+  cursor: pointer;
 }
 .dp5points .points h2:hover{
   color: wheat;
