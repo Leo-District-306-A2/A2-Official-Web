@@ -59,6 +59,7 @@ function sendToFCM(notification) {
                 theme: 'dark',
                 type:"blue"
             });
+            clearFields();
         }
     });
 }
@@ -108,6 +109,12 @@ function getNotificationFromInput() {
             datetime: (new Date().toString())
         }
     }
+}
+
+function clearFields() {
+    $('#notification-title').val('');
+    $('#notification-icon').val('');
+    $('#notification-body').val('');
 }
 
 $('#send-notification').click(() => {
