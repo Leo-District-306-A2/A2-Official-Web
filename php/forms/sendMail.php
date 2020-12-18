@@ -15,14 +15,17 @@ $name = $_POST['name'];
 $contactNumber = $_POST['contactNumber'];
 $homeTown = $_POST['homeTown'];
 $age = $_POST['age'];
+$message = $_POST['message'];
 
 $to = "sapsdilshan@gmail.com";
 $subject = "New Member Request";
-$body = '<h4>New member request has been captured from Leo District 306 A2 web site</h4><div><strong>Name</strong>: '.$name."<br>".
-        "<strong>Email</strong>: ".$email."<br>".
-        "<strong>Contact Number</strong>: ".$contactNumber."<br>".
-        "<strong>Home Town</strong>: ".$homeTown."<br>".
-        "<strong>Age</strong>: ".$age.'</div>
+$body = '<h4>New member request has been captured from Leo District 306 A2 web site</h4><div><strong>Name</strong>: '.$name.'<br>'.
+        '<strong>Email</strong>: '.$email.'<br>'.
+        '<strong>Contact Number</strong>: '.$contactNumber.'<br>'.
+        '<strong>Home Town</strong>: '.$homeTown.'<br>'.
+        '<strong>Age</strong>: '.$age.'<br>'.
+        '<strong>Message</strong>: '.$message.
+        '</div>
         <div style="margin-top: 20px">
         '.$footerMsg.
         '</div>';
