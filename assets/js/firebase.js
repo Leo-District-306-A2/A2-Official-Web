@@ -25,8 +25,7 @@ Notification must be json with below template
     }
 */
 function saveNotification(notification) {
-    let notificationId = 'not-'+$.MD5(JSON.stringify(notification));
-    return notifications.doc(notificationId).set(notification);
+    return notifications.doc(notification.id).set(notification);
 }
 
 function sendToFCM(notification) {
@@ -38,7 +37,10 @@ function sendToFCM(notification) {
             click_action: "FCM_PLUGIN_ACTIVITY"
         },
         data:{
-            icon:notification.icon
+            icon:notification.icon,
+            datetime: notification.datetime,
+            sentBy: notification.sentBy,
+            id: notification.id
         },
         to: "/topics/general"
     }
@@ -101,13 +103,17 @@ function getNotificationFromInput() {
     }
 
     if(title && body) {
-        return {
+        let notificationData = {
             title: title,
             body: body,
             icon: icon,
             sentBy: JSON.parse(sessionStorage.getItem('signedUser')),
-            datetime: (new Date().toString())
-        }
+            datetime: (new Date().toString()),
+            id:null
+        };
+
+        notificationData.id = 'not-'+$.MD5(JSON.stringify(notificationData));
+        return notificationData;
     }
 }
 
