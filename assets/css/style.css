@@ -796,7 +796,7 @@ A2 CLUBS SECTION
 #hero {
   width: 100%;
   height: 90vh;
-  background:url("../img/gp.jpg") center center;
+  /* background:url("../img/gp.jpg") center center; */
   background-size: cover;
   position: relative;
   margin-bottom: -150px;
@@ -1587,7 +1587,6 @@ section {
 }
 
 .about .video-box {
-  background: url("../img/about.jpg") center center no-repeat;
   background-size: cover;
   min-height: 500px;
 }
@@ -1692,14 +1691,14 @@ section {
 --------------------------------------------------------------*/
 
 .counts {
-  background: url("../img/campcover.jpg") center center no-repeat;
+  background: url("../img/home/campcover.jpg") center center no-repeat;
   background-size: cover;
   padding: 80px 0 60px 0;
   position: relative;
 }
 
 .counts2 {
-  background: url("../img/logo11.png") center center no-repeat;
+  background: url("../img/home/logo11.png") center center no-repeat;
   background-size: cover;
   padding: 80px 0 60px 0;
   position: relative;
