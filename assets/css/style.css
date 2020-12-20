@@ -1706,7 +1706,7 @@ section {
 .counts2::before {
   content: "";
   position: absolute;
-  background: rgba(22, 22, 22, 0.4);
+  background: rgba(22, 22, 22, 0.6);
   left: 0;
   right: 0;
   top: 0;
@@ -1762,6 +1762,17 @@ section {
   font-size: 25px;
   color: #fff;
   font-weight: bold;
+}
+
+.counts2 .points h3{
+  position: relative;
+  color: white;
+  font-weight: 600;
+  padding: 5px;
+  cursor: pointer;
+}
+.counts2 .points h3:hover{
+  color: wheat;
 }
 
 
