@@ -238,6 +238,7 @@ A2 CLUBS SECTION
 }
 .features .description p:hover{
   transform: scale(1.1);
+  cursor: pointer;
   transition: all 0.3s ease-in-out 0.1s;
 
 }
