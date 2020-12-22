@@ -1691,32 +1691,24 @@ section {
 --------------------------------------------------------------*/
 
 .counts {
-  background: url("../img/home/campcover.jpg") center center no-repeat;
+  background: url("../img/home/parallax-imgs/1.jpg") center center no-repeat;
   background-size: cover;
   padding: 80px 0 60px 0;
   position: relative;
 }
 
 .counts2 {
-  background: url("../img/home/logo11.png") center center no-repeat;
+  background: url("../img/home/parallax-imgs/2.png") center center no-repeat, rgba(22, 22, 22, 0.6);
   background-size: cover;
   padding: 80px 0 60px 0;
   position: relative;
-}
-.counts2::before {
-  content: "";
-  position: absolute;
-  background: rgba(22, 22, 22, 0.6);
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  background-blend-mode: multiply;
 }
 
 .counts::before {
   content: "";
   position: absolute;
-  background:rgba(22, 22, 22, 0.6);;
+  background:rgba(22, 22, 22, 0.6);
   left: 0;
   right: 0;
   top: 0;
@@ -1731,7 +1723,7 @@ section {
 
 .counts2 h4 {
   position: relative;
-  color: black;
+  color: white;
   margin-bottom: 40px;
 }
 
@@ -1746,13 +1738,17 @@ section {
   font-weight: 700;
   color: #1c97cf;
 }
+
 .counts2 .counters span {
   font-size: 48px;
   display: block;
   font-weight: 700;
   color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  z-index: 999999;
+}
+
+.counts2 .counters span::before {
+  color: white;
 }
 
 .counts .counters p {
