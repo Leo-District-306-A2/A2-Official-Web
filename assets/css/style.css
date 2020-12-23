@@ -2808,3 +2808,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
 #join-us-modal .modal-body {
   padding: 2rem!important;
 }
+
+.guest-intro-header {
+  cursor: pointer;
+  color: #1c84e3;
+}
+
+.guest-intro-header:hover {
+  opacity: 0.6;
+}
