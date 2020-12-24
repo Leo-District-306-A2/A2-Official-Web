@@ -2619,6 +2619,10 @@ and (orientation: portrait) {
     text-align: center;
     padding: 0 !important;
   }
+
+  .directory-app-ss, .directory-team {
+    display: none;
+  }
 }
 
 /*Iphone 6/7/8 */
@@ -2642,6 +2646,10 @@ and (orientation: portrait) {
   .store-link {
     text-align: center;
     padding: 0 !important;
+  }
+
+  .directory-app-ss, .directory-team {
+    display: none;
   }
 }
 
@@ -2669,6 +2677,10 @@ and (orientation: portrait) {
     padding: 0 !important;
   }
 
+  .directory-app-ss, .directory-team {
+    display: none;
+  }
+
 }
 
 /* ----------- Galaxy S4, S5 and Note 3 ----------- */
@@ -2692,6 +2704,10 @@ and (orientation: portrait) {
   .store-link {
     text-align: center;
     padding: 0 !important;
+  }
+
+  .directory-app-ss, .directory-team {
+    display: none;
   }
 }
 
@@ -2732,6 +2748,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
   .link-andorid {
     padding-right: 3px!important;
     text-align: right;
+  }
+
+  .directory-app-ss, .directory-team {
+    display: none;
   }
 }
 
@@ -2816,4 +2836,43 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 .guest-intro-header:hover {
   opacity: 0.6;
+}
+
+.app-in-hand {
+  width:500px;
+  border: none!important;
+}
+
+.directory-app-logo {
+  width: 200px;
+  border: none!important;
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+
+.directory-app-logo:hover {
+  transform: scale(1.05);
+}
+
+.directory-app-ss {
+  width: 400px;
+  position: relative;
+  right: 60px;
+  top:210px;
+  border: none!important;
+}
+
+.directory-download-btn img {
+  width: 200px;
+  transition: transform 0.2s ease-in;
+  border: none!important;
+}
+
+.directory-download-btn img:hover {
+  transform: scale(1.05);
+}
+
+.directory-team-member {
+  width: 100px;
+  border-radius: 50%;
 }
