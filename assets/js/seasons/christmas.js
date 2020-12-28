@@ -1,6 +1,4 @@
-let curr_date = new Date();
-
-if(curr_date.getMonth() === 11) {
+if (season === 'christmas') {
     let content_html = "\n" +
         "<div class=\"snowflakes\" aria-hidden=\"true\">\n" +
         "  <div class=\"snowflake\">\n" +
@@ -37,3 +35,4 @@ if(curr_date.getMonth() === 11) {
 
     $('#seasonal').html(content_html);
 }
+

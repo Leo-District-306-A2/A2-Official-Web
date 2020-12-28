@@ -31,8 +31,11 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/seasonal.css" rel="stylesheet">
   <link href="assets/css/fonts.css" rel="stylesheet">
+
+  <!-- Seasons styles -->
+  <link href="assets/css/seasons/christmas.css" rel="stylesheet">
+  <link href="assets/css/seasons/new_year.css" rel="stylesheet">
 
 </head>
 
@@ -44,7 +47,7 @@
     }
   </style>
 
-  <!-- ======= Header ======= -->
+  <!-- ======= Header ======= -->s
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
@@ -823,6 +826,18 @@
 
   <div id="seasonal"></div>
 
+  <div class="fireworks-container">
+    <div class="loading-init">
+
+    </div>
+    <div class="stage-container remove">
+      <div class="canvas-container">
+        <canvas id="trails-canvas"></canvas>
+        <canvas id="main-canvas"></canvas>
+      </div>
+    </div>
+  </div>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -839,7 +854,14 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/google-auth.js"></script>
-  <script src="assets/js/seasonal.js"></script>
+
+  <!-- Handle the seasons -->
+  <script src="assets/js/seasons/common.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/fscreen%401.0.1.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/Stage%400.1.4.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/MyMath.js"></script>
+  <script src="assets/js/seasons/new_year.js"></script>
+  <script src="assets/js/seasons/christmas.js"></script>
 </body>
 
 </html>
