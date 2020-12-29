@@ -31,8 +31,11 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/seasonal.css" rel="stylesheet">
   <link href="assets/css/fonts.css" rel="stylesheet">
+
+  <!-- Seasons styles -->
+  <link href="assets/css/seasons/christmas.css" rel="stylesheet">
+  <link href="assets/css/seasons/new_year.css" rel="stylesheet">
 
 </head>
 
@@ -44,7 +47,7 @@
     }
   </style>
 
-  <!-- ======= Header ======= -->
+  <!-- ======= Header ======= -->s
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
@@ -292,7 +295,7 @@
       </div>
     </section>
 
-    <section id="why-us" class="why-us">
+    <section id="why-us" class="why-us pb-0">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 d-flex align-items-stretch">
@@ -315,22 +318,33 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="features pt-0" data-aos="fade-up">
+    <section class="features" data-aos="fade-up">
       <div class="container">
         <div class="row" data-aos="fade-up">
           <div class="col-lg-6 order-1 order-lg-2 d-flex flex-column justify-content-center video-box img-size-fit">
-            <img src="assets/img/home/leomap.png" class="img-fluid" alt="">
+            <img src="assets/img/home/leo_map/a2.png" class="img-fluid" alt="leo map" id="leo-map-view">
           </div>
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center p-1 description">
+            <a href="http://www.leomd306.org/" target="_blank" title="Open Multiple District official webpage">
+            <img src="assets/img/home/leos_of_sl_logo.png" class="leos-of-sl-logo mx-auto d-block mb-2 mt-2">
+            </a>
             <p class="mb-0">
               Leo Multiple District 306, Sri Lanka is divided into 6 administrative districts namely Leo District 306
               A1, A2, B1, B2, C1 and C2.
             </p>
+
+            <div class="interactive-buttons mx-auto d-block mt-1">
+              <button class="district-btn" onclick="changeDistrict('a1')" id="a1">A1</button>
+              <button class="district-btn district-active" onclick="changeDistrict('a2')" id="a2">A2</button>
+              <button class="district-btn" onclick="changeDistrict('b1')" id="b1">B1</button>
+              <button class="district-btn" onclick="changeDistrict('b2')" id="b2">B2</button>
+              <button class="district-btn" onclick="changeDistrict('c1')" id="c1">C1</button>
+              <button class="district-btn" onclick="changeDistrict('c2')" id="c2">C2</button>
+            </div>
+
             <p class="mb-0">Under each district, are the Leo Clubs that carry out their services to the communities in need. </p>
             <p class="mb-0">We, Leo District 306 A2 is one of the most active districts in the world, where over 1,000 projects are
               conducted annually with a beneficiary count of over 100,000 individuals.</p>
-            </ul>
-
           </div>
         </div>
       </div>
@@ -670,10 +684,6 @@
       </div>
 
     </section>
-
-
-
-
   </main>
 
   <!-- ======= Footer ======= -->
@@ -823,6 +833,18 @@
 
   <div id="seasonal"></div>
 
+  <div class="fireworks-container">
+    <div class="loading-init">
+
+    </div>
+    <div class="stage-container remove">
+      <div class="canvas-container">
+        <canvas id="trails-canvas"></canvas>
+        <canvas id="main-canvas"></canvas>
+      </div>
+    </div>
+  </div>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -839,7 +861,15 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/google-auth.js"></script>
-  <script src="assets/js/seasonal.js"></script>
+  <script src="assets/js/home/home.js"></script>
+
+  <!-- Handle the seasons -->
+  <script src="assets/js/seasons/common.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/fscreen%401.0.1.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/Stage%400.1.4.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/MyMath.js"></script>
+  <script src="assets/js/seasons/new_year.js"></script>
+  <script src="assets/js/seasons/christmas.js"></script>
 </body>
 
 </html>
