@@ -2876,3 +2876,34 @@ and (-webkit-min-device-pixel-ratio: 1) {
   width: 100px;
   border-radius: 50%;
 }
+
+.leos-of-sl-logo {
+  width: 250px;
+  cursor: pointer;
+}
+
+.district-btn {
+  width: 36px;
+  height: 36px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #37a4e3;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  margin: 3px;
+}
+
+.district-btn:active,
+.district-btn:focus,
+.district-btn {
+  outline: none;
+}
+
+.district-btn:hover {
+  opacity: 0.75;
+}
+
+.district-active {
+  border: 3px solid white;
+}
