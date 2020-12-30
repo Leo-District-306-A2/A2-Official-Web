@@ -163,12 +163,13 @@ A2 CLUBS SECTION
 }
 .dp5points img{
   margin-top: 0px !important;
-  width: 70%;
+  width: 80%;
 }
 
 .point-description {
   color: #1c97cf;
   padding-left: 20px;
+  font-size: 14px;
 }
 
 @media (max-width: 992px) {
