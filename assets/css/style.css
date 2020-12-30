@@ -2632,6 +2632,10 @@ and (orientation: portrait) {
   .directory-app-ss, .directory-team {
     display: none;
   }
+
+  .point-description {
+    padding-left: 0;
+  }
 }
 
 /*Iphone 6/7/8 */
@@ -2659,6 +2663,10 @@ and (orientation: portrait) {
 
   .directory-app-ss, .directory-team {
     display: none;
+  }
+
+  .point-description {
+    padding-left: 0;
   }
 }
 
@@ -2690,6 +2698,9 @@ and (orientation: portrait) {
     display: none;
   }
 
+  .point-description {
+    padding-left: 0;
+  }
 }
 
 /* ----------- Galaxy S4, S5 and Note 3 ----------- */
@@ -2717,6 +2728,10 @@ and (orientation: portrait) {
 
   .directory-app-ss, .directory-team {
     display: none;
+  }
+
+  .point-description {
+    padding-left: 0;
   }
 }
 
@@ -2761,6 +2776,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
   .directory-app-ss, .directory-team {
     display: none;
+  }
+
+  .point-description {
+    padding-left: 0;
   }
 }
 
