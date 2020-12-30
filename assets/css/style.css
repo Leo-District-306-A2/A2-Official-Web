@@ -163,8 +163,15 @@ A2 CLUBS SECTION
 }
 .dp5points img{
   margin-top: 0px !important;
-  width: 70%;
+  width: 80%;
 }
+
+.point-description {
+  color: #1c97cf;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
 @media (max-width: 992px) {
   .dp5points .points h3{
     text-align: center;
@@ -2625,6 +2632,10 @@ and (orientation: portrait) {
   .directory-app-ss, .directory-team {
     display: none;
   }
+
+  .point-description {
+    padding-left: 0;
+  }
 }
 
 /*Iphone 6/7/8 */
@@ -2652,6 +2663,10 @@ and (orientation: portrait) {
 
   .directory-app-ss, .directory-team {
     display: none;
+  }
+
+  .point-description {
+    padding-left: 0;
   }
 }
 
@@ -2683,6 +2698,9 @@ and (orientation: portrait) {
     display: none;
   }
 
+  .point-description {
+    padding-left: 0;
+  }
 }
 
 /* ----------- Galaxy S4, S5 and Note 3 ----------- */
@@ -2710,6 +2728,10 @@ and (orientation: portrait) {
 
   .directory-app-ss, .directory-team {
     display: none;
+  }
+
+  .point-description {
+    padding-left: 0;
   }
 }
 
@@ -2754,6 +2776,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
   .directory-app-ss, .directory-team {
     display: none;
+  }
+
+  .point-description {
+    padding-left: 0;
   }
 }
 
