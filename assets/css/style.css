@@ -2516,11 +2516,12 @@ section {
 #footer .social-links .facebook:hover,
 #footer .social-links .instagram:hover,
 #footer .social-links .linkedin:hover,
-#footer .social-links .youtube:hover{
+#footer .social-links .youtube:hover,
+.view-club-social-link a:hover{
   transform: scale(1.2);
 }
 
-#footer .social-links a {
+#footer .social-links a , .view-club-social-link a{
   font-size: 18px;
   display: inline-block;
   background: #1c97cf;
@@ -2934,4 +2935,17 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 .district-active {
   border: 3px solid white;
+}
+
+.club-details-logo {
+  width: 250px;
+}
+
+.view-club-officer-img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.view-club-officer-details {
+  font-size: 13px;
 }
