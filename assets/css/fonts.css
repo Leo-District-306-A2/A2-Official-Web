@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
 
 .merinda {
     font-family: 'Merienda', cursive!important;
@@ -7,4 +9,12 @@
 
 .dancing-script {
     font-family: 'Dancing Script', cursive!important;
+}
+
+.allura {
+    font-family: 'Allura', cursive!important;
+}
+
+.nato-sans {
+    font-family: "Noto Sans", sans-serif;
 }

@@ -357,7 +357,6 @@ body {
 .description {
   color: white;
   text-align: center;
-  font-family: "Noto Sans", sans-serif;
 }
 
 .description h1 {
@@ -372,6 +371,5 @@ body {
 
 .description .it-team {
   margin: 5px 0;
-  font-family: "Allura", cursive;
   font-size: 25px;
 }
