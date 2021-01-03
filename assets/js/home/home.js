@@ -28,7 +28,7 @@ function viewClub(club) {
 
     let social_html = "";
     let officers_html = "";
-    
+
     if (socialMedia['web'] !== "") {
         social_html += `<a href="${socialMedia['web']}" title="View club website" target="_blank"><i class="icofont-web"></i></a>`
     }

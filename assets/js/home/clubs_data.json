@@ -873,7 +873,32 @@
       "web": ""
     },
     "logo": "default_data/logo.png",
-    "officers": []
+    "officers": [
+      {
+        "designation": "President",
+        "visibility_order": 1,
+        "name": "Leo Pasindu Jayasinghe",
+        "img": "leo_club_of_milleniya/president.png"
+      },
+      {
+        "designation": "Secretary",
+        "visibility_order": 4,
+        "name": "Leo Durga Hashini Aushadharathna",
+        "img": "leo_club_of_milleniya/secretary.png"
+      },
+      {
+        "designation": "Treasurer",
+        "visibility_order": 5,
+        "name": "Leo Sasanka Harshan Udugahapaththuwa",
+        "img": "leo_club_of_milleniya/treasurer.png"
+      },
+      {
+        "designation": "Leo Advisor",
+        "visibility_order": 6,
+        "name": "Lion P.G.K. Nidhani",
+        "img": "leo_club_of_milleniya/advisor.png"
+      }
+    ]
   },
   "Leo Club of Piliyandala Central College": {
     "club": "Leo Club of Piliyandala Central College",
