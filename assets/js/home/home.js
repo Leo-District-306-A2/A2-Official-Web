@@ -88,7 +88,7 @@ function viewClub(club) {
     }
 
     $('#view-club-logo').attr('src', 'assets/img/home/clubs_data/' + clubDetails['logo']);
-    $("#view-club-title").text(clubDetails['club']);
+    $("#view-club-title").text(clubDetails['clubName']);
     $("#view-club-officers").html(officers_html);
     $("#view-club-social-media").html(social_html);
     $('#club-details-modal').modal('show');

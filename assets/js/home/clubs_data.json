@@ -1,6 +1,6 @@
 {
   "Leo Club of Baddegama": {
-    "club": "Leo Club of Baddegama",
+    "clubName": "Leo Club of Baddegama",
     "social_media": {
       "facebook": "https://www.facebook.com/bgleos",
       "instagram": "https://www.instagram.com/leosofbaddegama/?hl=en",
@@ -43,7 +43,7 @@
     ]
   },
   "Leo Club of Mattegoda": {
-    "club": "Leo Club of Mattegoda",
+    "clubName": "Leo Club of Mattegoda",
     "social_media": {
       "facebook": "https://www.facebook.com/mattegodaleos",
       "instagram": "https://www.instagram.com/leo_club_of_mattegoda/?hl=en",
@@ -86,7 +86,7 @@
     ]
   },
   "Leo Club of Sri Lanka Technological Campus": {
-    "club": "Leo Club of Sri Lanka Technological Campus",
+    "clubName": "Leo Club of Sri Lanka Technological Campus",
     "social_media": {
       "facebook": "https://www.facebook.com/SLTCLEOS",
       "instagram": "https://www.instagram.com/sltcleos/?hl=en",
@@ -141,7 +141,7 @@
     ]
   },
   "Leo Club of Werahera": {
-    "club": "Leo Club of Werahera",
+    "clubName": "Leo Club of Werahera",
     "social_media": {
       "facebook": "https://www.facebook.com/WeraheraLeos",
       "instagram": "https://www.instagram.com/leos_of_werahera/?hl=en",
@@ -184,7 +184,7 @@
     ]
   },
   "Leo Club of Godigamuwa": {
-    "club": "Leo Club of Godigamuwa",
+    "clubName": "Leo Club of Godigamuwa",
     "social_media": {
       "facebook": "https://www.facebook.com/LeoClubOfGodigamuwa",
       "instagram": "https://www.instagram.com/leo_club_of_godigamuwa/?hl=en",
@@ -233,7 +233,7 @@
     ]
   },
   "Leo Club of Kalubowila": {
-    "club": "Leo Club of Kalubowila",
+    "clubName": "Leo Club of Kalubowila",
     "social_media": {
       "facebook": "https://www.facebook.com/KalubowilaLeos",
       "instagram": "https://www.instagram.com/leos_of_kalubowila/?hl=en",
@@ -276,7 +276,7 @@
     ]
   },
   "Leo Club of Katuwawala": {
-    "club": "Leo Club of Katuwawala",
+    "clubName": "Leo Club of Katuwawala",
     "social_media": {
       "facebook": "https://www.facebook.com/Leo-Club-of-Katuwawala-288925034547707",
       "instagram": "https://www.instagram.com/leo_club_of_katuwawala/?hl=en",
@@ -288,7 +288,7 @@
     "officers": []
   },
   "Leo Club of Saegis Campus": {
-    "club": "Leo Club of Saegis Campus",
+    "clubName": "Leo Club of Saegis Campus",
     "social_media": {
       "facebook": "https://www.facebook.com/saegisleo",
       "instagram": "https://www.instagram.com/saegisleos/?hl=en",
@@ -337,7 +337,7 @@
     ]
   },
   "Leo Club of Dehiwala East": {
-    "club": "Leo Club of Dehiwala East",
+    "clubName": "Leo Club of Dehiwala East",
     "social_media": {
       "facebook": "https://www.facebook.com/dehiwalaeastleos",
       "instagram": "https://www.instagram.com/leo_club_of_dehiwala_east/?hl=en",
@@ -386,7 +386,7 @@
     ]
   },
   "Leo Club of Pepiliyana Woodlands": {
-    "club": "Leo Club of Pepiliyana Woodlands",
+    "clubName": "Leo Club of Pepiliyana Woodlands",
     "social_media": {
       "facebook": "https://www.facebook.com/pepiliyanawoodlandleos",
       "instagram": "https://www.instagram.com/woodlands_leos/?hl=en",
@@ -435,7 +435,7 @@
     ]
   },
   "Leo Club of Piliyandala": {
-    "club": "Leo Club of Piliyandala",
+    "clubName": "Leo Club of Piliyandala",
     "social_media": {
       "facebook": "https://www.facebook.com/leosofpiliyandala",
       "instagram": "https://www.instagram.com/leosofpiliyandala/?hl=en",
@@ -478,7 +478,7 @@
     ]
   },
   "Leo Club of Rattanapitiya": {
-    "club": "Leo Club of Rattanapitiya",
+    "clubName": "Leo Club of Rattanapitiya",
     "social_media": {
       "facebook": "https://www.facebook.com/leoclubofrattanapitiya",
       "instagram": "https://www.instagram.com/rattanapitiya_leos/?hl=en",
@@ -515,7 +515,7 @@
     ]
   },
   "Leo Club of Kesbewa": {
-    "club": "Leo Club of Kesbewa",
+    "clubName": "Leo Club of Kesbewa",
     "social_media": {
       "facebook": "https://www.facebook.com/Leo-Club-of-Kesbewa-924799497872141",
       "instagram": "https://www.instagram.com/kesbewaleos/?hl=en",
@@ -558,7 +558,7 @@
     ]
   },
   "Leo Club of Matara Nilwala": {
-    "club": "Leo Club of Matara Nilwala",
+    "clubName": "Leo Club of Matara Nilwala",
     "social_media": {
       "facebook": "https://www.facebook.com/Leo-Club-of-Matara-Nilwala-110002073713511",
       "instagram": "https://www.instagram.com/leos_of_matara_nilwala/?hl=en",
@@ -601,7 +601,7 @@
     ]
   },
   "Leo Club of Centennial Richmond College": {
-    "club": "Leo Club of Centennial Richmond College",
+    "clubName": "Leo Club of Centennial Richmond College",
     "social_media": {
       "facebook": "https://www.facebook.com/RCGLC",
       "instagram": "https://www.instagram.com/richmond_leos/?hl=en",
@@ -650,7 +650,7 @@
     ]
   },
   "Leo Club of Uragasmanhandiya": {
-    "club": "Leo Club of Uragasmanhandiya",
+    "clubName": "Leo Club of Uragasmanhandiya",
     "social_media": {
       "facebook": "https://www.facebook.com/Leo-Club-Of-Uragasmanhandiya-680932518969438",
       "instagram": "https://www.instagram.com/leo_club_of_uragasmanhandiya/?hl=en",
@@ -693,7 +693,7 @@
     ]
   },
   "Leo Club of Ingiriya United": {
-    "club": "Leo Club of Ingiriya United",
+    "clubName": "Leo Club of Ingiriya United",
     "social_media": {
       "facebook": "https://www.facebook.com/LEO-Club-of-Ingiriya-United-284273548270971",
       "instagram": "",
@@ -705,7 +705,7 @@
     "officers": []
   },
   "Leo Club of Panadura Alubomulla": {
-    "club": "Leo Club of Panadura Alubomulla",
+    "clubName": "Leo Club of Panadura Alubomulla",
     "social_media": {
       "facebook": "https://www.facebook.com/Leo-Club-Of-Panadura-Alubomulla-200407600046719",
       "instagram": "https://www.instagram.com/panadura_alubomulla_leos/?hl=en",
@@ -748,7 +748,7 @@
     ]
   },
   "Leo Club of Rahula College": {
-    "club": "Leo Club of Rahula College",
+    "clubName": "Leo Club of Rahula College",
     "social_media": {
       "facebook": "https://www.facebook.com/leoclubofrahulacollege",
       "instagram": "https://www.instagram.com/rahula.leos/?hl=en",
@@ -803,7 +803,7 @@
     ]
   },
   "Leo Club of University of Moratuwa": {
-    "club": "Leo Club of University of Moratuwa",
+    "clubName": "Leo Club of University of Moratuwa",
     "social_media": {
       "facebook": "https://www.facebook.com/UOMLEOS",
       "instagram": "https://www.instagram.com/uomleos/?hl=en",
@@ -852,7 +852,7 @@
     ]
   },
   "Leo Club of Horana Mid City": {
-    "club": "Leo Club of Horana Mid City",
+    "clubName": "Leo Club of Horana Mid City",
     "social_media": {
       "facebook": "https://www.facebook.com/horanamidcity.leoclub",
       "instagram": "https://www.instagram.com/mid_city_leo_club_horana/?hl=en",
@@ -864,7 +864,7 @@
     "officers": []
   },
   "Leo Club of Millaniya": {
-    "club": "Leo Club of Millaniya",
+    "clubName": "Leo Club of Millaniya",
     "social_media": {
       "facebook": "https://www.facebook.com/MillaniyaLeos",
       "instagram": "",
@@ -901,7 +901,7 @@
     ]
   },
   "Leo Club of Piliyandala Central College": {
-    "club": "Leo Club of Piliyandala Central College",
+    "clubName": "Leo Club of Piliyandala Central College",
     "social_media": {
       "facebook": "https://www.facebook.com/leosofccp",
       "instagram": "",
@@ -913,7 +913,7 @@
     "officers": []
   },
   "Leo Club of Polgasowita": {
-    "club": "Leo Club of Polgasowita",
+    "clubName": "Leo Club of Polgasowita",
     "social_media": {
       "facebook": "https://www.facebook.com/LeoClubOfPolgasowita",
       "instagram": "https://www.instagram.com/polgasowitaleos/?hl=en",
@@ -962,7 +962,7 @@
     ]
   },
   "Leo Club of University of Sri Jayewardenepura": {
-    "club": "Leo Club of University of Sri Jayewardenepura",
+    "clubName": "Leo Club of University of Sri Jayewardenepura",
     "social_media": {
       "facebook": "https://www.facebook.com/leoclub.usjp",
       "instagram": "https://www.instagram.com/leo_club_usj/?hl=en",
