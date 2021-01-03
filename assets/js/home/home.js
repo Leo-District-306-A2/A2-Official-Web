@@ -28,9 +28,7 @@ function viewClub(club) {
 
     let social_html = "";
     let officers_html = "";
-
-    console.log(clubDetails);
-
+    
     if (socialMedia['web'] !== "") {
         social_html += `<a href="${socialMedia['web']}" title="View club website" target="_blank"><i class="icofont-web"></i></a>`
     }
@@ -72,7 +70,17 @@ function viewClub(club) {
                                 <div class="col-md-3 pl-2">
                                     <img src="${ 'assets/img/home/clubs_data/' + officers[i]['img'] }" class="view-club-officer-img float-left">
                                 </div>
-                            </div>`;
+                            </div>
+                            <div class="row align-items-center h-100 right-img-officer mobile-left-img-officer" >
+                                <div class="col-md-3 pr-2">
+                                    <img src="${ 'assets/img/home/clubs_data/' + officers[i]['img'] }" class="view-club-officer-img float-right">
+                                </div>
+                                <div class="col-md-9 text-left pl-2 view-club-officer-details justify-content-center">
+                                    <h6 class="m-0 font-weight-bold">${ officers[i]['designation'] }</h6>
+                                    <p class="m-0">${ officers[i]['name'] }</p>
+                                </div>
+                            </div>
+`;
             }
         }
     } else {
