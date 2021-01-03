@@ -175,7 +175,7 @@
   });
 
   // Porfolio isotope and filter
-/*  $(window).on('load', function () {
+  $(window).on('load', function () {
     var portfolioIsotope = $('.portfolio-container').isotope({
       layoutMode: 'fitRows'
     });
@@ -190,7 +190,7 @@
       aos_init();
     });
 
-  });*/
+  });
 
   // Initiate the venobox plugin
   $(document).ready(function () {
