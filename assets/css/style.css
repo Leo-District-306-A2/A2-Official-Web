@@ -2607,184 +2607,6 @@ section {
   text-align: right;
 }
 
-/*Iphone 5*/
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
-  .get-started-btn {
-    display: none;
-  }
-
-  .modal {
-    width: 100vw;
-  }
-
-  .left-content {
-    display: none;
-  }
-
-  .store-link {
-    text-align: center;
-    padding: 0 !important;
-  }
-
-  .directory-app-ss, .directory-team {
-    display: none;
-  }
-
-  .point-description {
-    padding-left: 0;
-  }
-}
-
-/*Iphone 6/7/8 */
-@media only screen
-and (min-device-width: 414px)
-and (max-device-width: 736px)
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait) {
-  .get-started-btn {
-    display: none;
-  }
-
-  .modal {
-    width: 100vw;
-  }
-
-  .left-content {
-    display: none;
-  }
-
-  .store-link {
-    text-align: center;
-    padding: 0 !important;
-  }
-
-  .directory-app-ss, .directory-team {
-    display: none;
-  }
-
-  .point-description {
-    padding-left: 0;
-  }
-}
-
-
-/*Iphone x*/
-@media only screen
-and (min-device-width: 375px)
-and (max-device-width: 667px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
-  .get-started-btn {
-    display: none;
-  }
-
-  .modal {
-    width: 100vw;
-  }
-
-  .left-content {
-    display: none;
-  }
-
-  .store-link {
-    text-align: center;
-    padding: 0 !important;
-  }
-
-  .directory-app-ss, .directory-team {
-    display: none;
-  }
-
-  .point-description {
-    padding-left: 0;
-  }
-}
-
-/* ----------- Galaxy S4, S5 and Note 3 ----------- */
-@media screen
-and (device-width: 320px)
-and (device-height: 640px)
-and (-webkit-device-pixel-ratio: 3)
-and (orientation: portrait) {
-  .get-started-btn {
-    display: none;
-  }
-
-  .modal {
-    width: 100vw;
-  }
-
-  .left-content {
-    display: none;
-  }
-
-  .store-link {
-    text-align: center;
-    padding: 0 !important;
-  }
-
-  .directory-app-ss, .directory-team {
-    display: none;
-  }
-
-  .point-description {
-    padding-left: 0;
-  }
-}
-
-/* ----------- iPad 1, 2, Mini and Air ----------- */
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
-and (orientation: portrait)
-and (-webkit-min-device-pixel-ratio: 1) {
-  .get-started-btn {
-    display: none;
-  }
-
-  .modal {
-    width: 100vw;
-  }
-
-  .left-content {
-    display: none;
-  }
-
-  .right-content {
-    max-width: 100% !important;
-    width: 100% !important;
-    flex: none;
-  }
-
-  .store-link {
-    text-align: center;
-    padding: 0 !important;
-  }
-
-  .link-ios {
-    text-align: left;
-    padding-left: 3px!important;
-  }
-
-  .link-andorid {
-    padding-right: 3px!important;
-    text-align: right;
-  }
-
-  .directory-app-ss, .directory-team {
-    display: none;
-  }
-
-  .point-description {
-    padding-left: 0;
-  }
-}
-
-
 /* Scroll Bar styles */
 
 /* width */
@@ -2948,4 +2770,283 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 .view-club-officer-details {
   font-size: 13px;
+}
+
+.modal {
+  z-index: 9999!important;
+}
+
+.mobile-left-img-officer {
+  display: none!important;
+}
+
+
+/* Responsive media queries */
+/* media queries should place under all the other css */
+
+/*Iphone 5*/
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  .get-started-btn {
+    display: none;
+  }
+
+  .modal {
+    width: 100vw;
+  }
+
+  .left-content {
+    display: none;
+  }
+
+  .store-link {
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  .directory-app-ss, .directory-team {
+    display: none;
+  }
+
+  .point-description {
+    padding-left: 0;
+  }
+
+  .view-club-officer-img {
+    float: none!important;
+    margin: auto;
+    display: block;
+  }
+
+  .view-club-officer-details {
+    text-align: center!important;
+  }
+
+  .left-img-officer {
+    display: none!important;
+  }
+
+  .mobile-left-img-officer {
+    display: initial!important;
+  }
+}
+
+/*Iphone 6/7/8 */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) {
+  .get-started-btn {
+    display: none;
+  }
+
+  .modal {
+    width: 100vw;
+  }
+
+  .left-content {
+    display: none;
+  }
+
+  .store-link {
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  .directory-app-ss, .directory-team {
+    display: none;
+  }
+
+  .point-description {
+    padding-left: 0;
+  }
+
+  .view-club-officer-img {
+    float: none!important;
+    margin: auto;
+    display: block;
+  }
+
+  .view-club-officer-details {
+    text-align: center!important;
+  }
+
+  .left-img-officer {
+    display: none!important;
+  }
+
+  .mobile-left-img-officer {
+    display: initial!important;
+  }
+}
+
+
+/*Iphone x*/
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  .get-started-btn {
+    display: none;
+  }
+
+  .modal {
+    width: 100vw;
+  }
+
+  .left-content {
+    display: none;
+  }
+
+  .store-link {
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  .directory-app-ss, .directory-team {
+    display: none;
+  }
+
+  .point-description {
+    padding-left: 0;
+  }
+
+  .view-club-officer-img {
+    float: none!important;
+    margin: auto;
+    display: block;
+  }
+
+  .view-club-officer-details {
+    text-align: center!important;
+  }
+
+  .left-img-officer {
+    display: none!important;
+  }
+
+  .mobile-left-img-officer {
+    display: initial!important;
+  }
+}
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+@media screen
+and (device-width: 320px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: portrait) {
+  .get-started-btn {
+    display: none;
+  }
+
+  .modal {
+    width: 100vw;
+  }
+
+  .left-content {
+    display: none;
+  }
+
+  .store-link {
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  .directory-app-ss, .directory-team {
+    display: none;
+  }
+
+  .point-description {
+    padding-left: 0;
+  }
+
+  .view-club-officer-img {
+    float: none!important;
+    margin: auto;
+    display: block;
+  }
+
+  .view-club-officer-details {
+    text-align: center!important;
+  }
+
+  .left-img-officer {
+    display: none!important;
+  }
+
+  .mobile-left-img-officer {
+    display: initial!important;
+  }
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1) {
+  .get-started-btn {
+    display: none;
+  }
+
+  .modal {
+    width: 100vw;
+  }
+
+  .left-content {
+    display: none;
+  }
+
+  .right-content {
+    max-width: 100% !important;
+    width: 100% !important;
+    flex: none;
+  }
+
+  .store-link {
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  .link-ios {
+    text-align: left;
+    padding-left: 3px!important;
+  }
+
+  .link-andorid {
+    padding-right: 3px!important;
+    text-align: right;
+  }
+
+  .directory-app-ss, .directory-team {
+    display: none;
+  }
+
+  .point-description {
+    padding-left: 0;
+  }
+
+  .view-club-officer-img {
+    float: none!important;
+    margin: auto;
+    display: block;
+  }
+
+  .view-club-officer-details {
+    text-align: center!important;
+  }
+
+  .left-img-officer {
+    display: none!important;
+  }
+
+  .mobile-left-img-officer {
+    display: initial!important;
+  }
 }
