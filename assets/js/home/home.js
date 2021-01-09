@@ -25,9 +25,11 @@ function viewClub(club) {
 
     let socialMedia = clubDetails['social_media'];
     let officers = clubDetails['officers'];
+    let newsLetter = clubDetails['newsletter'];
 
     let social_html = "";
     let officers_html = "";
+    let newsLetter_html = "";
 
     if (socialMedia['web'] !== "") {
         social_html += `<a href="${socialMedia['web']}" title="View club website" target="_blank"><i class="icofont-web"></i></a>`
@@ -85,6 +87,19 @@ function viewClub(club) {
         }
     } else {
         officers_html += '<p class="small-text text-center text-secondary">Sorry! No officers data available.</p>'
+    }
+
+    $('#view-club-newsletter').hide();
+    if (newsLetter.name !== "" && newsLetter.library_link !== "") {
+        newsLetter_html += `<div>
+                                    <hr />
+                                    <h6 class="text-center">Official Newsletter <strong>${ newsLetter.name }</strong></h6>
+                                    <a class="news-letter-library-btn" href="${ newsLetter.library_link }">
+                                        <span><i class="icofont-library"></i>&nbsp;Newsletters Library</span>
+                                    </a>
+                                </div>`;
+        $('#view-club-newsletter').html(newsLetter_html);
+        $('#view-club-newsletter').show();
     }
 
     $('#view-club-logo').attr('src', 'assets/img/home/clubs_data/' + clubDetails['logo']);

@@ -9,6 +9,10 @@
       "web": "https://www.e-leoclubhouse.org/sites/baddegama/index.php"
     },
     "logo": "leo_club_of_baddegama/logo.png",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
     "officers": [
       {
         "designation": "President",
@@ -52,6 +56,10 @@
       "web": "https://www.slfind.lk/121193214620771"
     },
     "logo": "leo_club_of_mattegoda/logo.png",
+    "newsletter": {
+      "name": "The Communique",
+      "library_link": "https://anyflip.com/bookcase/bpfic"
+    },
     "officers": [
       {
         "designation": "President",
@@ -95,6 +103,10 @@
       "web": "https://supun.net/sltcleos/index"
     },
     "logo": "leo_club_of_sri_lanka_technological_campus/logo.png",
+    "newsletter": {
+      "name": "The Leo Times",
+      "library_link": "https://anyflip.com/bookcase/cpbbq"
+    },
     "officers": [
       {
         "designation": "President",
@@ -150,6 +162,10 @@
       "web": ""
     },
     "logo": "default_data/logo.png",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
     "officers": [
       {
         "designation": "President",
@@ -193,6 +209,10 @@
       "web": ""
     },
     "logo": "leo_club_of_godigamuwa/logo.png",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
     "officers": [
       {
         "designation": "President",
@@ -242,6 +262,10 @@
       "web": ""
     },
     "logo": "leo_club_of_kalubowila/logo.png",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
     "officers": [
       {
         "designation": "President",
@@ -285,6 +309,10 @@
       "web": ""
     },
     "logo": "default_data/logo.png",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
     "officers": []
   },
   "Leo Club of Saegis Campus": {
@@ -297,6 +325,10 @@
       "web": ""
     },
     "logo": "leo_club_of_saegis_campus/logo.png",
+    "newsletter": {
+      "name": "Pulse of Leos",
+      "library_link": "https://anyflip.com/bookcase/wzljp"
+    },
     "officers": [
       {
         "designation": "President",
@@ -346,6 +378,10 @@
       "web": ""
     },
     "logo": "leo_club_of_dehiwala_east/logo.png",
+    "newsletter": {
+      "name": "Intention",
+      "library_link": "https://anyflip.com/bookcase/vrrui"
+    },
     "officers": [
       {
         "designation": "President",
@@ -395,6 +431,10 @@
       "web": ""
     },
     "logo": "leo_club_of_pepiliyana_woodlands/logo.png",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
     "officers": [
       {
         "designation": "President",
@@ -444,6 +484,10 @@
       "web": "https://leoclubofpiliyandala.org/"
     },
     "logo": "leo_club_of_piliyandala/logo.png",
+    "newsletter": {
+      "name": "Inspire",
+      "library_link": "https://anyflip.com/bookcase/rgcqb"
+    },
     "officers": [
       {
         "designation": "President",
@@ -487,6 +531,10 @@
       "web": ""
     },
     "logo": "leo_club_of_rattanapitiya/logo.png",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
     "officers": [
       {
         "designation": "President",
@@ -524,6 +572,10 @@
       "web": "http://www.kesbawaleos.home.blog/"
     },
     "logo": "leo_club_of_kesbawa/logo.png",
+    "newsletter": {
+      "name": "Crescendo",
+      "library_link": "https://anyflip.com/bookcase/jlvtn"
+    },
     "officers": [
       {
         "designation": "President",
@@ -567,6 +619,10 @@
       "web": "https://www.nilwalaleos.org/"
     },
     "logo": "leo_club_of_matara_nilwala/logo.png",
+    "newsletter": {
+      "name": "Nilwala Chronicle",
+      "library_link": "https://anyflip.com/bookcase/tllza"
+    },
     "officers": [
       {
         "designation": "President",
@@ -610,6 +666,10 @@
       "web": ""
     },
     "logo": "leo_club_of_richmond_college/logo.png",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
     "officers": [
       {
         "designation": "President",
@@ -659,6 +719,10 @@
       "web": ""
     },
     "logo": "leo_club_of_uragasmanhandiya/logo.png",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
     "officers": [
       {
         "designation": "President",
@@ -702,6 +766,10 @@
       "web": ""
     },
     "logo": "default_data/logo.png",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
     "officers": []
   },
   "Leo Club of Panadura Alubomulla": {
@@ -714,6 +782,10 @@
       "web": ""
     },
     "logo": "leo_club_of_panadura_alubomulla/logo.png",
+    "newsletter": {
+      "name": "The Beacon",
+      "library_link": "https://anyflip.com/bookcase/wmiwd"
+    },
     "officers": [
       {
         "designation": "President",
@@ -757,6 +829,10 @@
       "web": ""
     },
     "logo": "leo_club_of_rahula_college/logo.png",
+    "newsletter": {
+      "name": "Rahal Tētarto",
+      "library_link": "https://anyflip.com/bookcase/xaugq"
+    },
     "officers": [
       {
         "designation": "President",
@@ -812,6 +888,10 @@
       "web": "https://uomleos.org/"
     },
     "logo": "leo_club_of_university_of_moratuwa/logo.png",
+    "newsletter": {
+      "name": "It's Us",
+      "library_link": "https://anyflip.com/bookcase/bdsuh"
+    },
     "officers": [
       {
         "designation": "President",
@@ -861,6 +941,10 @@
       "web": ""
     },
     "logo": "default_data/logo.png",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
     "officers": []
   },
   "Leo Club of Millaniya": {
@@ -873,6 +957,10 @@
       "web": ""
     },
     "logo": "leo_club_of_milleniya/logo.png",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
     "officers": [
       {
         "designation": "President",
@@ -910,6 +998,10 @@
       "web": ""
     },
     "logo": "default_data/logo.png",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
     "officers": []
   },
   "Leo Club of Polgasowita": {
@@ -922,6 +1014,10 @@
       "web": "https://polgasowitaleos.org/"
     },
     "logo": "leo_club_of_polgasowita/logo.png",
+    "newsletter": {
+      "name": "Icon",
+      "library_link": "https://anyflip.com/bookcase/fxtmx"
+    },
     "officers": [
       {
         "designation": "President",
@@ -971,6 +1067,10 @@
       "web": "https://sites.google.com/view/jpura-leos/"
     },
     "logo": "leo_club_of_university_of_sri_jayewardenepura/logo.png",
+    "newsletter": {
+      "name": "J'pura Leo Reader",
+      "library_link": "https://anyflip.com/bookcase/skjxg"
+    },
     "officers": [
       {
         "designation": "President",

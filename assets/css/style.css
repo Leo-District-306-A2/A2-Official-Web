@@ -3050,3 +3050,41 @@ and (-webkit-min-device-pixel-ratio: 1) {
     display: initial!important;
   }
 }
+
+.news-letter-library-btn {
+  background-color: #1c97cf;
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: #1c97cf;
+  display: block;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  width: 50%;
+  z-index: 2;
+}
+
+.news-letter-library-btn:hover {
+  color: #fff;
+}
+
+.news-letter-library-btn span {
+  align-items: center;
+  background: white;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background .5s ease;
+  width: 100%;
+}
+
+.news-letter-library-btn:hover span {
+  background: transparent;
+}
+
+#view-club-newsletter {
+  display: none;
+}
