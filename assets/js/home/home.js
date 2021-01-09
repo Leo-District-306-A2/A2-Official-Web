@@ -94,7 +94,7 @@ function viewClub(club) {
         newsLetter_html += `<div>
                                     <hr />
                                     <h6 class="text-center">Official Newsletter <strong>${ newsLetter.name }</strong></h6>
-                                    <a class="news-letter-library-btn" href="${ newsLetter.library_link }">
+                                    <a class="news-letter-library-btn" href="${ newsLetter.library_link }" target="_blank">
                                         <span><i class="icofont-library"></i>&nbsp;Newsletters Library</span>
                                     </a>
                                 </div>`;
