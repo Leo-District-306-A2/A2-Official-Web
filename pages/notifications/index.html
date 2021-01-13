@@ -49,7 +49,7 @@
         }
 
         .logos-row {
-            margin: 4rem auto 4rem auto!important;
+            margin: 4rem auto 4rem auto !important;
         }
     </style>
 
@@ -65,7 +65,8 @@
 
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-        <a href="../../" class="logo mr-auto"><img src="../../assets/img/common/header/header_nav_logo.png" alt="" class="img-fluid"></a>
+        <a href="../../" class="logo mr-auto"><img src="../../assets/img/common/header/header_nav_logo.png" alt=""
+                                                   class="img-fluid"></a>
 
         <nav class="nav-menu d-none d-lg-block">
             <ul>
@@ -294,14 +295,17 @@
                 <li id="notifications-nav-item" class="active"><a href="../notifications">Send Notifications</a></li>
             </ul>
         </nav><!-- .nav-menu -->
-        
-        <a href="../directory/"><div class="directory"><img
-                src="../../assets/img/directory/app_logo.png" alt="A2 Directory"></div></a>
+
+        <a href="../directory/">
+            <div class="directory"><img
+                    src="../../assets/img/directory/app_logo.png" alt="A2 Directory"></div>
+        </a>
         <!-- <div class="directory" data-toggle="modal" data-target="#directory-modal"><img
                 src="../../assets/img/directory/app_logo.png" alt="A2 Directory"></div> -->
-        <a href="#" class="appointment-btn join-now scrollto" data-toggle="modal" data-target="#join-us-modal">Join Us</a>
+        <a href="#" class="appointment-btn join-now scrollto" data-toggle="modal" data-target="#join-us-modal">Join
+            Us</a>
         <a href="#sign-in" id="sign-in" class="appointment-btn sign-in" title="Sign in">Sign In</a>
-        <a href="#sign-out" id="sign-out" class="appointment-btn signed-user" >
+        <a href="#sign-out" id="sign-out" class="appointment-btn signed-user">
             <img alt="Signed user image" id="signed-user-img" title="Sign out">
         </a>
 
@@ -317,26 +321,46 @@
         </div>
         <div class="form mx-auto d-block">
             <form role="form" class="php-email-form">
-            <div class="form-row">
+                <div class="form-row">
                     <div class="form-group col-md-6 mx-auto d-block">
-                        <input type="text" name="name" class="form-control" id="notification-title" placeholder="Notification title"
+                        <input type="text" name="name" class="form-control" id="notification-title"
+                               placeholder="Notification title"
                                data-rule="minlen:1" data-msg="Title is a required field"/>
                         <div class="validate mb-0"></div>
                     </div>
                 </div>
-            <div class="form-row">
-                <div class="form-group col-md-6 mx-auto d-block">
-                    <input type="text" name="name" class="form-control" id="notification-icon" placeholder="Notification icon url (ratio 1:1)"/>
-                    <div class="validate mb-0" style="display: none;" id="invalid-url">Invalid url entered</div>
+                <div class="form-row">
+                    <div class="form-group col-md-6 mx-auto d-block">
+                        <input type="text" name="name" class="form-control" id="notification-icon"
+                               placeholder="Notification icon url (ratio 1:1)"/>
+                        <div class="validate mb-0" style="display: none;" id="invalid-url">Invalid url entered</div>
+                    </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6 mx-auto d-block">
-                    <textarea type="text" rows="12" name="name" class="form-control" id="notification-body" placeholder="Notification body" data-rule="minlen:1" data-msg="Body is a required field"></textarea>
-                    <div class="validate mb-0"></div>
+                <div class="form-row">
+                    <div class="form-group col-md-6 mx-auto d-block">
+                        <div class="text-center">
+                            <img src="../../assets/img/notifications/logos/dp_logo.png"
+                                 class="notification-icon-default" title="Add District President logo" onclick="addNotificationIcon('dp_logo.png')">
+                            <img src="../../assets/img/notifications/logos/leo_logo.png"
+                                 class="notification-icon-default" title="Add leo logo" onclick="addNotificationIcon('leo_logo.png')">
+                            <img src="../../assets/img/notifications/logos/lions_logo.png"
+                                 class="notification-icon-default" title="Add lions logo" onclick="addNotificationIcon('lions_logo.png')">
+                        </div>
+                        <h6 class="text-sm notification-default-icon-text mt-2 mb-0 text-center">Click on a icon or add
+                            the url to icon (ratio 1:1)</h6>
+                    </div>
                 </div>
-            </div>
-            <div class="text-center"><button type="submit" id="send-notification">Send Notification</button></div>
+                <div class="form-row">
+                    <div class="form-group col-md-6 mx-auto d-block">
+                        <textarea type="text" rows="12" name="name" class="form-control" id="notification-body"
+                                  placeholder="Notification body" data-rule="minlen:1"
+                                  data-msg="Body is a required field"></textarea>
+                        <div class="validate mb-0"></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" id="send-notification">Send Notification</button>
+                </div>
             </form>
         </div>
 
@@ -437,16 +461,19 @@
                             <h2>JOIN US</h2>
                         </div>
                         <div class="form">
-                            <form action="../../php/forms/sendMail.php" method="post" role="form" class="php-email-form">
+                            <form action="../../php/forms/sendMail.php" method="post" role="form"
+                                  class="php-email-form">
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                               data-rule="minlen:2" data-msg="Please enter at least 4 chars" />
+                                        <input type="text" name="name" class="form-control" id="name"
+                                               placeholder="Your Name"
+                                               data-rule="minlen:2" data-msg="Please enter at least 4 chars"/>
                                         <div class="validate"></div>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                                               data-rule="email" data-msg="Please enter a valid email" />
+                                        <input type="email" class="form-control" name="email" id="email"
+                                               placeholder="Your Email"
+                                               data-rule="email" data-msg="Please enter a valid email"/>
                                         <div class="validate"></div>
                                     </div>
                                 </div>
@@ -454,17 +481,20 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-4">
                                         <input type="text" name="contactNumber" class="form-control" id="contactNumber"
-                                               placeholder="Your Contact Number" data-msg="Please enter valid contact number" />
+                                               placeholder="Your Contact Number"
+                                               data-msg="Please enter valid contact number"/>
                                         <!-- <div class="validate"></div> -->
                                     </div>
                                     <div class="form-group col-md-4">
-                                        <input type="text" class="form-control" name="homeTown" id="homeTown" placeholder="Your Home Town"
-                                               data-rule="minlen:1" data-msg="Please valid home town" />
+                                        <input type="text" class="form-control" name="homeTown" id="homeTown"
+                                               placeholder="Your Home Town"
+                                               data-rule="minlen:1" data-msg="Please valid home town"/>
                                         <div class="validate"></div>
                                     </div>
                                     <div class="form-group col-md-4">
-                                        <input type="number" class="form-control" name="age" id="age" placeholder="Your Age" data-rule="number"
-                                               data-msg="Please enter a number" />
+                                        <input type="number" class="form-control" name="age" id="age"
+                                               placeholder="Your Age" data-rule="number"
+                                               data-msg="Please enter a number"/>
                                         <div class="validate"></div>
                                     </div>
                                 </div>
@@ -481,7 +511,9 @@
                                     <div class="sent-message">Your message has been sent successfully!</div>
                                 </div>
 
-                                <div class="text-center"><button type="submit" class="btn btn-primary mx-auto d-block">Submit</button></div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary mx-auto d-block">Submit</button>
+                                </div>
                             </form>
                         </div>
 

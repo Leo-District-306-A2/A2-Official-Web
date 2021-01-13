@@ -2814,6 +2814,21 @@ section {
   display: none;
 }
 
+.notification-icon-default {
+  width: 40px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.notification-icon-default:hover {
+  transform: scale(1.1);
+}
+
+.notification-default-icon-text {
+  font-size: 10px;
+  color: grey;
+}
+
 /* Responsive media queries */
 /* media queries should place under all the other css */
 

@@ -7,9 +7,12 @@ $.getJSON("../../configs.json", (json) => {
 });
 
 if (!isSignedIn) {
-    console.log("unauthorised");
     window.onload = function() {
         // similar behavior as an HTTP redirect
         window.location.replace(host);
     }
+}
+
+function addNotificationIcon(img) {
+    $('#notification-icon').val(host + "/assets/img/notifications/logos/" + img);
 }
