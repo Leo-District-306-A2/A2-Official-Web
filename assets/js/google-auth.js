@@ -36,7 +36,7 @@ class GoogleAuth {
     initialise() {
         gapi.load('client:auth2', () => {
             gapi.client.init({
-                clientId: '99556617939-4belcg2tv7rai57le0akt7kans93l83u.apps.googleusercontent.com',
+                clientId: '728777430762-o6gn7g9i3fepp449t6jflpu6enfbc0mk.apps.googleusercontent.com',
                 scope: 'email'
             }).then(() => {
                 this.auth = gapi.auth2.getAuthInstance();
