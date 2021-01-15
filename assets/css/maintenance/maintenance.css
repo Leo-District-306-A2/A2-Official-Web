@@ -354,6 +354,10 @@ body {
   display: block;
 }
 
+.policy-logo {
+  margin: 15vh auto 50px auto;
+}
+
 .description {
   color: white;
   text-align: center;
@@ -372,4 +376,12 @@ body {
 .description .it-team {
   margin: 5px 0;
   font-size: 25px;
+}
+
+.a-white {
+  color: white!important;
+}
+
+.a-white:hover {
+  opacity: 0.8;
 }
