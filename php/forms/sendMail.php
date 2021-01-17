@@ -2,7 +2,7 @@
 
 require '../mailer/PHPMailerAutoload.php';
 
-$receivingEmail = 'secretariat@leodistrict306a2.org';
+$receivingEmail = 'web.leodistrict306a2@gmail.com';
 $sendingEmail = 'webadmin@leodistrict306a2.org';
 $password = 'A2@123Leos';
 $showingName = 'A2 Official Website';
@@ -320,10 +320,10 @@ $body = '<!DOCTYPE html>
                             </div>
                             </body>
                             </html>';
-         
+
 if(isset($_POST['name'])){
 
-    $mail = new PHPMailer;
+    $mail = new PHPMailer(true);
 
     // $mail->SMTPDebug = 4;
 
@@ -336,9 +336,9 @@ if(isset($_POST['name'])){
     $mail->Port = 465;
 
     $mail->setFrom($sendingEmail, $showingName);
-    $mail->addAddress($receivingEmail);                
-    $mail->addReplyTo($sendingEmail);   
-    $mail->isHTML(true);                                  
+    $mail->addAddress($receivingEmail);
+    $mail->addReplyTo($sendingEmail);
+    $mail->isHTML(true);
 
     $mail->Subject = $subject;
     $mail->Body    = $body;
@@ -348,6 +348,7 @@ if(isset($_POST['name'])){
         echo 'Message could not be sent.';
         echo 'Mailer Error: ' . $mail->ErrorInfo;
     } else {
+        $mail-> ClearAllRecipients( );
         $mail->addAddress($email);
         $mail->Subject = $subject_submitter;
         $mail->Body    = $body_submitter;
