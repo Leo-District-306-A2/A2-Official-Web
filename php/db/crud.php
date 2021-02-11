@@ -42,24 +42,24 @@ class Crud extends DbConfig
         return $this->connection->real_escape_string($value);
     }
 
-    public function addProject($id, $projectName, $description, $fbLink, $image, $publishedDate, $publishedBy)
+    public function addProject($id, $projectName, $description, $fbLink, $publishedDate, $publishedBy, $imageBase64)
     {
         $id = $this->escape_string($id);
         $projectName = $this->escape_string($projectName);
         $description = $this->escape_string($description);
         $fbLink = $this->escape_string($fbLink);
-        $image = $this->escape_string($image);
+        // $image = $this->escape_string($image);
         $publishedDate = $this->escape_string($publishedDate);
         $publishedBy = $this->escape_string($publishedBy);
 
-        $query = "INSERT INTO projects (id, project_name, description, fb_link, image_path, published_date, published_by) VALUES ('$id', '$projectName', '$description', '$fbLink', '$image', '$publishedDate', '$publishedBy')";
+        $query = "INSERT INTO projects (id, project_name, description, fb_link, published_date, published_by, image_base64) VALUES ('$id', '$projectName', '$description', '$fbLink', '$publishedDate', '$publishedBy', '$imageBase64')";
         $result = $this->execute($query);
         return $result;
     }
 
     public function getAllProjects()
     {
-        $query = "SELECT id, project_name, description, fb_link, image_path FROM projects ORDER BY published_date DESC";
+        $query = "SELECT id, project_name, description, fb_link, image_base64 FROM projects ORDER BY published_date DESC";
         $result = $this->getData($query);
         return $result;
     }

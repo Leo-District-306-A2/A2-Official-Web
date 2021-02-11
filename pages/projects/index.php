@@ -39,6 +39,7 @@
 </head>
 
 <body>
+  <?php require_once '../../php/projects/getProjects.php' ?>
   <style>
     body {
       margin-top: 0px;
@@ -297,10 +298,73 @@
   <section class="projects" data-aos="fade-up" date-aos-delay="200">
     <div class="container">
 
-      <!--page header -->
       <div class="section-title pb-0">
         <h2>projects</h2>
+      </div>     
+
+      <?php 
+      
+      for($x=0; $x<count($projects); $x++){
+        $isImageLeft = true;
+        $divClass = "project-left-img";
+        $imageDivClass = "col-lg-6 order-1 order-lg-1 d-flex flex-column justify-content-center video-box";
+        $descriptionDivClass = "col-lg-6 order-2 order-lg-2 d-flex flex-column justify-content-center p-1";
+        if($x%2 == 1){
+          $divClass = "project-right-img";
+          $imageDivClass = "col-lg-6 order-1 order-lg-2 d-flex flex-column justify-content-center video-box";
+          $descriptionDivClass = "col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center p-1";
+        }
+        ?>
+        <div class="<?php echo $divClass;?>">
+    
+        <div class="section-title">
+          <a class="project-title" href="<?php echo $projects[$x]['fb_link'];?>"
+            target="_blank">
+            <h3><?php echo $projects[$x]['project_name'];?></h3>
+          </a>
+        </div>
+        
+        <div class="row">
+          <div class="col-sm-6">
+            <button name="submit" class="btn btn-warning mr-2 ml-auto in-line edit-btn">Edit</button>
+          </div>
+          <div class="col-sm-6">
+          <button name="submit" class="btn btn-danger ml-2 in-line delete-btn">Delete</button>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="<?php echo $imageDivClass;?>">
+            <a class="project-title" href="<?php echo $projects[$x]['fb_link'];?>"
+              target="_blank">
+              <img src="<?php echo $projects[$x]['image_base64'];?>" class="img-fluid" alt="">
+            </a>
+          </div>
+
+          <div class="<?php echo $descriptionDivClass;?>">
+
+            <div class="icon-box">
+              <!-- <h4 class="title"><a href="">Lorem Ipsum</a></h4> -->
+              <p class="description"> <?php echo $projects[$x]['description'];?></p>             
+            </div>
+          </div>
+        </div>
       </div>
+      <?php
+      }     
+      ?>
+    </div>
+    </section>
+
+
+
+  <!-- <section class="projects" data-aos="fade-up" date-aos-delay="200">
+    <div class="container">
+
+      <div class="section-title pb-0">
+          <h2>projects</h2>
+      </div>
+     
 
       <div class="project-left-img">
         <div class="section-title">
@@ -320,7 +384,6 @@
           <div class="col-lg-6 order-2 order-lg-2 d-flex flex-column justify-content-center p-1">
 
             <div class="icon-box">
-              <!-- <h4 class="title"><a href="">Lorem Ipsum</a></h4> -->
               <p class="description">MADE IN SRI LANKA, a program embracing change, highlighting the importance of
                 creativity is a volunteer-led initiative by Leo District 306 A2. Keeping up with the theme of our
                 District
@@ -369,7 +432,6 @@
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center p-1">
 
             <div class="icon-box">
-              <!-- <h4 class="title"><a href="">Lorem Ipsum</a></h4> -->
               <p class="description">Fundraising is indeed a challenge for a Leo club. Needless to say, the hardships
                 caused in the age of pandemic had made this a daunting task, which is almost impossible. But as Leos, we
                 are in continuous search of ways and means to tackle the problems and get the best out of them rather
@@ -410,7 +472,6 @@
           <div class="col-lg-6 order-2 order-lg-2 d-flex flex-column justify-content-center p-1">
 
             <div class="icon-box">
-              <!-- <h4 class="title"><a href="">Lorem Ipsum</a></h4> -->
               <p class="description">Leoism provides our youth with opportunities to use their voice as well as their
                 energy to shape the community, question social norms, and promote the values we all hold so dear. There
                 are a lot of ways youth can give back to their community, but being a Leo is much more than just
@@ -449,7 +510,6 @@
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center p-1">
 
             <div class="icon-box">
-              <!-- <h4 class="title"><a href="">Lorem Ipsum</a></h4> -->
               <p class="description">It is important to have a good view of the roles and obligations assigned to Leos
                 in order to achieve the peak of achievement. Renaissance is a modern approach under the new slogan of
                 "Inspire Innovation" to improve the comprehension of Leoism and Lionism among fellow Leos. The programme
@@ -487,7 +547,6 @@
           <div class="col-lg-6 order-2 order-lg-2 d-flex flex-column justify-content-center p-1">
 
             <div class="icon-box">
-              <!-- <h4 class="title"><a href="">Lorem Ipsum</a></h4> -->
               <p class="description">"Every great design begins with an even better story"
                 The next chapter of the mega virtual webinar was focused on Video Editing techniques. It was
                 successfully
@@ -521,7 +580,6 @@
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center p-1">
 
             <div class="icon-box">
-              <!-- <h4 class="title"><a href="">Lorem Ipsum</a></h4> -->
               <p class="description">Designers’ Circle is the mega virtual webinar organized by the Leo District 306 A2
                 to
                 assist all the clubs in the District related to IT and PR activities for the first time in the history
@@ -561,7 +619,6 @@
           <div class="col-lg-6 order-2 order-lg-2 d-flex flex-column justify-content-center p-1">
 
             <div class="icon-box">
-              <!-- <h4 class="title"><a href="">Lorem Ipsum</a></h4> -->
               <p class="description">"Every great design begins with an even better story"</p>
               <p class="description">
                 The next chapter of the mega virtual webinar was focused on Video Editing techniques. It was
@@ -603,7 +660,6 @@
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center p-1">
 
             <div class="icon-box">
-              <!-- <h4 class="title"><a href="">Lorem Ipsum</a></h4> -->
               <p class="description">The times are surely challenging with the ongoing pandemic but our Leos are
                 determined as always. The project “ජොලියට වලියක් - Battle of Zones” was organized with the prime motive
                 of
@@ -689,7 +745,6 @@
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center p-1">
 
             <div class="icon-box">
-              <!-- <h4 class="title"><a href="">Lorem Ipsum</a></h4> -->
               <p class="description">In order to step up the club administration levels, A2 Classroom – the Council and
                 Club Officers’ Workshop of Leo District 306 A2, was successfully held on the 9th of August 2020 at
                 Camilla
@@ -725,7 +780,6 @@
           <div class="col-lg-6 order-2 order-lg-2 d-flex flex-column justify-content-center p-1">
 
             <div class="icon-box">
-              <!-- <h4 class="title"><a href="">Lorem Ipsum</a></h4> -->
               <p class="description">The District Installation of Leo District 306 A2 for the year 2020/2021
                 was gracefully held on the 1st of August 2020 at Aqua Pearl Lake Resort – Moratuwa from 2 pm
                 onwards with the participation of District Governor 2020/2021 Lions District 306 A2, Lion
@@ -765,7 +819,6 @@
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center p-1">
 
             <div class="icon-box">
-              <!-- <h4 class="title"><a href="">Lorem Ipsum</a></h4> -->
               <p class="description">නව ලියෝ වර්ෂයක ආරම්භය සනිටුහන් කරමින් 306 A2 ලියෝ දිස්ත්‍රික්කයේ නව
                 නිලධාරී මණ්ඩලයට හා සියලුම ලියෝවරුන්ට මෙන්ම කොරෝනා වසංගතයෙන් පීඩාවට පත් ජනතාවට සෙත් පතා ලියෝ
                 දිස්ත්‍රික් 306 A2 ලියෝවරුන් විසින් සංවිධානය කරනු ලැබූ "සදහම් වන්දනා" බෝධි පූජාමය පිංකම ජූලි
@@ -783,7 +836,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 

@@ -64,5 +64,11 @@
     border-radius: 25px;
   }
 
+  .edit-btn{
+    padding: 5px 10x 5px 10px;
+    display: block;
+    background-color: blue;
+  }
+
 
   
