@@ -319,7 +319,6 @@
                 <h2 class="pb-0">Add New Project</h2>
             </div>
             <div class="form">
-                <form role="form" action="../../../php/projects/addProject.php"  method="post" enctype="multipart/form-data">
                     <div class="form-content project-form">
                         <h5 class="font-weight-bold">Main Section</h5>
                         <div class="row">
@@ -399,10 +398,8 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="hidden" name="published_by" id="published_by" />
-                        <button type="submit" name="submit" class="btn btn-lg btn-primary ml-auto mr-0 mt-2"><i class="icofont-save vertical-center"></i>&nbsp;&nbsp;Save Project</button>
+                        <button type="buton" class="btn btn-lg btn-primary ml-auto mr-0 mt-2" onclick="saveProject();"><i class="icofont-save vertical-center"></i>&nbsp;&nbsp;Save Project</button>
                     </div>
-                </form>
             </div>
         </div>
     </section>

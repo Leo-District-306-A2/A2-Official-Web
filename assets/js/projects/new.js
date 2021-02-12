@@ -10,8 +10,6 @@ if (!isSignedIn) {
         // similar behavior as an HTTP redirect
         window.location.replace(host);
     }
-} else {
-    $("#published_by").val(signedUser)
 }
 
 
@@ -23,7 +21,6 @@ const previreDefaultText1 = previewContainer1.querySelector(".image-preview-defa
 
 fileInput1.addEventListener("change", function(){
     const file = this.files[0];
-    console.log(file);
     if(file){
         const reader = new FileReader();
         previreDefaultText1.style.display = "none";
@@ -45,7 +42,6 @@ const previreDefaultText2 = previewContainer2.querySelector(".image-preview-defa
 
 fileInput2.addEventListener("change", function(){
     const file = this.files[0];
-    console.log(file);
     if(file){
         const reader = new FileReader();
         previreDefaultText2.style.display = "none";
@@ -68,7 +64,6 @@ const previreDefaultText3 = previewContainer3.querySelector(".image-preview-defa
 
 fileInput3.addEventListener("change", function(){
     const file = this.files[0];
-    console.log(file);
     if(file){
         const reader = new FileReader();
         previreDefaultText3.style.display = "none";
@@ -90,7 +85,6 @@ const previreDefaultText4 = previewContainer4.querySelector(".image-preview-defa
 
 fileInput4.addEventListener("change", function(){
     const file = this.files[0];
-    console.log(file);
     if(file){
         const reader = new FileReader();
         previreDefaultText4.style.display = "none";
@@ -104,3 +98,54 @@ fileInput4.addEventListener("change", function(){
     }
 });
 
+function saveProject() {
+    let title = $('#title').val();
+    let description = $('#description').val();
+    let facebook = $('#facebook').val();
+    let image_1 = $('#image-preview-src-1').attr('src');
+    let image_2 = $('#image-preview-src-2').attr('src');
+    let image_3 = $('#image-preview-src-3').attr('src');
+    let image_4 = $('#image-preview-src-4').attr('src');
+    let published_by = signedUser;
+
+    if(isValidated()) {
+        $.ajax({
+            url: '../../../php/projects/addProject.php',
+            type: 'POST',
+            data: {
+                title: title,
+                description: description,
+                facebook: facebook,
+                image_1: image_1,
+                image_2: image_2,
+                image_3: image_3,
+                image_4: image_4,
+                published_by: published_by
+            },
+            success: function (response) {
+                if (response === 'success') {
+                    $.alert({
+                        title: 'Project Saved',
+                        columnClass: 'medium',
+                        content: 'Project Saved Successfully!',
+                        theme: 'dark',
+                        type: "blue"
+                    });
+                } else {
+                    $.alert({
+                        title: 'Project not Saved',
+                        columnClass: 'medium',
+                        content: 'Error happened while saving project!',
+                        theme: 'dark',
+                        type: "red"
+                    });
+                }
+
+            }
+        });
+    }
+}
+
+function isValidated() {
+    return true;
+}

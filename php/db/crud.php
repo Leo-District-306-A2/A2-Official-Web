@@ -42,16 +42,15 @@ class Crud extends DbConfig
         return $this->connection->real_escape_string($value);
     }
 
-    public function addProject($id, $title, $description, $facebook, $image_1, $image_2, $image_3, $image_4, $publishedDate, $publishedBy)
+    public function addProject($title, $description, $facebook, $image_1, $image_2, $image_3, $image_4, $publishedDate, $publishedBy)
     {
-        $id = $this->escape_string($id);
         $title = $this->escape_string($title);
         $description = $this->escape_string($description);
         $facebook = $this->escape_string($facebook);
         $publishedDate = $this->escape_string($publishedDate);
         $publishedBy = $this->escape_string($publishedBy);
 
-        $query = "INSERT INTO projects (id, title, description, facebook, image_1, image_2, image_3, image_4, published_date, published_by) VALUES ('$id', '$title', '$description', '$facebook', '$image_1', '$image_2', '$image_3', '$image_4', '$publishedDate', '$publishedBy')";
+        $query = "INSERT INTO projects (title, description, facebook, image_1, image_2, image_3, image_4, published_date, published_by) VALUES ('$title', '$description', '$facebook', '$image_1', '$image_2', '$image_3', '$image_4', '$publishedDate', '$publishedBy')";
         $result = $this->execute($query);
         return $result;
     }
