@@ -14,8 +14,12 @@ class GoogleAuth {
         this.isSignedIn = sessionStorage.getItem("isSignedIn");
         this.signedUser = JSON.parse(sessionStorage.getItem("signedUser"));
 
-        if($("title").text() !== 'A2 | Home') {
-            this.configFilePath = '../../' + this.configFilePath;
+        if ($("title").text() !== 'A2 | Home') {
+            if ($("title").text() === 'A2 | New Project') {
+                this.configFilePath = '../../../' + this.configFilePath;
+            } else {
+                this.configFilePath = '../../' + this.configFilePath;
+            }
         }
 
         $.getJSON(this.configFilePath, (json) => {

@@ -1,22 +1,106 @@
-const fileInput = document.getElementById("projectImage");
-const previewContainer = document.getElementById("image-preview")
-const previreImage = previewContainer.querySelector(".image-preview-image");
-const previreDefaultText = previewContainer.querySelector(".image-preview-default-text");
+let isSignedIn =  sessionStorage.getItem("isSignedIn");
+let signedUser =  sessionStorage.getItem("signedUser");
+let host = "";
+$.getJSON("../../../configs.json", (json) => {
+    host = (json['host']);
+});
+
+if (!isSignedIn) {
+    window.onload = function() {
+        // similar behavior as an HTTP redirect
+        window.location.replace(host);
+    }
+} else {
+    $("#published_by").val(signedUser)
+}
 
 
-fileInput.addEventListener("change", function(){
+const fileInput1 = document.getElementById("image_1_uploader");
+const previewContainer1 = document.getElementById("image-preview-1")
+const previreImage1 = previewContainer1.querySelector(".image-preview-image");
+const previreDefaultText1 = previewContainer1.querySelector(".image-preview-default-text");
+
+
+fileInput1.addEventListener("change", function(){
     const file = this.files[0];
     console.log(file);
     if(file){
         const reader = new FileReader();
-        previreDefaultText.style.display = "none";
-        previreImage.style.display = "block";
+        previreDefaultText1.style.display = "none";
+        previreImage1.style.display = "block";
 
         reader.addEventListener("load", function(){
-            console.log(this);
-            previreImage.setAttribute("src", this.result);
+            previreImage1.setAttribute("src", this.result);
         });
 
         reader.readAsDataURL(file);
     }
 });
+
+const fileInput2 = document.getElementById("image_2_uploader");
+const previewContainer2 = document.getElementById("image-preview-2")
+const previreImage2 = previewContainer2.querySelector(".image-preview-image");
+const previreDefaultText2 = previewContainer2.querySelector(".image-preview-default-text");
+
+
+fileInput2.addEventListener("change", function(){
+    const file = this.files[0];
+    console.log(file);
+    if(file){
+        const reader = new FileReader();
+        previreDefaultText2.style.display = "none";
+        previreImage2.style.display = "block";
+
+        reader.addEventListener("load", function(){
+            previreImage2.setAttribute("src", this.result);
+        });
+
+        reader.readAsDataURL(file);
+    }
+});
+
+
+const fileInput3 = document.getElementById("image_3_uploader");
+const previewContainer3 = document.getElementById("image-preview-3")
+const previreImage3 = previewContainer3.querySelector(".image-preview-image");
+const previreDefaultText3 = previewContainer3.querySelector(".image-preview-default-text");
+
+
+fileInput3.addEventListener("change", function(){
+    const file = this.files[0];
+    console.log(file);
+    if(file){
+        const reader = new FileReader();
+        previreDefaultText3.style.display = "none";
+        previreImage3.style.display = "block";
+
+        reader.addEventListener("load", function(){
+            previreImage3.setAttribute("src", this.result);
+        });
+
+        reader.readAsDataURL(file);
+    }
+});
+
+const fileInput4 = document.getElementById("image_4_uploader");
+const previewContainer4 = document.getElementById("image-preview-4")
+const previreImage4 = previewContainer4.querySelector(".image-preview-image");
+const previreDefaultText4 = previewContainer4.querySelector(".image-preview-default-text");
+
+
+fileInput4.addEventListener("change", function(){
+    const file = this.files[0];
+    console.log(file);
+    if(file){
+        const reader = new FileReader();
+        previreDefaultText4.style.display = "none";
+        previreImage4.style.display = "block";
+
+        reader.addEventListener("load", function(){
+            previreImage4.setAttribute("src", this.result);
+        });
+
+        reader.readAsDataURL(file);
+    }
+});
+

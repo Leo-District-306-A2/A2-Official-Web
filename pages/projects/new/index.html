@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>A2 | Admin Docs</title>
+    <title>A2 | New Project</title>
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
 
@@ -315,62 +315,92 @@
     <section class="add-project">
         <div class="container mt-4 register-form">
 
-            <div class="section-title">
-                <h2>Add Projects</h2>
+            <div class="section-title pt-4 pb-0">
+                <h2 class="pb-0">Add New Project</h2>
             </div>
             <div class="form">
                 <form role="form" action="../../../php/projects/addProject.php"  method="post" enctype="multipart/form-data">
                     <div class="form-content project-form">
+                        <h5 class="font-weight-bold">Main Section</h5>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="title">Project Title</label>
+                                    <input type="text" name="title" id="title" class="form-control" placeholder="" />
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="projectName">Project Name</label>
-                                    <input type="text" name="projectName" class="form-control" placeholder="" />
+                                    <label for="description">Project Description</label>
+                                    <textarea name="description" rows="10" class="form-control"
+                                        id="description" placeholder=""></textarea>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12">
-                                <div class="form-group">
-                                    <label for="projectDescription">Paper Description</label>
-                                    <textarea name="projectDescription" rows="3" class="form-control"
-                                        id="projectDescription" placeholder=""></textarea>
-                                </div>
-                            </div>
-                        </div>
-
-
+                        <h5 class="font-weight-bold">Social Media Links</h5>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="fbLink">Facebook Link</label>
-                                    <input type="text" name="fbLink" class="form-control" placeholder="" />
+                                    <label for="facebook">Facebook</label>
+                                    <input type="text" name="facebook" id="facebook" class="form-control" placeholder="" />
                                 </div>
                             </div>
                         </div>
 
+                        <h5 class="font-weight-bold mt-2 mb-3">Gallery Section</h5>
                         <!-- start here -->
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-3">
                                 <div class="form-group">
-                                    <label for="formFileSm" class="form-label">Project Image</label>
                                     <div class="file-upload-wrapper">
-                                       
-                                        <input type="file" name="projectImage" id="projectImage" class="file-upload"/>
+                                        <input type="file" name="image_1" id="image_1_uploader" class="file-upload"/>
                                     </div>
                                 </div>
-                                <div class="image-preview" id="image-preview">
-                                    <img src="" alt="Image Preview" class="image-preview-image">
-                                    <span class="image-preview-default-text">Image Preview</span>
+                                <div class="image-preview" id="image-preview-1">
+                                    <img src="" alt="Image Preview" class="image-preview-image" id="image-preview-src-1">
+                                    <span class="image-preview-default-text"><i class="icofont-image"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <div class="file-upload-wrapper">
+                                        <input type="file" name="image_2" id="image_2_uploader"  class="file-upload"/>
+                                    </div>
+                                </div>
+                                <div class="image-preview" id="image-preview-2">
+                                    <img src="" alt="Image Preview" class="image-preview-image" id="image-preview-src-2">
+                                    <span class="image-preview-default-text"><i class="icofont-image"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <div class="file-upload-wrapper">
+                                        <input type="file" name="image_3" id="image_3_uploader"  class="file-upload"/>
+                                    </div>
+                                </div>
+                                <div class="image-preview" id="image-preview-3">
+                                    <img src="" alt="Image Preview" class="image-preview-image" id="image-preview-src-3">
+                                    <span class="image-preview-default-text"><i class="icofont-image"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <div class="file-upload-wrapper">
+                                        <input type="file" name="image_4" id="image_4_uploader"  class="file-upload"/>
+                                    </div>
+                                </div>
+                                <div class="image-preview" id="image-preview-4">
+                                    <img src="" alt="Image Preview" class="image-preview-image" id="image-preview-src-4">
+                                    <span class="image-preview-default-text"><i class="icofont-image"></i></span>
                                 </div>
                             </div>
                         </div>
-                       
-                        <div class="text-center">
-                            <button type="submit" name="submit" class="btn btn-primary mx-auto d-block project-submit-button">Submit</button>
-                        </div>
+                        <input type="hidden" name="published_by" id="published_by" />
+                        <button type="submit" name="submit" class="btn btn-lg btn-primary ml-auto mr-0 mt-2"><i class="icofont-save vertical-center"></i>&nbsp;&nbsp;Save Project</button>
                     </div>
                 </form>
             </div>

@@ -38,8 +38,7 @@
     border: 1px solid  blue !important;
   }
 
-  .image-preview{
-    width: 300px;
+  .image-preview {
     min-height: 100px;
     border: 1px solid #ced4da;
     margin-top: 15px;
@@ -71,4 +70,3 @@
   }
 
 
-  
