@@ -5,17 +5,17 @@ let pageNumber = 1;
 let pageSize = 10;
 
 function renderOperations(project) {
-    if (isSignedIn && project.published_by === signedUser) {
-        return `<div class="btn-group float-right" role="group" aria-label="Basic example">
+  if (isSignedIn && project.published_by === signedUser) {
+    return `<div class="btn-group float-right" role="group" aria-label="Basic example">
               <button type="button" class="btn btn-secondary" onclick="update_project(${project.id})"><i class="icofont-edit"></i></button>
               <button type="button" class="btn btn-danger" onclick="delete_project(${project.id}}])"><i class="icofont-ui-delete"></i></button>
             </div>`;
-    }
-    return "";
+  }
+  return "";
 }
 
 function renderCaurosal(project) {
-    return `<div id="images-project-${project.id}" class="carousel slide" data-ride="carousel">
+  return `<div id="images-project-${project.id}" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               ${project.image_1 !== "" ? `<li data-target="#images-project-${project.id}" data-slide-to="0" class="active"></li>` : ""}
               ${project.image_2 !== "" ? `<li data-target="#images-project-${project.id}" data-slide-to="1" class="active"></li>` : ""}
@@ -53,7 +53,7 @@ function renderCaurosal(project) {
 }
 
 function renderProject(project) {
-    return `<div class="row mb-3">
+  return `<div class="row mb-3">
         <div class="col-md-4">
           ${renderCaurosal(project)}
         </div>
@@ -69,19 +69,19 @@ function renderProject(project) {
 }
 
 function renderProjects(pageNumber) {
-    let projects_html = "";
-    let page_projects = paginate(projects, pageNumber);
-    $('#projects').html("");
-    for (i = 0; i < page_projects.length; i++) {
-        projects_html += renderProject(page_projects[i]);
-    }
-    $('#projects').html(projects_html);
+  let projects_html = "";
+  let page_projects = paginate(projects, pageNumber);
+  $('#projects').html("");
+  for (i = 0; i < page_projects.length; i++) {
+    projects_html += renderProject(page_projects[i]);
+  }
+  $('#projects').html(projects_html);
 }
 
 function renderPagination(projects, activePage) {
-    let out_html = ``;
-    if (projects.length > 0) {
-        out_html = `<nav aria-label="Page navigation" class="d-flex justify-content-center">
+  let out_html = ``;
+  if (projects.length > 0) {
+    out_html = `<nav aria-label="Page navigation" class="d-flex justify-content-center">
         <ul class="pagination">
           <li class="page-item">
             <button class="page-link" aria-label="Previous" onclick="previousPageClicked()">
@@ -91,16 +91,16 @@ function renderPagination(projects, activePage) {
           </li>
           `;
 
-        let pagesCount = Math.ceil(projects.length / pageSize);
-        for (i = 0; i < pagesCount; i++) {
-            if (i === activePage - 1) {
-                out_html += `<li class="page-item"><button class="page-link page-link-active" onclick="navigateToPage(${i + 1})">${i + 1}</button></li>`;
-            } else {
-                out_html += `<li class="page-item"><button class="page-link" onclick="navigateToPage(${i + 1})">${i + 1}</button></li>`;
-            }
-        }
+    let pagesCount = Math.ceil(projects.length / pageSize);
+    for (i = 0; i < pagesCount; i++) {
+      if (i === activePage - 1) {
+        out_html += `<li class="page-item"><button class="page-link page-link-active" onclick="navigateToPage(${i + 1})">${i + 1}</button></li>`;
+      } else {
+        out_html += `<li class="page-item"><button class="page-link" onclick="navigateToPage(${i + 1})">${i + 1}</button></li>`;
+      }
+    }
 
-        out_html += `<li class="page-item">
+    out_html += `<li class="page-item">
             <button class="page-link" aria-label="Next" onclick="nextPageClicked()">
               <span aria-hidden="true">&raquo;</span>
               <span class="sr-only">Next</span>
@@ -109,42 +109,42 @@ function renderPagination(projects, activePage) {
         </ul>
       </nav>`;
 
-        $('#pagination').html(out_html);
-    }
+    $('#pagination').html(out_html);
+  }
 }
 
 function previousPageClicked() {
-    if (pageNumber !== 1 ) {
-        pageNumber -= 1;
-        renderProjects(pageNumber);
-        renderPagination(projects, pageNumber);
-    }
+  if (pageNumber !== 1 ) {
+    pageNumber -= 1;
+    renderProjects(pageNumber);
+    renderPagination(projects, pageNumber);
+  }
 }
 
 function nextPageClicked() {
-    if (pageNumber !== Math.ceil(projects.length / pageSize)) {
-        pageNumber += 1;
-        renderProjects(pageNumber);
-        renderPagination(projects, pageNumber);
-    }
+  if (pageNumber !== Math.ceil(projects.length / pageSize)) {
+    pageNumber += 1;
+    renderProjects(pageNumber);
+    renderPagination(projects, pageNumber);
+  }
 }
 
 function navigateToPage(page) {
-    pageNumber = page;
-    renderProjects(pageNumber);
-    renderPagination(projects, pageNumber);
+  pageNumber = page;
+  renderProjects(pageNumber);
+  renderPagination(projects, pageNumber);
 }
 
 $.ajax({
-    url: '../../php/projects/getProjects.php',
-    type: 'GET',
-    success: function (response) {
-        projects = JSON.parse(response);
-        renderProjects(pageNumber);
-        renderPagination(projects, pageNumber);
-    }
+  url: '../../php/projects/getProjects.php',
+  type: 'GET',
+  success: function (response) {
+    projects = JSON.parse(response);
+    renderProjects(pageNumber);
+    renderPagination(projects, pageNumber);
+  }
 });
 
 function paginate(array, page_number) {
-    return array.slice((page_number - 1) * pageSize, page_number * pageSize);
+  return array.slice((page_number - 1) * pageSize, page_number * pageSize);
 }
