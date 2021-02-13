@@ -4,5 +4,5 @@ $crud =  new Crud();
 
 $projects = $crud->getAllProjects();
 
-echo "a";
+echo json_encode($projects);
 ?>

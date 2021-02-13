@@ -57,7 +57,7 @@ class Crud extends DbConfig
 
     public function getAllProjects()
     {
-        $query = "SELECT id, title, description, facebook, image_1, image_2, image_3, image_4 FROM projects ORDER BY published_date DESC";
+        $query = "SELECT * FROM projects ORDER BY published_date DESC";
         $result = $this->getData($query);
         return $result;
     }
