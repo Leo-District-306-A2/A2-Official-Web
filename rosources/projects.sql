@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `projects` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(500) NOT NULL,
   `description` varchar(2000) NOT NULL,
   `facebook` varchar(2000) NOT NULL,
@@ -38,7 +38,8 @@ CREATE TABLE `projects` (
   `image_3` mediumtext NOT NULL,
   `image_4` mediumtext NOT NULL,
   `published_date` datetime NOT NULL,
-  `published_by` varchar(1000) NOT NULL
+  `published_by` varchar(1000) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
