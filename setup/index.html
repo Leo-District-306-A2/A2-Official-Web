@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>A2 | Setup</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/favicon.png" rel="apple-touch-icon">
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+<div class="container w-50">
+    <h3 class="text-center mt-5"> A2 Setup</h3>
+    <form method="post" action="db.php">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" name="username" id="username" aria-describedby="username"
+                   placeholder="Enter username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="tables" class="mb-0">Tables</label>
+            <small id="emailHelp" class="form-text text-muted mt-0">(Enter table names seperated by a comma. eg: projects,users)</small>
+            <input type="text" class="form-control" id="tables" name="tables" aria-describedby="tables"
+                   placeholder="Enter table names">
+        </div>
+        <button type="submit" class="btn btn-primary">Start setup</button>
+    </form>
+</div>
+
+<!-- Vendor JS Files -->
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
