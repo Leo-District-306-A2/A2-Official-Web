@@ -86,7 +86,7 @@ class Crud extends DbConfig
 
     public function deleteProject($id)
     {
-        $query = "DELETE  FROM projects WHERE id = '$id'";
+        $query = "DELETE FROM projects WHERE id = '$id'";
         $result = $this->execute($query);
         return $result;
     }
