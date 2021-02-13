@@ -24,25 +24,25 @@ function renderCaurosal(project) {
             ${project.image_1 !== "" ? `<div class="carousel-item active">
                 <img class="d-block w-100" src="${project.image_1}" alt="First slide">
               </div>` : ""}
-              ${project.image_2 !== "" ? `<div class="carousel-item active">
-                <img class="d-block w-100" src="${project.image_2}" alt="First slide">
+              ${project.image_2 !== "" ? `<div class="carousel-item">
+                <img class="d-block w-100" src="${project.image_2}" alt="Second slide">
               </div>` : ""}
-              ${project.image_3 !== "" ? `<div class="carousel-item active">
-                <img class="d-block w-100" src="${project.image_3}" alt="First slide">
+              ${project.image_3 !== "" ? `<div class="carousel-item">
+                <img class="d-block w-100" src="${project.image_3}" alt="Third slide">
               </div>` : ""}
-              ${project.image_4 !== "" ? `<div class="carousel-item active">
-                <img class="d-block w-100" src="${project.image_1}" alt="First slide">
+              ${project.image_4 !== "" ? `<div class="carousel-item">
+                <img class="d-block w-100" src="${project.image_1}" alt="Fourth slide">
               </div>` : ""}
               
               ${project.image_1 === "" && project.image_2 === "" && project.image_3 === "" && project.image_4 === "" ? `<div class="carousel-item active">
                 <img class="d-block w-100" src="../../assets/img/projects/default.png" alt="First slide">
               </div>` : ""}
             </div>
-            <a class="carousel-control-prev" href="#images-project-1" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#images-project-${project.id}" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#images-project-1" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#images-project-${project.id}" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
