@@ -29,8 +29,9 @@ fileInput1.addEventListener("change", function(){
         reader.addEventListener("load", function(){
             previreImage1.setAttribute("src", this.result);
         });
-
+        $('#image-2-section').show();
         reader.readAsDataURL(file);
+
     }
 });
 
@@ -50,7 +51,7 @@ fileInput2.addEventListener("change", function(){
         reader.addEventListener("load", function(){
             previreImage2.setAttribute("src", this.result);
         });
-
+        $('#image-3-section').show();
         reader.readAsDataURL(file);
     }
 });
@@ -72,7 +73,7 @@ fileInput3.addEventListener("change", function(){
         reader.addEventListener("load", function(){
             previreImage3.setAttribute("src", this.result);
         });
-
+        $('#image-4-section').show();
         reader.readAsDataURL(file);
     }
 });

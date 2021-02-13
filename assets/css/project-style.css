@@ -73,3 +73,7 @@
 .project-img {
   width: inherit;
 }
+
+#image-2-section, #image-3-section, #image-4-section {
+  display: none;
+}
