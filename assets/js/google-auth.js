@@ -64,6 +64,7 @@ class GoogleAuth {
                     $('#sign-in').hide();
                     $('#sign-out').show();
                     $("#notifications-nav-item").show();
+                    window.location.reload();
                 } else {
                     $.alert({
                         title: 'Unauthorised',
@@ -86,9 +87,10 @@ class GoogleAuth {
         $('#sign-in').show();
         $('#sign-out').hide();
         $("#notifications-nav-item").hide();
-
         if($("title").text() === 'A2 | Notifications') {
             window.location.replace(this.host);
+        } else {
+            window.location.reload();
         }
     }
 }
