@@ -1,12 +1,12 @@
-let isSignedIn =  sessionStorage.getItem("isSignedIn");
-let signedUser =  JSON.parse(sessionStorage.getItem("signedUser"));
+let isSignedIn = sessionStorage.getItem("isSignedIn");
+let signedUser = JSON.parse(sessionStorage.getItem("signedUser"));
 let host = "";
 $.getJSON("../../../configs.json", (json) => {
     host = (json['host']);
 });
 
 if (!isSignedIn || !signedUser.authorisedFunctions.includes("projects")) {
-    window.onload = function() {
+    window.onload = function () {
         // similar behavior as an HTTP redirect
         window.location.replace(host);
     }
@@ -19,14 +19,14 @@ const previreImage1 = previewContainer1.querySelector(".image-preview-image");
 const previreDefaultText1 = previewContainer1.querySelector(".image-preview-default-text");
 
 
-fileInput1.addEventListener("change", function(){
+fileInput1.addEventListener("change", function () {
     const file = this.files[0];
-    if(file){
+    if (file) {
         const reader = new FileReader();
         previreDefaultText1.style.display = "none";
         previreImage1.style.display = "block";
 
-        reader.addEventListener("load", function(){
+        reader.addEventListener("load", function () {
             previreImage1.setAttribute("src", this.result);
         });
         $('#image-2-section').show();
@@ -41,14 +41,14 @@ const previreImage2 = previewContainer2.querySelector(".image-preview-image");
 const previreDefaultText2 = previewContainer2.querySelector(".image-preview-default-text");
 
 
-fileInput2.addEventListener("change", function(){
+fileInput2.addEventListener("change", function () {
     const file = this.files[0];
-    if(file){
+    if (file) {
         const reader = new FileReader();
         previreDefaultText2.style.display = "none";
         previreImage2.style.display = "block";
 
-        reader.addEventListener("load", function(){
+        reader.addEventListener("load", function () {
             previreImage2.setAttribute("src", this.result);
         });
         $('#image-3-section').show();
@@ -63,14 +63,14 @@ const previreImage3 = previewContainer3.querySelector(".image-preview-image");
 const previreDefaultText3 = previewContainer3.querySelector(".image-preview-default-text");
 
 
-fileInput3.addEventListener("change", function(){
+fileInput3.addEventListener("change", function () {
     const file = this.files[0];
-    if(file){
+    if (file) {
         const reader = new FileReader();
         previreDefaultText3.style.display = "none";
         previreImage3.style.display = "block";
 
-        reader.addEventListener("load", function(){
+        reader.addEventListener("load", function () {
             previreImage3.setAttribute("src", this.result);
         });
         $('#image-4-section').show();
@@ -84,14 +84,14 @@ const previreImage4 = previewContainer4.querySelector(".image-preview-image");
 const previreDefaultText4 = previewContainer4.querySelector(".image-preview-default-text");
 
 
-fileInput4.addEventListener("change", function(){
+fileInput4.addEventListener("change", function () {
     const file = this.files[0];
-    if(file){
+    if (file) {
         const reader = new FileReader();
         previreDefaultText4.style.display = "none";
         previreImage4.style.display = "block";
 
-        reader.addEventListener("load", function(){
+        reader.addEventListener("load", function () {
             previreImage4.setAttribute("src", this.result);
         });
 
@@ -109,7 +109,7 @@ function saveProject() {
     let image_4 = $('#image-preview-src-4').attr('src');
     let published_by = JSON.stringify(signedUser);
 
-    if(isValidated()) {
+    if (isValidated(title, description, facebook)) {
         $.ajax({
             url: '../../../php/projects/addProject.php',
             type: 'POST',
@@ -147,6 +147,53 @@ function saveProject() {
     }
 }
 
-function isValidated() {
-    return true;
+function isValidated(title, description, facebook) {
+    let isTitleValidated = true;
+    let isDescriptionValidated = true;
+    let isFacebookValidated = true;
+
+    // title validations
+    if (title === "") {
+        isTitleValidated = false;
+        $("#title-error").html("Invalid input: Cannot be empty!");
+    } else if (title.length > 500) {
+        isTitleValidated = false;
+        $("#title-error").html("Invalid input: Max length 500 charactors");
+    } else {
+        isTitleValidated = true;
+        $("#title-error").html("");
+    }
+
+    // description validations
+    if (description === "") {
+        isDescriptionValidated = false;
+        $("#description-error").html("Invalid input: Cannot be empty!");
+    } else if (description.length > 2500) {
+        isDescriptionValidated = false;
+        $("#description-error").html("Invalid input: Max length 2500 charactors");
+    } else  {
+        isDescriptionValidated = true;
+        $("#description-error").html("");
+    }
+
+    // facebook validations
+    if (facebook !== "") {
+        console.log("aaa");
+        if (facebook.length > 500) {
+            isFacebookValidated = false;
+            $("#facebook-error").html("Invalid input: Max length 2500 charactors");
+        } else if (!facebook.startsWith("https://www.facebook.com")) {
+            console.log("aaa");
+            isFacebookValidated = false;
+            $("#facebook-error").html("Invalid input: Not a facebook url. (Url must like with https://www.facebook.com/xxxxx)");
+        } else {
+            isFacebookValidated = true;
+            $("#facebook-error").html("");
+        }
+    } else {
+        isFacebookValidated = true;
+        $("#facebook-error").html("");
+    }
+
+    return isTitleValidated && isDescriptionValidated && isFacebookValidated;
 }
