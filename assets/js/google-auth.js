@@ -5,7 +5,8 @@ class GoogleAuth {
         id: null,
         name: null,
         img: null,
-        email: null
+        email: null,
+        authorisedFunctions: []
     };
     configFilePath = 'configs.json';
     allowedUsers = [];
@@ -51,12 +52,14 @@ class GoogleAuth {
     signIn() {
         if (this.auth && !this.isSignedIn && this.allowedUsers) {
             this.auth.signIn().then(() => {
-                if(this.allowedUsers.indexOf(this.auth.currentUser.get().getBasicProfile().getEmail()) >= 0) {
+                if(this.allowedUsers.some(item => item.email === this.auth.currentUser.get().getBasicProfile().getEmail())) {
+                    let allowedUser = this.allowedUsers.filter(item => { return item.email === this.auth.currentUser.get().getBasicProfile().getEmail()})[0];
                     this.signedUser = {
                         id: this.auth.currentUser.get().getId(),
                         name: this.auth.currentUser.get().getBasicProfile().getName(),
                         img: this.auth.currentUser.get().getBasicProfile().getImageUrl(),
-                        email: this.auth.currentUser.get().getBasicProfile().getEmail()
+                        email: this.auth.currentUser.get().getBasicProfile().getEmail(),
+                        authorisedFunctions: allowedUser.authorisedFunctions
                     }
                     sessionStorage.setItem("isSignedIn", true);
                     sessionStorage.setItem("signedUser", JSON.stringify(this.signedUser));

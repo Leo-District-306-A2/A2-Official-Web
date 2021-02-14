@@ -1,10 +1,40 @@
 {
   "host": "http://leodistrict306a2.org",
   "allowedUsers": [
-    "thilina.prasad@leodistrict306a2.org",
-    "sapsdilshan@gmail.com",
-    "praminda.vindika@leodistrict306a2.org",
-    "raseema@leodistrict306a2.org",
-    "secretariat@leodistrict306a2.org"
+    {
+      "email": "thilina.prasad@leodistrict306a2.org",
+      "authorisedFunctions": [
+        "notifications",
+        "projects"
+      ]
+    },
+    {
+      "email": "sapsdilshan@gmail.com",
+      "authorisedFunctions": [
+        "notifications",
+        "projects"
+      ]
+    },
+    {
+      "email": "praminda.vindika@leodistrict306a2.org",
+      "authorisedFunctions": [
+        "notifications",
+        "projects"
+      ]
+    },
+    {
+      "email": "raseema@leodistrict306a2.org",
+      "authorisedFunctions": [
+        "notifications",
+        "projects"
+      ]
+    },
+    {
+      "email": "secretariat@leodistrict306a2.org",
+      "authorisedFunctions": [
+        "notifications",
+        "projects"
+      ]
+    }
   ]
 }
