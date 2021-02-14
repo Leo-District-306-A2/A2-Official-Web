@@ -132,7 +132,11 @@ $.ajax({
         id: project_id
     },
     success: function (response) {
-        project = JSON.parse(response);
-        renderProject(project);
+        if (response !== "error") {
+            project = JSON.parse(response);
+            renderProject(project);
+        } else {
+            $('#project-content').html("<h5 class='text-center text-white text-capitalize'>Sorry! Project Not Found</h5>");
+        }
     }
 });
