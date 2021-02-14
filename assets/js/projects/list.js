@@ -196,12 +196,12 @@ function deleteProject(id, title, index) {
     });
 }
 
-function view_project(id) {
-    window.location.href = `view?id=${id}`;
-}
-
 function edit_project(id) {
     window.location.href = `edit?id=${id}`;
+}
+
+function view_project(id) {
+    window.location.href = `view?id=${id}`;
 }
 
 // execute when page load

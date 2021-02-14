@@ -28,6 +28,7 @@ class GoogleAuth {
         $.getJSON(this.configFilePath, (json) => {
             this.allowedUsers = json['allowedUsers'];
             this.host = json['host'];
+            sessionStorage.setItem("host", this.host);
         });
 
         if (!this.isSignedIn) {

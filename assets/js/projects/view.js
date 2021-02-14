@@ -1,5 +1,7 @@
 let project_id = new URLSearchParams(window.location.search).get('id');
 let project;
+let isSignedIn = sessionStorage.getItem("isSignedIn");
+let signedUser = JSON.parse(sessionStorage.getItem("signedUser"));
 
 function renderCarosel(project) {
     let html_out = `<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
@@ -47,9 +49,80 @@ function renderProject(project) {
                 ${project.description}
                     </p>
                 <pre class="text-secondary text-right float-right text-capitalize">Published By: <a class="published-user-name">Thilina Jayathilaka</a><br>Published date/time: ${project.published_date}</pre>
+                    ${ renderProjectOperations(project) }
             `;
     renderCarosel(project);
     $('#project-content').html(project_html);
+}
+
+function renderProjectOperations(project) {
+    if (isSignedIn && signedUser.authorisedFunctions.includes("projects")) {
+        return "<br><br><br><div class=\"btn-group float-right\" role=\"group\" aria-label=\"Basic example\">\n              <button type=\"button\" class=\"btn btn-secondary\" onclick=\"edit_project('" + project.id + "')\"><i class=\"icofont-edit\"></i></button>\n              <button type=\"button\" class=\"btn btn-danger\" onclick=\"deleteProject( '" + project.id + "', '" + project.title + "')\"><i class=\"icofont-ui-delete\"></i></button>\n            </div>";
+    }
+    return "";
+}
+
+function deleteProject(id, title) {
+    $.alert({
+        title: 'Do you want to delete project?',
+        columnClass: 'medium',
+        content: `Please confirm to delete <b>${title}</b> project.`,
+        theme: 'dark',
+        type: "red",
+        buttons: {
+            delete: {
+                text: "Delete",
+                btnClass: "btn-red",
+                keys: ['enter', 'delete'],
+                action: function () {
+                    $.ajax({
+                        url: "../../../php/projects/deleteProject.php",
+                        type: 'POST',
+                        data: {
+                            id: id,
+                        },
+                        success: function (response) {
+                            if (response === 'success') {
+                                $.alert({
+                                    title: 'Project deleted',
+                                    columnClass: 'medium',
+                                    content: 'Project deleted Successfully!',
+                                    theme: 'dark',
+                                    type: "blue",
+                                    buttons: {
+                                        ok: {
+                                            text: "OK",
+                                            action: function () {
+                                                window.location.href = `/pages/projects`;
+                                            }
+                                        }
+                                    }
+                                });
+
+                            } else {
+                                $.alert({
+                                    title: 'Project not deleted',
+                                    columnClass: 'medium',
+                                    content: 'Error happened while deleting project!',
+                                    theme: 'dark',
+                                    type: "red"
+                                });
+                            }
+                        }
+                    });
+                }
+            },
+            cancel: {
+                text: "Cancel",
+                action: function () {
+                }
+            }
+        }
+    });
+}
+
+function edit_project(id) {
+    window.location.href = `../edit?id=${id}`;
 }
 
 $.ajax({
