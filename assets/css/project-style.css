@@ -83,7 +83,7 @@
   right: 15px;
   bottom: 100px;
   border-radius: 50px;
-  z-index: 99999;
+  z-index: 999;
   width: fit-content;
   height: 40px;
   background-color: #1c84e3;
@@ -130,4 +130,15 @@
 .error-text {
   font-size: 12px;
   opacity: 0.8;
+}
+
+.view-on-facebook-btn {
+  border-radius: 50px;
+  vertical-align: middle;
+}
+
+.view-on-facebook-btn i {
+  font-size: larger;
+  vertical-align: middle;
+  margin-top: 3px;
 }
