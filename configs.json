@@ -2,6 +2,12 @@
   "host": "http://leodistrict306a2.org",
   "allowedUsers": [
     {
+      "email": "thilina.prashad25@gmail.com",
+      "authorisedFunctions": [
+        "projects"
+      ]
+    },
+    {
       "email": "thilina.prasad@leodistrict306a2.org",
       "authorisedFunctions": [
         "notifications",

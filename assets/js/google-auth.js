@@ -10,7 +10,9 @@ class GoogleAuth {
     };
     configFilePath = 'configs.json';
     allowedUsers = [];
+    allowedUser = null;
     host = "";
+
     constructor() {
         this.isSignedIn = sessionStorage.getItem("isSignedIn");
         this.signedUser = JSON.parse(sessionStorage.getItem("signedUser"));
@@ -34,7 +36,9 @@ class GoogleAuth {
             $('#signed-user-img').attr('src', this.signedUser.img);
             $('#sign-in').hide();
             $('#sign-out').show();
-            $('#notifications-nav-item').show();
+            if (this.signedUser.authorisedFunctions.includes("notifications")) {
+                $('#notifications-nav-item').show();
+            }
         }
     }
 
@@ -52,29 +56,33 @@ class GoogleAuth {
     signIn() {
         if (this.auth && !this.isSignedIn && this.allowedUsers) {
             this.auth.signIn().then(() => {
-                if(this.allowedUsers.some(item => item.email === this.auth.currentUser.get().getBasicProfile().getEmail())) {
-                    let allowedUser = this.allowedUsers.filter(item => { return item.email === this.auth.currentUser.get().getBasicProfile().getEmail()})[0];
+                if (this.allowedUsers.some(item => item.email === this.auth.currentUser.get().getBasicProfile().getEmail())) {
+                    this.allowedUser = this.allowedUsers.filter(item => {
+                        return item.email === this.auth.currentUser.get().getBasicProfile().getEmail()
+                    })[0];
                     this.signedUser = {
                         id: this.auth.currentUser.get().getId(),
                         name: this.auth.currentUser.get().getBasicProfile().getName(),
                         img: this.auth.currentUser.get().getBasicProfile().getImageUrl(),
                         email: this.auth.currentUser.get().getBasicProfile().getEmail(),
-                        authorisedFunctions: allowedUser.authorisedFunctions
+                        authorisedFunctions: this.allowedUser.authorisedFunctions
                     }
                     sessionStorage.setItem("isSignedIn", true);
                     sessionStorage.setItem("signedUser", JSON.stringify(this.signedUser));
                     $('#signed-user-img').attr('src', this.signedUser.img);
                     $('#sign-in').hide();
                     $('#sign-out').show();
-                    $("#notifications-nav-item").show();
+                    if (this.signedUser.authorisedFunctions.includes("notifications")) {
+                        $("#notifications-nav-item").show();
+                    }
                     window.location.reload();
                 } else {
                     $.alert({
                         title: 'Unauthorised',
                         columnClass: 'medium',
-                        content: `Sorry! ${ this.auth.currentUser.get().getBasicProfile().getName() } <br>You are not allowed to access <b>Leo District 306 A2</b> official web site.<br> <div class="small-text">(*If you want to get access please contact <a href="mailto:secretariat@leodistrict306a2.org" class="contact">secretariat@leodistrict306a2.org)</a></div>`,
+                        content: `Sorry! ${this.auth.currentUser.get().getBasicProfile().getName()} <br>You are not allowed to access <b>Leo District 306 A2</b> official web site.<br> <div class="small-text">(*If you want to get access please contact <a href="mailto:secretariat@leodistrict306a2.org" class="contact">secretariat@leodistrict306a2.org)</a></div>`,
                         theme: 'dark',
-                        type:"blue"
+                        type: "blue"
                     });
                 }
             });
@@ -90,7 +98,7 @@ class GoogleAuth {
         $('#sign-in').show();
         $('#sign-out').hide();
         $("#notifications-nav-item").hide();
-        if($("title").text() === 'A2 | Notifications') {
+        if ($("title").text() === 'A2 | Notifications') {
             window.location.replace(this.host);
         } else {
             window.location.reload();
@@ -110,17 +118,18 @@ $("#sign-out").click(function () {
         columnClass: 'medium',
         content: `Are you sure you want to sign out?`,
         theme: 'dark',
-        type:"blue",
+        type: "blue",
         buttons: {
             signOut: {
                 text: 'Sign out',
                 btnClass: 'btn-blue',
                 keys: ['enter'],
-                action: function(){
+                action: function () {
                     googleAuth.signOut();
                 }
             },
-            cancel: function () {}
+            cancel: function () {
+            }
         }
     });
 });
