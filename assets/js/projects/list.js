@@ -6,7 +6,7 @@ let pageSize = 10;
 
 function renderProjectOperations(project, index) {
     if (isSignedIn && signedUser.authorisedFunctions.includes("projects")) {
-        return "<div class=\"btn-group float-right\" role=\"group\" aria-label=\"Basic example\">\n              <button type=\"button\" class=\"btn btn-secondary\" onclick=\"update_project(${project.id})\"><i class=\"icofont-edit\"></i></button>\n              <button type=\"button\" class=\"btn btn-danger\" onclick=\"deleteProject( '" + project.id + "', '" + project.title + "', " + index + ")\"><i class=\"icofont-ui-delete\"></i></button>\n            </div>";
+        return "<div class=\"btn-group float-right\" role=\"group\" aria-label=\"Basic example\">\n              <button type=\"button\" class=\"btn btn-secondary\" onclick=\"edit_project(${project.id})\"><i class=\"icofont-edit\"></i></button>\n              <button type=\"button\" class=\"btn btn-danger\" onclick=\"deleteProject( '" + project.id + "', '" + project.title + "', " + index + ")\"><i class=\"icofont-ui-delete\"></i></button>\n            </div>";
     }
     return "";
 }
@@ -198,6 +198,10 @@ function deleteProject(id, title, index) {
 
 function view_project(id) {
     window.location.href = `view?id=${id}`;
+}
+
+function edit_project(id) {
+    window.location.href = `edit?id=${id}`;
 }
 
 // execute when page load
