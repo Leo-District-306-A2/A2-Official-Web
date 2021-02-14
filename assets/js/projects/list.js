@@ -4,7 +4,7 @@ let projects = [];
 let pageNumber = 1;
 let pageSize = 10;
 
-function renderOperations(project, index) {
+function renderProjectOperations(project, index) {
     if (isSignedIn && signedUser.authorisedFunctions.includes("projects")) {
         return "<div class=\"btn-group float-right\" role=\"group\" aria-label=\"Basic example\">\n              <button type=\"button\" class=\"btn btn-secondary\" onclick=\"update_project(${project.id})\"><i class=\"icofont-edit\"></i></button>\n              <button type=\"button\" class=\"btn btn-danger\" onclick=\"deleteProject( '" + project.id + "', '" + project.title + "', " + index + ")\"><i class=\"icofont-ui-delete\"></i></button>\n            </div>";
     }
@@ -60,7 +60,7 @@ function renderProject(project, index) {
             ${project.description.length > 650 ? project.description.substring(0, 647) + " ..." : project.description}
             </p>
             <pre class="text-secondary">Published by: ${JSON.parse(project.published_by).name ? JSON.parse(project.published_by).name : JSON.parse(project.published_by).email} | Published date: ${project.published_date}</pre>
-          ${renderOperations(project, index)}
+          ${renderProjectOperations(project, index)}
         </div>
       </div>`;
 }
@@ -138,16 +138,11 @@ function paginate(array, page_number) {
     return array.slice((page_number - 1) * pageSize, page_number * pageSize);
 }
 
-
-$.ajax({
-    url: '../../php/projects/getProjects.php',
-    type: 'GET',
-    success: function (response) {
-        projects = JSON.parse(response);
-        renderProjects(pageNumber);
-
+function renderNewProjectBtn() {
+    if (isSignedIn && signedUser.authorisedFunctions.includes("projects")) {
+        $('#new-project').html(`<a href="new/index.html" class="new-project-btn"><i class="icofont-justify-left"></i> New Project</a>`);
     }
-});
+}
 
 function deleteProject(id, title, index) {
     $.alert({
@@ -200,3 +195,18 @@ function deleteProject(id, title, index) {
         }
     });
 }
+
+
+// execute when page load
+$.ajax({
+    url: '../../php/projects/getProjects.php',
+    type: 'GET',
+    success: function (response) {
+        projects = JSON.parse(response);
+        renderProjects(pageNumber);
+
+    }
+});
+
+renderNewProjectBtn();
+

@@ -77,3 +77,28 @@
 #image-2-section, #image-3-section, #image-4-section {
   display: none;
 }
+
+.new-project-btn {
+  position: fixed;
+  right: 15px;
+  bottom: 100px;
+  border-radius: 50px;
+  z-index: 99999;
+  width: fit-content;
+  height: 40px;
+  background-color: #1c84e3;
+  color: white;
+  font-size: 14px;
+  padding: 10px 12px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.new-project-btn:hover {
+  color: rgba(255,255,255, 0.6);
+}
+
+.new-project-btn i {
+  font-size: 18px;
+  margin-right: 3px;
+}
