@@ -6,7 +6,7 @@ let pageSize = 10;
 
 function renderProjectOperations(project, index) {
     if (isSignedIn && signedUser.authorisedFunctions.includes("projects")) {
-        return "<div class=\"btn-group float-right\" role=\"group\" aria-label=\"Basic example\">\n              <button type=\"button\" class=\"btn btn-secondary\" onclick=\"edit_project(${project.id})\"><i class=\"icofont-edit\"></i></button>\n              <button type=\"button\" class=\"btn btn-danger\" onclick=\"deleteProject( '" + project.id + "', '" + project.title + "', " + index + ")\"><i class=\"icofont-ui-delete\"></i></button>\n            </div>";
+        return "<div class=\"btn-group float-right\" role=\"group\" aria-label=\"Basic example\">\n              <button type=\"button\" class=\"btn btn-secondary\" onclick=\"edit_project('" + project.id + "')\"><i class=\"icofont-edit\"></i></button>\n              <button type=\"button\" class=\"btn btn-danger\" onclick=\"deleteProject( '" + project.id + "', '" + project.title + "', " + index + ")\"><i class=\"icofont-ui-delete\"></i></button>\n            </div>";
     }
     return "";
 }
@@ -54,9 +54,9 @@ function renderProject(project, index) {
         <div class="col-md-4">
           ${renderCaurosal(project)}
         </div>
-        <div class="col-md-8 project-clickable" onclick="view_project(${ project.id })">
-          <h3 class="font-weight-bold">${project.title}</h3>
-          <p class="project-content text-justify">
+        <div class="col-md-8 project-clickable">
+          <h3 class="font-weight-bold" onclick="view_project(${project.id})">${project.title}</h3>
+          <p class="project-content text-justify" onclick="view_project(${project.id})">
             ${project.description.length > 650 ? project.description.substring(0, 647) + " ..." : project.description}
             </p>
             <pre class="text-secondary">Published by: ${JSON.parse(project.published_by).name ? JSON.parse(project.published_by).name : JSON.parse(project.published_by).email} | Published date: ${project.published_date}</pre>
