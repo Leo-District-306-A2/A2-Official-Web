@@ -69,10 +69,15 @@ function renderProjects(pageNumber) {
     let projects_html = "";
     let page_projects = paginate(projects, pageNumber);
     $('#projects').html("");
-    for (i = 0; i < page_projects.length; i++) {
-        projects_html += renderProject(page_projects[i], i);
+    if (projects.length > 0) {
+        for (i = 0; i < page_projects.length; i++) {
+            projects_html += renderProject(page_projects[i], i);
+        }
+        $('#projects').html(projects_html);
+        renderPagination(projects, pageNumber);
+    } else {
+        $('#projects').html("<h5 class='text-center text-white'>Sorry! No project available!</h5>");
     }
-    $('#projects').html(projects_html);
 }
 
 function renderPagination(projects, activePage) {
@@ -111,10 +116,9 @@ function renderPagination(projects, activePage) {
 }
 
 function previousPageClicked() {
-    if (pageNumber !== 1 ) {
+    if (pageNumber !== 1) {
         pageNumber -= 1;
         renderProjects(pageNumber);
-        renderPagination(projects, pageNumber);
     }
 }
 
@@ -122,14 +126,12 @@ function nextPageClicked() {
     if (pageNumber !== Math.ceil(projects.length / pageSize)) {
         pageNumber += 1;
         renderProjects(pageNumber);
-        renderPagination(projects, pageNumber);
     }
 }
 
 function navigateToPage(page) {
     pageNumber = page;
     renderProjects(pageNumber);
-    renderPagination(projects, pageNumber);
 }
 
 function paginate(array, page_number) {
@@ -143,7 +145,7 @@ $.ajax({
     success: function (response) {
         projects = JSON.parse(response);
         renderProjects(pageNumber);
-        renderPagination(projects, pageNumber);
+
     }
 });
 
@@ -151,7 +153,7 @@ function deleteProject(id, title, index) {
     $.alert({
         title: 'Do you want to delete project?',
         columnClass: 'medium',
-        content: `Please confirm to delete <b>${ title }</b> project.`,
+        content: `Please confirm to delete <b>${title}</b> project.`,
         theme: 'dark',
         type: "red",
         buttons: {
@@ -170,7 +172,6 @@ function deleteProject(id, title, index) {
                             if (response === 'success') {
                                 projects.splice(index, 1);
                                 renderProjects(pageNumber);
-                                renderPagination(projects, pageNumber);
                                 $.alert({
                                     title: 'Project deleted',
                                     columnClass: 'medium',
@@ -193,7 +194,8 @@ function deleteProject(id, title, index) {
             },
             cancel: {
                 text: "Cancel",
-                action: function () {}
+                action: function () {
+                }
             }
         }
     });
