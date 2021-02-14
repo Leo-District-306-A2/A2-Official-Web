@@ -102,3 +102,27 @@
   font-size: 18px;
   margin-right: 3px;
 }
+
+.published-user-img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.published-user-name {
+  cursor: pointer;
+  color: white!important;
+}
+
+.published-user-name:hover {
+  color: rgba(255, 255, 255, 0.6)!important;
+}
+
+.project-clickable {
+  cursor: pointer;
+  color: white!important;
+}
+
+.project-clickable:hover {
+  color: rgba(255, 255, 255, 0.6)!important;
+}

@@ -15,9 +15,9 @@ function renderCaurosal(project) {
     return `<div id="images-project-${project.id}" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               ${project.image_1 !== "" ? `<li data-target="#images-project-${project.id}" data-slide-to="0" class="active"></li>` : ""}
-              ${project.image_2 !== "" ? `<li data-target="#images-project-${project.id}" data-slide-to="1" class="active"></li>` : ""}
-              ${project.image_3 !== "" ? `<li data-target="#images-project-${project.id}" data-slide-to="2" class="active"></li>` : ""}
-              ${project.image_4 !== "" ? `<li data-target="#images-project-${project.id}" data-slide-to="3" class="active"></li>` : ""}
+              ${project.image_2 !== "" ? `<li data-target="#images-project-${project.id}" data-slide-to="1"></li>` : ""}
+              ${project.image_3 !== "" ? `<li data-target="#images-project-${project.id}" data-slide-to="2"></li>` : ""}
+              ${project.image_4 !== "" ? `<li data-target="#images-project-${project.id}" data-slide-to="3"></li>` : ""}
               ${project.image_1 === "" && project.image_2 === "" && project.image_3 === "" && project.image_4 === "" ? `<li data-target="#images-project-${project.id}" data-slide-to="0" class="active"></li>` : ""}
             </ol>
             <div class="carousel-inner">
@@ -54,9 +54,9 @@ function renderProject(project, index) {
         <div class="col-md-4">
           ${renderCaurosal(project)}
         </div>
-        <div class="col-md-8">
-          <h3 class="text-white font-weight-bold">${project.title}</h3>
-          <p class="text-white project-content text-justify">
+        <div class="col-md-8 project-clickable" onclick="view_project(${ project.id })">
+          <h3 class="font-weight-bold">${project.title}</h3>
+          <p class="project-content text-justify">
             ${project.description.length > 650 ? project.description.substring(0, 647) + " ..." : project.description}
             </p>
             <pre class="text-secondary">Published by: ${JSON.parse(project.published_by).name ? JSON.parse(project.published_by).name : JSON.parse(project.published_by).email} | Published date: ${project.published_date}</pre>
@@ -196,6 +196,9 @@ function deleteProject(id, title, index) {
     });
 }
 
+function view_project(id) {
+    window.location.href = `view?id=${id}`;
+}
 
 // execute when page load
 $.ajax({
