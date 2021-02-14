@@ -1,11 +1,11 @@
 let isSignedIn =  sessionStorage.getItem("isSignedIn");
-let signedUser =  sessionStorage.getItem("signedUser");
+let signedUser =  JSON.parse(sessionStorage.getItem("signedUser"));
 let host = "";
 $.getJSON("../../../configs.json", (json) => {
     host = (json['host']);
 });
 
-if (!isSignedIn) {
+if (!isSignedIn || !signedUser.authorisedFunctions.includes("projects")) {
     window.onload = function() {
         // similar behavior as an HTTP redirect
         window.location.replace(host);
@@ -107,7 +107,7 @@ function saveProject() {
     let image_2 = $('#image-preview-src-2').attr('src');
     let image_3 = $('#image-preview-src-3').attr('src');
     let image_4 = $('#image-preview-src-4').attr('src');
-    let published_by = signedUser;
+    let published_by = JSON.stringify(signedUser);
 
     if(isValidated()) {
         $.ajax({

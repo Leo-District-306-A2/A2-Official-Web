@@ -60,22 +60,32 @@ class GoogleAuth {
                     this.allowedUser = this.allowedUsers.filter(item => {
                         return item.email === this.auth.currentUser.get().getBasicProfile().getEmail()
                     })[0];
-                    this.signedUser = {
-                        id: this.auth.currentUser.get().getId(),
-                        name: this.auth.currentUser.get().getBasicProfile().getName(),
-                        img: this.auth.currentUser.get().getBasicProfile().getImageUrl(),
-                        email: this.auth.currentUser.get().getBasicProfile().getEmail(),
-                        authorisedFunctions: this.allowedUser.authorisedFunctions
+                    if(this.allowedUser.authorisedFunctions.length > 0) {
+                        this.signedUser = {
+                            id: this.auth.currentUser.get().getId(),
+                            name: this.auth.currentUser.get().getBasicProfile().getName(),
+                            img: this.auth.currentUser.get().getBasicProfile().getImageUrl(),
+                            email: this.auth.currentUser.get().getBasicProfile().getEmail(),
+                            authorisedFunctions: this.allowedUser.authorisedFunctions
+                        }
+                        sessionStorage.setItem("isSignedIn", true);
+                        sessionStorage.setItem("signedUser", JSON.stringify(this.signedUser));
+                        $('#signed-user-img').attr('src', this.signedUser.img);
+                        $('#sign-in').hide();
+                        $('#sign-out').show();
+                        if (this.signedUser.authorisedFunctions.includes("notifications")) {
+                            $("#notifications-nav-item").show();
+                        }
+                        window.location.reload();
+                    } else {
+                        $.alert({
+                            title: 'No Authorised functions',
+                            columnClass: 'medium',
+                            content: `Sorry! ${this.auth.currentUser.get().getBasicProfile().getName()} <br>You don't have any authorised functions on <b>Leo District 306 A2</b> official web site.<br> <div class="small-text">(*If you want to access please contact <a href="mailto:secretariat@leodistrict306a2.org" class="contact">secretariat@leodistrict306a2.org)</a></div>`,
+                            theme: 'dark',
+                            type: "blue"
+                        });
                     }
-                    sessionStorage.setItem("isSignedIn", true);
-                    sessionStorage.setItem("signedUser", JSON.stringify(this.signedUser));
-                    $('#signed-user-img').attr('src', this.signedUser.img);
-                    $('#sign-in').hide();
-                    $('#sign-out').show();
-                    if (this.signedUser.authorisedFunctions.includes("notifications")) {
-                        $("#notifications-nav-item").show();
-                    }
-                    window.location.reload();
                 } else {
                     $.alert({
                         title: 'Unauthorised',

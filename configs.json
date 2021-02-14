@@ -8,6 +8,16 @@
       ]
     },
     {
+      "email": "thilinaprasad.15@cse.mrt.ac.lk",
+      "authorisedFunctions": [
+        "notifications"
+      ]
+    },
+    {
+      "email": "directory@leodistrict306a2.org",
+      "authorisedFunctions": []
+    },
+    {
       "email": "thilina.prasad@leodistrict306a2.org",
       "authorisedFunctions": [
         "notifications",

@@ -1,11 +1,11 @@
 let isSignedIn = sessionStorage.getItem("isSignedIn");
-let signedUser = sessionStorage.getItem("signedUser");
+let signedUser = JSON.parse(sessionStorage.getItem("signedUser"));
 let projects = [];
 let pageNumber = 1;
 let pageSize = 10;
 
 function renderOperations(project, index) {
-    if (isSignedIn && project.published_by === signedUser) {
+    if (isSignedIn && signedUser.authorisedFunctions.includes("projects")) {
         return "<div class=\"btn-group float-right\" role=\"group\" aria-label=\"Basic example\">\n              <button type=\"button\" class=\"btn btn-secondary\" onclick=\"update_project(${project.id})\"><i class=\"icofont-edit\"></i></button>\n              <button type=\"button\" class=\"btn btn-danger\" onclick=\"deleteProject( '" + project.id + "', '" + project.title + "', " + index + ")\"><i class=\"icofont-ui-delete\"></i></button>\n            </div>";
     }
     return "";
