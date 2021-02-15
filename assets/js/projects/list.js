@@ -31,7 +31,7 @@ function renderCaurosal(project) {
                 <img class="d-block w-100" src="${project.image_3}" alt="Third slide">
               </div>` : ""}
               ${project.image_4 !== "" ? `<div class="carousel-item">
-                <img class="d-block w-100" src="${project.image_1}" alt="Fourth slide">
+                <img class="d-block w-100" src="${project.image_4}" alt="Fourth slide">
               </div>` : ""}
               
               ${project.image_1 === "" && project.image_2 === "" && project.image_3 === "" && project.image_4 === "" ? `<div class="carousel-item active">

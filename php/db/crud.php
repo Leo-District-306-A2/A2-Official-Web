@@ -69,17 +69,16 @@ class Crud extends DbConfig
         return $result;
     }
 
-    public function updateProject($id, $projectName, $description, $fbLink, $image, $publishedDate, $publishedBy)
+    public function updateProject($id, $title, $description, $facebook, $image_1,$image_2, $image_3, $image_4, $publishedDate, $publishedBy)
     {
         $id = $this->escape_string($id);
-        $projectName = $this->escape_string($projectName);
+        $title = $this->escape_string($title);
         $description = $this->escape_string($description);
-        $fbLink = $this->escape_string($fbLink);
-        $image = $this->escape_string($image);
+        $facebook = $this->escape_string($facebook);
         $publishedDate = $this->escape_string($publishedDate);
         $publishedBy = $this->escape_string($publishedBy);
 
-        $query = "UPDATE projects SET project_name = '$projectName', description = '$description', fb_link = '$fbLink', image_path = '$image', published_date = '$publishedDate', published_by = '$publishedBy'";
+        $query = "UPDATE projects SET title = '$title', description = '$description', facebook = '$facebook', image_1 = '$image_1', image_2 = '$image_2', image_3 = '$image_3', image_4 = '$image_4', published_date = '$publishedDate', published_by = '$publishedBy' WHERE id = '$id'";
         $result = $this->execute($query);
         return $result;
     }
