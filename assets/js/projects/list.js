@@ -75,6 +75,7 @@ function renderProjects(pageNumber) {
         }
         $('#projects').html(projects_html);
         renderPagination(projects, pageNumber);
+        removePreloader();
     } else {
         $('#projects').html("<h5 class='text-center text-white'>Sorry! No project available!</h5>");
     }
@@ -204,6 +205,14 @@ function view_project(id) {
     window.location.href = `view?id=${id}`;
 }
 
+function removePreloader() {
+    if ($('#preloader').length) {
+        $('#preloader').delay(100).fadeOut('slow', function () {
+            $(this).remove();
+        });
+    }
+}
+
 // execute when page load
 $.ajax({
     url: '../../php/projects/getProjects.php',
@@ -211,7 +220,6 @@ $.ajax({
     success: function (response) {
         projects = JSON.parse(response);
         renderProjects(pageNumber);
-
     }
 });
 

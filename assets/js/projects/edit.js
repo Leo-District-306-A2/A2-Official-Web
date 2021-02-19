@@ -65,9 +65,7 @@ $.ajax({
             previreImage4.style.display = "block";
             $('#image-preview-src-4').attr('src', project.image_4);
         }
-
-
-
+        removePreloader();
     }
 });
 
@@ -274,5 +272,13 @@ function deleteImage(imageIndex){
         $('#image-preview-src-4').hide();
         previreDefaultText4.style.display = "block";
         deleted_images += "image_4 ";
+    }
+}
+
+function removePreloader() {
+    if ($('#preloader').length) {
+        $('#preloader').delay(100).fadeOut('slow', function () {
+            $(this).remove();
+        });
     }
 }

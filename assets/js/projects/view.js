@@ -54,6 +54,7 @@ function renderProject(project) {
             `;
     renderCarosel(project);
     $('#project-content').html(project_html);
+    removePreloader();
 }
 
 function renderProjectOperations(project) {
@@ -141,3 +142,11 @@ $.ajax({
         }
     }
 });
+
+function removePreloader() {
+    if ($('#preloader').length) {
+        $('#preloader').delay(100).fadeOut('slow', function () {
+            $(this).remove();
+        });
+    }
+}
