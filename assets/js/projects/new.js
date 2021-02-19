@@ -1,9 +1,11 @@
 let isSignedIn = sessionStorage.getItem("isSignedIn");
 let signedUser = JSON.parse(sessionStorage.getItem("signedUser"));
 let host = "";
+
 $.getJSON("../../../configs.json", (json) => {
     host = (json['host']);
-});
+})
+;
 
 if (!isSignedIn || !signedUser.authorisedFunctions.includes("projects")) {
     window.onload = function () {
@@ -11,7 +13,6 @@ if (!isSignedIn || !signedUser.authorisedFunctions.includes("projects")) {
         window.location.replace(host);
     }
 }
-
 
 const fileInput1 = document.getElementById("image_1_uploader");
 const previewContainer1 = document.getElementById("image-preview-1")
@@ -83,7 +84,6 @@ const previewContainer4 = document.getElementById("image-preview-4")
 const previreImage4 = previewContainer4.querySelector(".image-preview-image");
 const previreDefaultText4 = previewContainer4.querySelector(".image-preview-default-text");
 
-
 fileInput4.addEventListener("change", function () {
     const file = this.files[0];
     if (file) {
@@ -103,26 +103,45 @@ function saveProject() {
     let title = $('#title').val();
     let description = $('#description').val();
     let facebook = $('#facebook').val();
-    let image_1 = $('#image-preview-src-1').attr('src');
-    let image_2 = $('#image-preview-src-2').attr('src');
-    let image_3 = $('#image-preview-src-3').attr('src');
-    let image_4 = $('#image-preview-src-4').attr('src');
+    let image_1 = $('#image_1_uploader').prop('files')[0];
+    let image_2 = $('#image_2_uploader').prop('files')[0];
+    let image_3 = $('#image_3_uploader').prop('files')[0];
+    let image_4 = $('#image_4_uploader').prop('files')[0];
     let published_by = JSON.stringify(signedUser);
 
+    let upload_count = 0;
+    if (image_1) {
+        upload_count+=1;
+    }
+    if (image_2) {
+        upload_count+=1;
+    }
+    if (image_3) {
+        upload_count+=1;
+    }
+    if (image_4) {
+        upload_count+=1;
+    }
+
     if (isValidated(title, description, facebook)) {
+        const form_data = new FormData();
+        form_data.append('title', title);
+        form_data.append('description', description);
+        form_data.append('facebook', facebook);
+        form_data.append('upload_count', upload_count.toString());
+        form_data.append('image_1', image_1 !== null? image_1: "");
+        form_data.append('image_2', image_2? image_2: "");
+        form_data.append('image_3', image_3? image_3: "");
+        form_data.append('image_4', image_4? image_4: "");
+        form_data.append('published_by', published_by);
         $.ajax({
             url: '../../../php/projects/addProject.php',
             type: 'POST',
-            data: {
-                title: title,
-                description: description,
-                facebook: facebook,
-                image_1: image_1,
-                image_2: image_2,
-                image_3: image_3,
-                image_4: image_4,
-                published_by: published_by
-            },
+            data: form_data,
+            dataType: 'text',
+            cache: false,
+            contentType: false,
+            processData: false,
             success: function (response) {
                 if (response === 'success') {
                     $.alert({
@@ -168,22 +187,20 @@ function isValidated(title, description, facebook) {
     if (description === "") {
         isDescriptionValidated = false;
         $("#description-error").html("Invalid input: Cannot be empty!");
-    } else if (description.length > 2500) {
+    } else if (description.length > 5000) {
         isDescriptionValidated = false;
         $("#description-error").html("Invalid input: Max length 2500 charactors");
-    } else  {
+    } else {
         isDescriptionValidated = true;
         $("#description-error").html("");
     }
 
     // facebook validations
     if (facebook !== "") {
-        console.log("aaa");
         if (facebook.length > 500) {
             isFacebookValidated = false;
             $("#facebook-error").html("Invalid input: Max length 2500 charactors");
         } else if (!facebook.startsWith("https://www.facebook.com")) {
-            console.log("aaa");
             isFacebookValidated = false;
             $("#facebook-error").html("Invalid input: Not a facebook url. (Url must like with https://www.facebook.com/xxxxx)");
         } else {

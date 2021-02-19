@@ -69,7 +69,7 @@ class Crud extends DbConfig
         return $result;
     }
 
-    public function updateProject($id, $title, $description, $facebook, $image_1, $image_2, $image_3, $image_4, $publishedDate, $publishedBy)
+    public function updateProject($id, $title, $description, $facebook, $publishedDate, $publishedBy)
     {
         $id = $this->escape_string($id);
         $title = $this->escape_string($title);
@@ -78,10 +78,17 @@ class Crud extends DbConfig
         $publishedDate = $this->escape_string($publishedDate);
         $publishedBy = $this->escape_string($publishedBy);
 
-        $query = "UPDATE projects SET title = '$title', description = '$description', facebook = '$facebook', image_1 = '$image_1', image_2 = '$image_2', image_3 = '$image_3', image_4 = '$image_4', published_date = '$publishedDate', published_by = '$publishedBy' WHERE id = '$id'";
+        $query = "UPDATE projects SET title = '$title', description = '$description', facebook = '$facebook', published_date = '$publishedDate', published_by = '$publishedBy' WHERE id = '$id'";
         $result = $this->execute($query);
         return $result;
     }
+
+    public function updateProjectImage($id, $image_id, $value)
+        {
+            $query = "UPDATE projects SET " . $image_id . " = '$value' WHERE id = '$id'";
+            $result = $this->execute($query);
+            return $result;
+        }
 
     public function deleteProject($id)
     {

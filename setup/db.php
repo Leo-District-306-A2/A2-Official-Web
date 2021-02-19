@@ -12,7 +12,7 @@ if (isset($_POST['username']) && $_POST['username'] != "" && isset($_POST['passw
                 $projects_create_query = "CREATE TABLE `projects` (
                                         `id` int(11) NOT NULL AUTO_INCREMENT,
                                         `title` varchar(500) NOT NULL,
-                                        `description` varchar(2500) NOT NULL,
+                                        `description` varchar(5000) NOT NULL,
                                         `facebook` varchar(500) NOT NULL,
                                         `image_1` mediumtext NOT NULL,
                                         `image_2` mediumtext NOT NULL,

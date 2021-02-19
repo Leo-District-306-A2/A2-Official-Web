@@ -43,18 +43,21 @@ $.ajax({
             previreDefaultText1.style.display = "none";
             previreImage1.style.display = "block";
             $('#image-preview-src-1').attr('src', project.image_1);
+            $('#image-2-section').show();
         }
         if (project.image_2 !== "") {
             $('#image-2-section').show();
             previreDefaultText2.style.display = "none";
             previreImage2.style.display = "block";
             $('#image-preview-src-2').attr('src', project.image_2);
+            $('#image-3-section').show();
         }
         if (project.image_3 !== "") {
             $('#image-3-section').show();
             previreDefaultText3.style.display = "none";
             previreImage3.style.display = "block";
             $('#image-preview-src-3').attr('src', project.image_3);
+            $('#image-4-section').show();
         }
         if (project.image_4 !== "") {
             $('#image-4-section').show();
@@ -131,32 +134,52 @@ fileInput4.addEventListener("change", function () {
 });
 
 
-
+let uploaded_images = "";
+let deleted_images = "";
 function edit() {
     let title = $('#title').val();
     let description = $('#description').val();
     let facebook = $('#facebook').val();
-    let image_1 = $('#image-preview-src-1').attr('src');
-    let image_2 = $('#image-preview-src-2').attr('src');
-    let image_3 = $('#image-preview-src-3').attr('src');
-    let image_4 = $('#image-preview-src-4').attr('src');
+    let image_1 = $('#image_1_uploader').prop('files')[0];
+    let image_2 = $('#image_2_uploader').prop('files')[0];
+    let image_3 = $('#image_3_uploader').prop('files')[0];
+    let image_4 = $('#image_4_uploader').prop('files')[0];
     let published_by = JSON.stringify(signedUser);
 
+    if (image_1) {
+        uploaded_images += "image_1 ";
+    }
+    if (image_2) {
+        uploaded_images+="image_2 ";
+    }
+    if (image_3) {
+        uploaded_images+= "image_3 ";
+    }
+    if (image_4) {
+        uploaded_images+= "image_4 ";
+    }
+
     if (isValidated(title, description, facebook)) {
+        const form_data = new FormData();
+        form_data.append('id', project_id);
+        form_data.append('title', title);
+        form_data.append('description', description);
+        form_data.append('facebook', facebook);
+        form_data.append('deleted_images', deleted_images);
+        form_data.append('uploaded_images', uploaded_images);
+        form_data.append('image_1', image_1);
+        form_data.append('image_2', image_2);
+        form_data.append('image_3', image_3);
+        form_data.append('image_4', image_4);
+        form_data.append('published_by', published_by);
         $.ajax({
             url: '../../../php/projects/editProject.php',
             type: 'POST',
-            data: {
-                id:project_id,
-                title: title,
-                description: description,
-                facebook: facebook,
-                image_1: image_1,
-                image_2: image_2,
-                image_3: image_3,
-                image_4: image_4,
-                published_by: published_by
-            },
+            data: form_data,
+            dataType: 'text',
+            cache: false,
+            contentType: false,
+            processData: false,
             success: function (response) {
                 if (response === 'success') {
                     $.alert({
@@ -202,7 +225,7 @@ function isValidated(title, description, facebook) {
     if (description === "") {
         isDescriptionValidated = false;
         $("#description-error").html("Invalid input: Cannot be empty!");
-    } else if (description.length > 2500) {
+    } else if (description.length > 5000) {
         isDescriptionValidated = false;
         $("#description-error").html("Invalid input: Max length 2500 charactors");
     } else  {
@@ -212,12 +235,10 @@ function isValidated(title, description, facebook) {
 
     // facebook validations
     if (facebook !== "") {
-        console.log("aaa");
         if (facebook.length > 500) {
             isFacebookValidated = false;
             $("#facebook-error").html("Invalid input: Max length 2500 charactors");
         } else if (!facebook.startsWith("https://www.facebook.com")) {
-            console.log("aaa");
             isFacebookValidated = false;
             $("#facebook-error").html("Invalid input: Not a facebook url. (Url must like with https://www.facebook.com/xxxxx)");
         } else {
@@ -237,17 +258,21 @@ function deleteImage(imageIndex){
         previreImage1.setAttribute("src", '');
         $('#image-preview-src-1').hide();
         previreDefaultText1.style.display = "block";
+        deleted_images += "image_1 ";
     }else if(imageIndex === '2'){
         previreImage2.setAttribute("src", '');
         $('#image-preview-src-2').hide();
         previreDefaultText2.style.display = "block";
+        deleted_images += "image_2 ";
     }else if(imageIndex === '3'){
         previreImage3.setAttribute("src", '');
         $('#image-preview-src-3').hide();
         previreDefaultText3.style.display = "block";
+        deleted_images += "image_3 ";
     }else if(imageIndex === '4'){
         previreImage4.setAttribute("src", '');
         $('#image-preview-src-4').hide();
         previreDefaultText4.style.display = "block";
+        deleted_images += "image_4 ";
     }
 }
