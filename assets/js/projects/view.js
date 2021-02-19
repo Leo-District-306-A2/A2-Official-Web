@@ -49,7 +49,7 @@ function renderProject(project) {
                 ${project.description}
                     </p>
                     ${ project.facebook !== ""? `<a href="${ project.facebook }" class="btn btn-sm btn-primary float-left text-capitalize view-on-facebook-btn mt-5" target="_blank"><i class="icofont-facebook"></i>&nbsp;View on Facebook</a>`: "" }
-                <pre class="text-secondary text-right float-right text-capitalize">Published By: <a class="published-user-name">${project.published_by}</a><br>Published date/time: ${project.published_date}</pre>
+                <pre class="text-secondary text-right float-right text-capitalize">Published By: <a class="published-user-name">${JSON.parse(project.published_by).name ? JSON.parse(project.published_by).name : JSON.parse(project.published_by).email}</a><br>Published date/time: ${project.published_date}</pre>
                     ${ renderProjectOperations(project) }
             `;
     renderCarosel(project);
