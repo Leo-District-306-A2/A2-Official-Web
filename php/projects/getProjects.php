@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__DIR__).'../db/crud.php';
+require_once('../db/crud.php');
 $crud =  new Crud();
 
 $projects = $crud->getAllProjects();

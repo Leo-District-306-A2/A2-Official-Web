@@ -1,5 +1,5 @@
 <?php
-include_once dirname(__DIR__) . '../php/db/crud.php';
+require_once('../php/db/crud.php');
 $crud = new Crud();
 if (isset($_POST['username']) && $_POST['username'] != "" && isset($_POST['password']) && $_POST['password'] != "") {
     $username    = $_POST['username'];

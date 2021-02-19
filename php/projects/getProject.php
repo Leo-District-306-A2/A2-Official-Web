@@ -1,6 +1,6 @@
 <?php
-require_once dirname(__DIR__).'../db/crud.php';
-$crud =  new Crud();
+require_once('../db/crud.php');
+$crud = new Crud();
 
 $project = $crud->getProjectById($_GET['id']);
 if (count($project) > 0) {

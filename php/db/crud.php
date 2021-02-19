@@ -2,7 +2,7 @@
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
 
-include_once 'dbConfig.php';
+require_once('dbConfig.php');
 
 class Crud extends DbConfig
 {
@@ -69,7 +69,7 @@ class Crud extends DbConfig
         return $result;
     }
 
-    public function updateProject($id, $title, $description, $facebook, $image_1,$image_2, $image_3, $image_4, $publishedDate, $publishedBy)
+    public function updateProject($id, $title, $description, $facebook, $image_1, $image_2, $image_3, $image_4, $publishedDate, $publishedBy)
     {
         $id = $this->escape_string($id);
         $title = $this->escape_string($title);
@@ -90,4 +90,5 @@ class Crud extends DbConfig
         return $result;
     }
 }
+
 ?>
