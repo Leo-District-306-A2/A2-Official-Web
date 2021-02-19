@@ -35,6 +35,12 @@
         "notifications",
         "projects"
       ]
+    },
+    {
+      "email": "danushi@leodistrict306a2.org",
+      "authorisedFunctions": [
+        "projects"
+      ]
     }
   ]
 }
