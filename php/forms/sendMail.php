@@ -365,7 +365,7 @@ if(isset($_POST['name'])){
         }
         
     }else{
-        echo 'Please veryfy that you are not a robot!';
+        echo 'Please verify that you are not a robot!';
     }
 } else {
     echo 'Please complete the form data!';
