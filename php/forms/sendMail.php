@@ -16,9 +16,11 @@ $contactNumber = $_POST['contactNumber'];
 $homeTown = $_POST['homeTown'];
 $age = $_POST['age'];
 $message = $_POST['message'];
-
 $subject = "A2 Web | Join us request";
 $subject_submitter = "A2 Web | Received your Join Us request";
+
+// captcha
+$secretKey = '6LfELXsaAAAAANrISxAW2m-FDLZGe8gd3AOYaMlF';
 
 $body = '<!DOCTYPE html>
          <html lang="en">
@@ -322,41 +324,67 @@ $body = '<!DOCTYPE html>
                             </html>';
 
 if(isset($_POST['name'])){
+    $userResponse = $_POST['g-recaptcha-response'];
+    if($userResponse != ''){
+        $result = checkCaptcha($userResponse, $secretKey);
+        if ($result['success']) {
 
-    $mail = new PHPMailer(true);
+            $mail = new PHPMailer(true);
+            // $mail->SMTPDebug = 4;
+            // $mail->isSMTP();
+            $mail->Host = 'europe3.pvtwebs.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = $sendingEmail;
+            $mail->Password = $password;
+            $mail->SMTPSecure = 'tls';
+            $mail->Port = 465;
 
-    // $mail->SMTPDebug = 4;
+            $mail->setFrom($sendingEmail, $showingName);
+            $mail->addAddress($receivingEmail);
+            $mail->addReplyTo($sendingEmail);
+            $mail->isHTML(true);
 
-    // $mail->isSMTP();
-    $mail->Host = 'europe3.pvtwebs.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = $sendingEmail;
-    $mail->Password = $password;
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 465;
+            $mail->Subject = $subject;
+            $mail->Body    = $body;
+            $mail->AltBody = '';
 
-    $mail->setFrom($sendingEmail, $showingName);
-    $mail->addAddress($receivingEmail);
-    $mail->addReplyTo($sendingEmail);
-    $mail->isHTML(true);
-
-    $mail->Subject = $subject;
-    $mail->Body    = $body;
-    $mail->AltBody = '';
-
-    if(!$mail->send()) {
-        echo 'Message could not be sent.';
-        echo 'Mailer Error: ' . $mail->ErrorInfo;
-    } else {
-        $mail-> ClearAllRecipients( );
-        $mail->addAddress($email);
-        $mail->Subject = $subject_submitter;
-        $mail->Body    = $body_submitter;
-        $mail->send();
-        echo 'OK';
+            if(!$mail->send()) {
+                echo 'Message could not be sent.';
+                echo 'Mailer Error: ' . $mail->ErrorInfo;
+            } else {
+                $mail-> ClearAllRecipients( );
+                $mail->addAddress($email);
+                $mail->Subject = $subject_submitter;
+                $mail->Body    = $body_submitter;
+                $mail->send();
+                echo 'OK';
+            }
+        
+        } else {
+            echo 'Can\'t submit data. Please Try again!';
+        }
+        
+    }else{
+        echo 'Please veryfy that you are not a robot!';
     }
 } else {
     echo 'Please complete the form data!';
+}
+
+
+function checkCaptcha($userResponse,$secretKey){
+    $ch = curl_init();
+    $requestData = array(
+        'secret' => $secretKey,
+        'response' => $userResponse
+    );
+    curl_setopt($ch, CURLOPT_URL,"https://www.google.com/recaptcha/api/siteverify");
+    curl_setopt($ch, CURLOPT_POST, count($requestData));
+    curl_setopt($ch, CURLOPT_POSTFIELDS,http_build_query($requestData));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $result = curl_exec($ch);    
+    curl_close ($ch);
+    return json_decode($result , true);
 }
 
 ?>
