@@ -357,7 +357,7 @@
       {
         "designation": "Leo Advisor",
         "visibility_order": 6,
-        "name": "PGD Lion Kamal Seneviratne PMJF",
+        "name": "PDG Lion Kamal Seneviratne PMJF",
         "img": "leo_club_of_saegis_campus/advisor.png"
       },
       {
@@ -1053,6 +1053,130 @@
         "designation": "Leo Advisor",
         "visibility_order": 6,
         "name": "Lion Wijayasena Attygalle",
+        "img": "default_data/default_male_user.png"
+      }
+    ]
+  },
+  "Leo Club of Christ Church Boys College": {
+    "clubName": "Leo Club of Christ Church Boys' College",
+    "social_media": {
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": "",
+      "web": ""
+    },
+    "logo": "default_data/logo.png",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
+    "officers": [
+      {
+        "designation": "President",
+        "visibility_order": 1,
+        "name": "Leo Lahiru Sadavinna",
+        "img": "default_data/default_male_user.png"
+      },
+      {
+        "designation": "Vice President",
+        "visibility_order": 2,
+        "name": "Leo Yasas Bimsara",
+        "img": "default_data/default_male_user.png"
+      },
+      {
+        "designation": "Secretary",
+        "visibility_order": 4,
+        "name": "Leo Janidu Hansana",
+        "img": "default_data/default_male_user.png"
+      },
+      {
+        "designation": "Treasurer",
+        "visibility_order": 5,
+        "name": "Leo Rasindu Rasanjana",
+        "img": "default_data/default_male_user.png"
+      }
+    ]
+  },
+  "Leo Club of Christ Church Girls College": {
+    "clubName": "Leo Club of Christ Church Girls' College",
+    "social_media": {
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": "",
+      "web": ""
+    },
+    "logo": "default_data/logo.png",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
+    "officers": [
+      {
+        "designation": "President",
+        "visibility_order": 1,
+        "name": "Leo Kaveesha Rashmindi",
+        "img": "default_data/default_female_user.png"
+      },
+      {
+        "designation": "Vice President",
+        "visibility_order": 2,
+        "name": "Leo Sethini Dahamsa",
+        "img": "default_data/default_female_user.png"
+      },
+      {
+        "designation": "Secretary",
+        "visibility_order": 4,
+        "name": "Leo Sanie Withanachchi",
+        "img": "default_data/default_female_user.png"
+      },
+      {
+        "designation": "Treasurer",
+        "visibility_order": 5,
+        "name": "Leo Isurindi Malsha",
+        "img": "default_data/default_female_user.png"
+      }
+    ]
+  },
+
+  "Leo Club of Southern Metro": {
+    "clubName": "Leo Club of Southern Metro",
+    "social_media": {
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": "",
+      "web": ""
+    },
+    "logo": "default_data/logo.png",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
+    "officers": [
+      {
+        "designation": "President",
+        "visibility_order": 1,
+        "name": "Leo Sandul Siriwardana",
+        "img": "default_data/default_male_user.png"
+      },
+      {
+        "designation": "Vice President",
+        "visibility_order": 2,
+        "name": "Leo Danushka Matteo",
+        "img": "default_data/default_male_user.png"
+      },
+      {
+        "designation": "Secretary",
+        "visibility_order": 4,
+        "name": "Leo Amandi Madanayake",
+        "img": "default_data/default_female_user.png"
+      },
+      {
+        "designation": "Treasurer",
+        "visibility_order": 5,
+        "name": "Leo Sanusha Hiruditha",
         "img": "default_data/default_male_user.png"
       }
     ]

@@ -2672,7 +2672,7 @@ section {
   border-radius: 50%;
 }
 
-.view-club-officer-details {
+.view-club-officer-details, .text-modal-small {
   font-size: 13px;
 }
 

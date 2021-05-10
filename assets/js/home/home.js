@@ -30,27 +30,29 @@ function viewClub(club) {
     let social_html = "";
     let officers_html = "";
     let newsLetter_html = "";
+    if(socialMedia['web'] !== "" || socialMedia['facebook'] !== "" || socialMedia['instagram'] !== "" || socialMedia['linkedin'] !== "" || socialMedia['youtube'] !== "") {
+        if (socialMedia['web'] !== "") {
+            social_html += `<a href="${socialMedia['web']}" title="View club website" target="_blank"><i class="icofont-web"></i></a>`
+        }
 
-    if (socialMedia['web'] !== "") {
-        social_html += `<a href="${socialMedia['web']}" title="View club website" target="_blank"><i class="icofont-web"></i></a>`
+        if (socialMedia['facebook'] !== "") {
+            social_html += `<a href="${socialMedia['facebook']}" title="View club facebook" target="_blank"><i class="bx bxl-facebook"></i></a>`
+        }
+
+        if (socialMedia['instagram'] !== "") {
+            social_html += `<a href="${socialMedia['instagram']}" title="View club instagram" target="_blank"><i class="bx bxl-instagram"></i></a>`
+        }
+
+        if (socialMedia['linkedin'] !== "") {
+            social_html += `<a href="${socialMedia['linkedin']}" title="View club linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>`
+        }
+
+        if (socialMedia['youtube'] !== "") {
+            social_html += `<a href="${socialMedia['youtube']}" title="View club youtube" target="_blank"><i class="bx bxl-youtube"></i></a>`
+        }
+    } else {
+        social_html += `<p class="text-sm-center text-modal-small"> No published social media sites</p>`;
     }
-
-    if (socialMedia['facebook'] !== "") {
-        social_html += `<a href="${socialMedia['facebook']}" title="View club facebook" target="_blank"><i class="bx bxl-facebook"></i></a>`
-    }
-
-    if (socialMedia['instagram'] !== "") {
-        social_html += `<a href="${socialMedia['instagram']}" title="View club instagram" target="_blank"><i class="bx bxl-instagram"></i></a>`
-    }
-
-    if (socialMedia['linkedin'] !== "") {
-        social_html += `<a href="${socialMedia['linkedin']}" title="View club linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>`
-    }
-
-    if (socialMedia['youtube'] !== "") {
-        social_html += `<a href="${socialMedia['youtube']}" title="View club youtube" target="_blank"><i class="bx bxl-youtube"></i></a>`
-    }
-
     if (officers.length !== 0) {
         for(let i=0; i < officers.length; i++) {
             if(i % 2 === 0) {
