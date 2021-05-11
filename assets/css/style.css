@@ -3040,5 +3040,11 @@ and (-webkit-min-device-pixel-ratio: 1) {
   }
 }
 
-
+.image-note strong{
+  color: red;
+}
+.image-note p{
+  color: rgb(175, 121, 4);
+  font-style: italic;
+}
 
