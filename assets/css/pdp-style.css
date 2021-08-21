@@ -1,18 +1,30 @@
-body{
+:root {
+    --primaryColor: #00649b;
+    --secondaryColor: #ffc50c;
+    --thirdColor: #d00000;
+    --fouthColor: #009036;
+    /* --primaryColor: #00649b;
+    --secondaryColor: #d00000;
+    --thirdColor: #ffc50c;
+    --fouthColor: #009036; */
+}
+
+body {
     /* padding-top: 100px; */
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.card{
+.card {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    /* border-radius: 15px; */
+    border-radius: 15px;
     margin-bottom: 35px;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid whitesmoke;
+    border: 1px solid var(--primaryColor);
+    min-width: 100%;
 }
 
-.img11 img{
+.img11 img {
     height: 300px;
     /* border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -22,7 +34,7 @@ body{
     width: 100%;
 }
 
-.img22 img{
+.img22 img {
     position: relative;
     display: block;
     margin-left: auto;
@@ -31,33 +43,43 @@ body{
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 3px solid var(--primaryColor);
     margin-top: -80px;
 }
 
-.main-text{
+.main-text {
     padding: 5px 0;
     text-align: center;
 }
 
-.main-text h4{
+.main-text h4 {
     color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.main-text p i{
+.main-text p {
+    color: rgba(255, 255, 255, 0.3);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main-text p i {
     text-transform: initial;
 }
 
-.main-text h4{
+.main-text h4 {
     font-weight: 900;
     font-size: 20px;
     margin: 0 0 20px;
 }
-.socials{
+
+.socials {
     text-align: center;
     padding-bottom: 20px;
 }
-.socials i{
+
+.socials i {
     font-size: 20px;
     color: darkslategrey;
     padding: 0 10px;
