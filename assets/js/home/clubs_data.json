@@ -1943,11 +1943,11 @@
   "Leo Club of Colombo Monarch": {
     "clubName": "Leo Club of Colombo Monarch",
     "social_media": {
-      "facebook": "https://www.facebook.com/leoclub.usjp",
-      "instagram": "https://www.instagram.com/leo_club_usj/?hl=en",
-      "linkedin": "https://www.linkedin.com/in/leousj/",
-      "youtube": "https://www.youtube.com/channel/UC7iH29ENao-tQL7XtcoJRVQ",
-      "web": "https://sites.google.com/view/jpura-leos/"
+      "facebook": null,
+      "instagram": null,
+      "linkedin": null,
+      "youtube": null,
+      "web": null
     },
     "newsletter": {
       "name": "",
