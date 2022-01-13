@@ -2,7 +2,14 @@
 require_once('../db/crud.php');
 $crud =  new Crud();
 
-$projects = $crud->getAllProjects();
+$start = $_GET['start'];
+$size = $_GET['size'];
 
-echo json_encode($projects);
+$projects = $crud->getProjectsRange($start, $size);
+$projects_count = $crud->getProjectCount();
+$projectsDetails = new \stdClass();
+$projectsDetails->projects = $projects;
+$projectsDetails->count = $projects_count;
+
+echo json_encode($projectsDetails);
 ?>

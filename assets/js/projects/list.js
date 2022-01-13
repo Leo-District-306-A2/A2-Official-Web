@@ -1,8 +1,13 @@
+
+let page_number = new URLSearchParams(window.location.search).get('page');
+let pageNumber = 1;
+pageNumber = page_number ? page_number : 1
+pageNumber = parseInt(pageNumber);
 let isSignedIn = sessionStorage.getItem("isSignedIn");
 let signedUser = JSON.parse(sessionStorage.getItem("signedUser"));
 let projects = [];
-let pageNumber = 1;
 let pageSize = 10;
+let projectCount = 0;
 
 function renderProjectOperations(project, index) {
     if (isSignedIn && signedUser.authorisedFunctions.includes("projects")) {
@@ -67,11 +72,11 @@ function renderProject(project, index) {
 
 function renderProjects(pageNumber) {
     let projects_html = "";
-    let page_projects = paginate(projects, pageNumber);
+    // let page_projects = paginate(projects, pageNumber);
     $('#projects').html("");
     if (projects.length > 0) {
-        for (i = 0; i < page_projects.length; i++) {
-            projects_html += renderProject(page_projects[i], i);
+        for (i = 0; i < projects.length; i++) {
+            projects_html += renderProject(projects[i], i);
         }
         $('#projects').html(projects_html);
         renderPagination(projects, pageNumber);
@@ -94,7 +99,7 @@ function renderPagination(projects, activePage) {
           </li>
           `;
 
-        let pagesCount = Math.ceil(projects.length / pageSize);
+        let pagesCount = Math.ceil(projectCount / pageSize);
         for (i = 0; i < pagesCount; i++) {
             if (i === activePage - 1) {
                 out_html += `<li class="page-item"><button class="page-link page-link-active" onclick="navigateToPage(${i + 1})">${i + 1}</button></li>`;
@@ -119,20 +124,23 @@ function renderPagination(projects, activePage) {
 function previousPageClicked() {
     if (pageNumber !== 1) {
         pageNumber -= 1;
-        renderProjects(pageNumber);
+        window.location.href = `?page=${pageNumber}`;
+        // renderProjects(pageNumber);
     }
 }
 
 function nextPageClicked() {
-    if (pageNumber !== Math.ceil(projects.length / pageSize)) {
+    if (pageNumber !== Math.ceil(projectCount / pageSize)) {
         pageNumber += 1;
-        renderProjects(pageNumber);
+        window.location.href = `?page=${pageNumber}`;
+        // renderProjects(pageNumber);
     }
 }
 
 function navigateToPage(page) {
     pageNumber = page;
-    renderProjects(pageNumber);
+    window.location.href = `?page=${pageNumber}`;
+    // renderProjects(pageNumber);
 }
 
 function paginate(array, page_number) {
@@ -217,10 +225,16 @@ function removePreloader() {
 $.ajax({
     url: '../../php/projects/getProjects.php',
     type: 'GET',
+    data:{
+        start: ( pageNumber -1 ) * pageSize,
+        size: pageSize
+    },
     success: function (response) {
         // console.log(response);
-        projects = JSON.parse(response);
-        // console.log(projects);
+        projectDetails = JSON.parse(response);
+        projects = projectDetails['projects'];
+        projectCount = parseInt(projectDetails['count'][0]['project_count']);
+        // console.log(pageNumber);
         renderProjects(pageNumber);
     }
 });

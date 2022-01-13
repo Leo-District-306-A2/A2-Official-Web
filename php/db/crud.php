@@ -62,6 +62,19 @@ class Crud extends DbConfig
         return $result;
     }
 
+    public function getProjectsRange($start, $size)
+    {
+        $query = "SELECT * FROM projects ORDER BY published_date DESC LIMIT ".$start." , ".$size;
+        $result = $this->getData($query);
+        return $result;
+    }
+
+    public function getProjectCount(){
+        $query = "SELECT COUNT(*) as project_count FROM projects";
+        $result = $this->getData($query);
+        return $result;
+    }
+
     public function getProjectById($id)
     {
         $query = "SELECT * FROM projects WHERE id = '$id'";
