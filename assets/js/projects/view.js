@@ -14,20 +14,20 @@ function renderCarosel(project) {
             </ol>
             <div class="carousel-inner">
                 ${project.image_1 !== "" ? `<div class="carousel-item active">
-                <img class="d-block w-100" src="${project.image_1}" alt="First slide">
+                <img class="d-block w-75" style="max-height: 80vh; margin-left:auto; margin-right:auto;" src="${project.image_1}" alt="First slide">
               </div>` : ""}
               ${project.image_2 !== "" ? `<div class="carousel-item">
-                <img class="d-block w-100" src="${project.image_2}" alt="Second slide">
+                <img class="d-block w-75" style="max-height: 80vh; margin-left:auto; margin-right:auto;" src="${project.image_2}" alt="Second slide">
               </div>` : ""}
               ${project.image_3 !== "" ? `<div class="carousel-item">
-                <img class="d-block w-100" src="${project.image_3}" alt="Third slide">
+                <img class="d-block w-75" style="max-height: 80vh; margin-left:auto; margin-right:auto;" src="${project.image_3}" alt="Third slide">
               </div>` : ""}
               ${project.image_4 !== "" ? `<div class="carousel-item">
-                <img class="d-block w-100" src="${project.image_1}" alt="Fourth slide">
+                <img class="d-block w-75" style="max-height: 80vh; margin-left:auto; margin-right:auto;" src="${project.image_1}" alt="Fourth slide">
               </div>` : ""}
               
               ${project.image_1 === "" && project.image_2 === "" && project.image_3 === "" && project.image_4 === "" ? `<div class="carousel-item active">
-                <img class="d-block w-100" src="../../../assets/img/projects/default.png" alt="First slide">
+                <img class="d-block w-75" style="max-height: 80vh; margin-left:auto; margin-right:auto;" src="../../../assets/img/projects/default.png" alt="First slide">
               </div>` : ""}
             </div>
             <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
