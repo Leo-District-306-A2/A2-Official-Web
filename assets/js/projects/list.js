@@ -218,7 +218,9 @@ $.ajax({
     url: '../../php/projects/getProjects.php',
     type: 'GET',
     success: function (response) {
+        // console.log(response);
         projects = JSON.parse(response);
+        // console.log(projects);
         renderProjects(pageNumber);
     }
 });

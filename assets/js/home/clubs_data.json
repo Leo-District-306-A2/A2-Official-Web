@@ -907,17 +907,6 @@
           "mylci": "5190464",
           "address": "330, Makola North, Makola",
           "img": "leo_club_of_kesbewa/treasurer.png"
-      },
-      {
-          "designation": "Leo Advisor",
-          "visibility_order": 6,
-          "name": "Lion Amal Ravinatha",
-          "gender": "Male",
-          "lions club": "Lions club of Kesbewa",
-          "phone": "0714244259",
-          "email": "",
-          "address": "27/B/2, Gorakagahawatta Road, Kesbewa, Piliyandala",
-          "img": "leo_club_of_kesbewa/leo_advisor.png"
       }
   ]
   },
