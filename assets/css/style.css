@@ -12,15 +12,15 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-  background-color: #121221;
+  background-color: #2f1254;
 }
 
 a {
-  color: #1977cc;
+  color: #db4729;
 }
 
 a:hover {
-  color: #3291e6;
+  color: #fb7325;
   text-decoration: none;
 }
 
@@ -163,7 +163,7 @@ A2 CLUBS SECTION
 }
 
 .point-description {
-  color: #1c97cf;
+  color: #f55e29;
   padding-left: 20px;
   font-size: 14px;
 }
@@ -198,7 +198,7 @@ A2 CLUBS SECTION
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background: #1977cc;
+  background: #db4729;
   color: #fff;
   transition: all 0.4s;
 }
@@ -267,7 +267,7 @@ A2 CLUBS SECTION
 }
 
 #topbar .contact-info a:hover {
-  color: #1977cc;
+  color: #db4729;
 }
 
 #topbar .contact-info i {
@@ -289,7 +289,7 @@ A2 CLUBS SECTION
 }
 
 #topbar .social-links a:hover {
-  color: #1977cc;
+  color: #db4729;
 }
 
 #topbar .social-links a:first-child {
@@ -416,7 +416,7 @@ A2 CLUBS SECTION
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active>a, .nav-menu .drop-down ul li:hover>a {
-  color: #1977cc;
+  color: #db4729;
 }
 
 .nav-menu .drop-down>a:after {
@@ -473,7 +473,7 @@ A2 CLUBS SECTION
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #1c97cf;
+  color: #f55e29;
 }
 
 #contact .contact-info address, #contact .contact-info p {
@@ -494,7 +494,7 @@ A2 CLUBS SECTION
 }
 
 #contact .contact-info a:hover {
-  color: #1c97cf;
+  color: #f55e29;
 }
 
 #contact .contact-address, #contact .contact-phone, #contact .contact-email {
@@ -585,11 +585,11 @@ A2 CLUBS SECTION
 }
 
 #contact .php-email-form input::focus, #contact .php-email-form textarea::focus {
-  background-color: #1c97cf;
+  background-color: #f55e29;
 }
 
 #contact .php-email-form button[type="submit"] {
-  background: #1c97cf;
+  background: #f55e29;
   border: 0;
   border-radius: 3px;
   padding: 10px 30px;
@@ -599,7 +599,7 @@ A2 CLUBS SECTION
 }
 
 #contact .php-email-form button[type="submit"]:hover {
-  background: #1c97cf;
+  background: #f55e29;
 }
 
 @-webkit-keyframes animate-loading {
@@ -623,7 +623,7 @@ A2 CLUBS SECTION
 /* Get Startet Button */
 
 .appointment-btn {
-  /* background: #1c97cf; */
+  /* background: #f55e29; */
   color: #fff;
   border-radius: 50px;
   padding: 8px 25px;
@@ -634,7 +634,7 @@ A2 CLUBS SECTION
 }
 
 .join-now {
-  background: linear-gradient(to right, #1c97cf, #7cb341);
+  background: linear-gradient(to right, #f55e29, #7cb341);
   border-radius: 50px 0 0 50px;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -651,16 +651,16 @@ A2 CLUBS SECTION
 
 .sign-in, .signed-user {
   border-radius: 0 50px 50px 0;
-  background: linear-gradient(to left, #1c97cf, #7cb341);
+  background: linear-gradient(to left, #f55e29, #7cb341);
   border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .join-now:hover {
-  background: linear-gradient(to left, #1c97cf, #7cb341);
+  background: linear-gradient(to left, #f55e29, #7cb341);
 }
 
 .sign-in:hover, .signed-user:hover {
-  background: linear-gradient(to right, #1c97cf, #7cb341);
+  background: linear-gradient(to right, #f55e29, #7cb341);
 }
 
 .appointment-btn:hover {
@@ -701,7 +701,7 @@ A2 CLUBS SECTION
 }
 
 .mobile-nav-toggle i {
-  color: #1977cc;
+  color: #db4729;
 }
 
 .mobile-nav {
@@ -737,7 +737,7 @@ A2 CLUBS SECTION
 }
 
 .mobile-nav a:hover, .mobile-nav .active>a, .mobile-nav li:hover>a {
-  color: #1977cc;
+  color: #db4729;
   text-decoration: none;
 }
 
@@ -837,11 +837,11 @@ A2 CLUBS SECTION
   border-radius: 50px;
   transition: 0.5s;
   color: #fff;
-  background: #1977cc;
+  background: #db4729;
 }
 
 #hero .btn-get-started:hover {
-  background: #3291e6;
+  background: #fb7325;
 }
 
 @media (min-width: 1024px) {
@@ -933,7 +933,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #1c97cf;
+  color: #f55e29;
 
 }
 
@@ -958,7 +958,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #1977cc;
+  background: #db4729;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -1067,7 +1067,7 @@ section {
 }
 
 .logos .member .social a:hover {
-  color: #1977cc;
+  color: #db4729;
 }
 
 .logos .member .social i {
@@ -1258,7 +1258,7 @@ section {
 }
 
 .why-us .content .more-btn:hover {
-  color: #1977cc;
+  color: #db4729;
   background: #fff;
 }
 
@@ -1273,7 +1273,7 @@ section {
 
 .why-us .icon-boxes .icon-box i {
   font-size: 40px;
-  color: #1977cc;
+  color: #db4729;
   margin-bottom: 30px;
 }
 
@@ -1384,7 +1384,7 @@ section {
 
 .btn-theme{
   text-decoration: none;
-  color:#1c97cf;
+  color:#f55e29;
 }
 
 .btn-theme button :hover{
@@ -1462,13 +1462,13 @@ section {
 }
 
 .about .icon-box .icon i {
-  color: #1977cc;
+  color: #db4729;
   font-size: 32px;
 }
 
 .about .icon-box:hover .icon {
-  background: #1977cc;
-  border-color: #1977cc;
+  background: #db4729;
+  border-color: #db4729;
 }
 
 .about .icon-box:hover .icon i {
@@ -1488,7 +1488,7 @@ section {
 }
 
 .about .icon-box .title a:hover {
-  color: #1977cc;
+  color: #db4729;
 }
 
 .about .icon-box .description {
@@ -1505,7 +1505,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#1977cc 50%, rgba(25, 119, 204, 0.4) 52%);
+  background: radial-gradient(#db4729 50%, rgba(25, 119, 204, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -1553,7 +1553,7 @@ section {
 }
 
 .about .play-btn:hover::after {
-  border-left: 15px solid #1977cc;
+  border-left: 15px solid #db4729;
   transform: scale(20);
 }
 
@@ -1647,7 +1647,7 @@ section {
   font-size: 48px;
   display: block;
   font-weight: 700;
-  color: #1c97cf;
+  color: #f55e29;
 }
 
 .counts2 .counters span {
@@ -1709,7 +1709,7 @@ section {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #1977cc;
+  background: #db4729;
   border-radius: 5px;
   transition: all .3s ease-out 0s;
   display: flex;
@@ -1754,8 +1754,8 @@ section {
 }
 
 .services .icon-box:hover {
-  background: #1977cc;
-  border-color: #1977cc;
+  background: #db4729;
+  border-color: #db4729;
 }
 
 .services .icon-box:hover .icon {
@@ -1763,11 +1763,11 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #1977cc;
+  color: #db4729;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #3291e6;
+  background: #fb7325;
 }
 
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
@@ -1842,7 +1842,7 @@ section {
 }
 
 .appointment .php-email-form input:focus, .appointment .php-email-form textarea:focus, .appointment .php-email-form select:focus {
-  border-color: #1977cc;
+  border-color: #db4729;
 }
 
 .appointment .php-email-form input, .appointment .php-email-form select {
@@ -1856,7 +1856,7 @@ section {
 
 
 .appointment .php-email-form button[type="submit"] {
-  background: #1c97cf;
+  background: #f55e29;
   border: 20px;
   padding: 10px 30px;
   color: #fff;
@@ -1892,12 +1892,12 @@ section {
 }
 
 .departments .nav-link:hover {
-  color: #1977cc;
+  color: #db4729;
 }
 
 .departments .nav-link.active {
-  color: #1977cc;
-  border-color: #1977cc;
+  color: #db4729;
+  border-color: #db4729;
 }
 
 .departments .tab-pane.active {
@@ -1927,7 +1927,7 @@ section {
   }
   .departments .nav-link.active {
     color: #fff;
-    background: #1977cc;
+    background: #db4729;
   }
 }
 
@@ -2020,7 +2020,7 @@ section {
 }
 
 .doctors .member .social a:hover {
-  background: #1977cc;
+  background: #db4729;
 }
 
 .doctors .member .social a+a {
@@ -2091,7 +2091,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #1977cc;
+  color: #db4729;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -2185,7 +2185,7 @@ section {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #1977cc !important;
+  background-color: #db4729 !important;
 }
 
 @media (max-width: 767px) {
@@ -2231,7 +2231,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #1977cc;
+  color: #db4729;
   float: left;
   width: 44px;
   height: 44px;
@@ -2263,7 +2263,7 @@ section {
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #1977cc;
+  background: #db4729;
   color: #fff;
 }
 
@@ -2341,7 +2341,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #1977cc;
+  background: #db4729;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -2428,7 +2428,7 @@ section {
 #footer .social-links a , .view-club-social-link a{
   font-size: 18px;
   display: inline-block;
-  background: #1c97cf;
+  background: #f55e29;
   color: #fff;
   line-height: 1;
   padding: 9px 0;
@@ -2441,7 +2441,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #1c97cf;
+  background: #f55e29;
   color: #fff;
   text-decoration: none;
 }
@@ -2455,12 +2455,12 @@ section {
 }
 
 #footer .credits a {
-  color: #1c97cf;
+  color: #f55e29;
   transition: 0.3s;
 }
 
 #footer .credits a:hover {
-  color: #1c97cf;
+  color: #f55e29;
 }
 
 .modal-logo {
@@ -2642,7 +2642,7 @@ section {
   height: 36px;
   font-size: 12px;
   font-weight: bold;
-  background-color: #1c97cf;
+  background-color: #f55e29;
   border-radius: 50%;
   border: none;
   color: white;
@@ -2685,10 +2685,10 @@ section {
 }
 
 .news-letter-library-btn {
-  background-color: #1c97cf;
+  background-color: #f55e29;
   border-radius: 40px;
   box-sizing: border-box;
-  color: #1c97cf;
+  color: #f55e29;
   display: block;
   letter-spacing: 1px;
   margin: 0 auto;
