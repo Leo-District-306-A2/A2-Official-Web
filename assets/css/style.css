@@ -933,7 +933,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #1c97cf;
+  color: #3db7bc;
 
 }
 
@@ -958,7 +958,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #1977cc;
+  background: #3db7bc;
   bottom: 0;
   left: calc(50% - 20px);
 }
