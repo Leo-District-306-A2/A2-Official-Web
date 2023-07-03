@@ -3048,3 +3048,30 @@ and (-webkit-min-device-pixel-ratio: 1) {
   font-style: italic;
 }
 
+/* -----------------------------------------------------------
+#DISTRICT PROJECTS
+------------------------------------------------------------ */
+.disctproject h3{
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  padding: 5px;
+}
+
+.disctproject img{
+  margin-top: 0px !important;
+  width: 80%;
+}
+
+#graph{
+  color: #ffffff;
+  text-align: justify;
+}
+
+.img-effect {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.img-effect:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #2bb673;
+}
