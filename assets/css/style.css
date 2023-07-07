@@ -163,9 +163,9 @@ A2 CLUBS SECTION
 }
 
 .point-description {
-  color: #1c97cf;
+  color: #2bb673;
   padding-left: 20px;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 @media (max-width: 992px) {
