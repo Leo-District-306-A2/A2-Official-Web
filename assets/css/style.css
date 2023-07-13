@@ -111,23 +111,23 @@ A2 CLUBS SECTION
 #preloader:before {
   content: "";
   position: fixed;
-  top: calc(50% - 35px);
-  left: calc(50% - 35px);
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
   border: 6px solid #46d1bf;
   border-top-color: darkgray;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
 }
 
 #preloader-image {
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 90px;
   position: fixed;
-  top: calc(50% - 25px);
-  left: calc(50% - 25px);
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
 }
 
 @-webkit-keyframes animate-preloader {
