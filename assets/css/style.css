@@ -508,10 +508,10 @@ A2 CLUBS SECTION
 }
 
 @media (min-width: 768px) {
-  #contact .contact-phone {
-    /* border-left: 1px solid #ddd; */
+  /* #contact .contact-phone {
+    border-left: 1px solid #ddd;
    
-  }
+  } */
 }
 
 #contact #google-map {
@@ -2529,8 +2529,8 @@ section {
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-}
+/* ::-webkit-scrollbar-thumb:hover {
+} */
 
 .nav-pills .nav-link {
   color: white;
