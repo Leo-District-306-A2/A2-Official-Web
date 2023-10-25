@@ -17,25 +17,25 @@
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Narmada Guruge",
-        "img": "leo_club_of_baddegama/president.png"
+        "name": "Leo Lahiru Sandavinna",
+        "img": "leo_club_of_baddegama/president.jpg"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Iruki Amaya Salwathura",
-        "img": "leo_club_of_baddegama/vice_president.jpeg"
+        "name": "Leo Yasiru Kavishka",
+        "img": "leo_club_of_baddegama/vice_president.jpg"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Malsha Madushani",
+        "name": "Leo Ishani Vindya",
         "img": "leo_club_of_baddegama/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Ishini Sewwandhi",
+        "name": "Leo Raveesha Vikum",
         "img": "leo_club_of_baddegama/treasurer.png"
       },
       {
