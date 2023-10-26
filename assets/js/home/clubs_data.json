@@ -1,4 +1,51 @@
 {
+  "Leo Club of Arawwala": {
+    "clubName": "Leo Club of Arawwala",
+    "social_media": {
+      "facebook": "https://www.facebook.com/profile.php?id=100091329194623",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": "",
+      "web": ""
+    },
+    "logo": "leo_club_of_arawwala/logo.jpg",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
+    "officers": [
+      {
+        "designation": "President",
+        "visibility_order": 1,
+        "name": "Leo Ruveen Vishmitha",
+        "img": "leo_club_of_arawwala/president.jpeg"
+      },
+      {
+        "designation": "Vice President",
+        "visibility_order": 2,
+        "name": "Leo Sathnidu Alwis",
+        "img": "leo_club_of_arawwala/vice_president.jpeg"
+      },
+      {
+        "designation": "Secretary",
+        "visibility_order": 4,
+        "name": "Leo Ikshi Sahasna",
+        "img": "leo_club_of_arawwala/secretary.jpeg"
+      },
+      {
+        "designation": "Treasurer",
+        "visibility_order": 5,
+        "name": "Leo Dinuli Siriwardena",
+        "img": "leo_club_of_arawwala/treasurer.jpeg"
+      },
+      {
+        "designation": "Leo Advisor",
+        "visibility_order": 6,
+        "name": "Disna Caldera",
+        "img": "leo_club_of_arawwala/advisor.jpeg"
+      }
+    ]
+  },
   "Leo Club of Baddegama": {
     "clubName": "Leo Club of Baddegama",
     "social_media": {
@@ -10,14 +57,14 @@
     },
     "logo": "leo_club_of_baddegama/logo.png",
     "newsletter": {
-      "name": "The Bottom Line",
-      "library_link": "http://anyflip.com/bookcase/izfqr"
+      "name": "",
+      "library_link": ""
     },
     "officers": [
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Lahiru Sandavinna",
+        "name": "Leo Ishani Vindya",
         "img": "leo_club_of_baddegama/president.jpg"
       },
       {
@@ -46,50 +93,185 @@
       }
     ]
   },
-  "Leo Club of Mattegoda": {
-    "clubName": "Leo Club of Mattegoda",
+  "Leo Club of Colombo Monarch": {
+    "clubName": "Leo Club of Colombo Monarch",
     "social_media": {
-      "facebook": "https://www.facebook.com/mattegodaleos",
-      "instagram": "https://www.instagram.com/leo_club_of_mattegoda/?hl=en",
-      "linkedin": "",
-      "youtube": "https://www.youtube.com/channel/UCPBMH2mmXMRqyKWMcXzBbIw",
-      "web": "https://www.slfind.lk/121193214620771"
+      "facebook": "https://www.facebook.com/MonarchLeos",
+      "instagram": "https://www.instagram.com/lc_colombo_monarch/",
+      "linkedin": "https://www.linkedin.com/company/leo-club-of-colombo-monarch/",
+      "youtube": "https://www.youtube.com/@leoclubofcolombomonarch839",
+      "web": "https://monarchleos.org/"
     },
-    "logo": "leo_club_of_mattegoda/logo.png",
+    "logo": "leo_club_of_colombo_monarch/logo.jpg",
     "newsletter": {
-      "name": "The Communique",
-      "library_link": "https://anyflip.com/bookcase/bpfic"
+      "name": "",
+      "library_link": ""
     },
     "officers": [
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Dulith Fernando",
-        "img": "leo_club_of_mattegoda/president.png"
-      },
-      {
-        "designation": "Vice President",
-        "visibility_order": 2,
-        "name": "Leo Malki Paranawithana",
-        "img": "leo_club_of_mattegoda/vice_president.png"
+        "name": "Leo Nipuna Milan Kodithuwakku",
+        "img": "leo_club_of_colombo_monarch/president.jpg"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Mishani Tharukie",
-        "img": "leo_club_of_mattegoda/secretary.png"
+        "name": "Leo Dilhara Sahani Karunanayake",
+        "img": "leo_club_of_colombo_monarch/secretary.jpg"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Poorna Balasooriya",
-        "img": "leo_club_of_mattegoda/treasurer.png"
+        "name": "Leo Ashen Gnanathilaka",
+        "img": "leo_club_of_colombo_monarch/treasurer.jpg"
       },
       {
         "designation": "Leo Advisor",
         "visibility_order": 6,
-        "name": "Lion Hettige Niroshana Perera",
-        "img": "leo_club_of_mattegoda/advisor.png"
+        "name": "Lion Thulitha Piyasena",
+        "img": "leo_club_of_colombo_monarch/advisor.jpg"
+      }
+    ]
+  },
+  "Leo Club of Deniyaya": {
+    "clubName": "Leo Club of Deniyaya",
+    "social_media": {
+      "facebook": "https://www.facebook.com/profile.php?id=100083876276551",
+      "instagram": "https://www.instagram.com/deniyaya_leos/",
+      "linkedin": "https://www.linkedin.com/in/leo-club-of-deniyaya-39b756271/",
+      "youtube": "https://www.youtube.com/@leoclubofdeniyaya5011/featured",
+      "web": ""
+    },
+    "logo": "leo_club_of_deniyaya/logo.jpg",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
+    "officers": [
+      {
+        "designation": "President",
+        "visibility_order": 1,
+        "name": "Leo Lakshitha Udaranga",
+        "img": "leo_club_of_deniyaya/president.jpg"
+      },
+      {
+        "designation": "Vice President",
+        "visibility_order": 2,
+        "name": "Leo Hasitha Hiranya Godevithana",
+        "img": "leo_club_of_deniyaya/vice_president.jpeg"
+      },
+      {
+        "designation": "Secretary",
+        "visibility_order": 4,
+        "name": "Leo Sewmini Chamika Dahanayaka",
+        "img": "leo_club_of_deniyaya/secretary.jpg"
+      },
+      {
+        "designation": "Treasurer",
+        "visibility_order": 5,
+        "name": "Leo Ayomal Weerasinhe",
+        "img": "leo_club_of_deniyaya/treasurer.jpg"
+      },
+      {
+        "designation": "Leo Advisor",
+        "visibility_order": 6,
+        "name": "Mr. Malith liyanage",
+        "img": "leo_club_of_deniyaya/advisor.jpg"
+      }
+    ]
+  },
+  "Leo Club of Ethos International College": {
+    "clubName": "Leo Club of Ethos International College",
+    "social_media": {
+      "facebook": "",
+      "instagram": "https://www.instagram.com/leoclubofeic/",
+      "linkedin": "",
+      "youtube": "",
+      "web": ""
+    },
+    "logo": "leo_club_of_ethos_international_college/logo.jpg",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
+    "officers": [
+      {
+        "designation": "President",
+        "visibility_order": 1,
+        "name": "Leo Sanduni Wanasinghe",
+        "img": "leo_club_of_ethos_international_college/president.jpg"
+      },
+      {
+        "designation": "Vice President",
+        "visibility_order": 2,
+        "name": "Leo Anupa Vitharana",
+        "img": "leo_club_of_ethos_international_college/vice_president.jpeg"
+      },
+      {
+        "designation": "Secretary",
+        "visibility_order": 4,
+        "name": "Leo Preksha Wijesuriya",
+        "img": "leo_club_of_ethos_international_college/secretary.jpg"
+      },
+      {
+        "designation": "Treasurer",
+        "visibility_order": 5,
+        "name": "Leo Dinethmi Hettiarachchi",
+        "img": "leo_club_of_ethos_international_college/treasurer.jpg"
+      },
+      {
+        "designation": "Leo Advisor",
+        "visibility_order": 6,
+        "name": "Mr. Anthony Sepion",
+        "img": "leo_club_of_ethos_international_college/advisor.jpg"
+      }
+    ]
+  },
+  "Leo Club of Matara Marians": {
+    "clubName": "Leo Club of Matara Marians",
+    "social_media": {
+      "facebook": "https://www.facebook.com/profile.php?id=100095294208668",
+      "instagram": "https://www.instagram.com/leos_of_matara_marian/",
+      "linkedin": "https://www.linkedin.com/in/leo-matara-marians-97745a26a/",
+      "youtube": "",
+      "web": ""
+    },
+    "logo": "leo_club_of_matara_marians/logo.jpeg",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
+    "officers": [
+      {
+        "designation": "President",
+        "visibility_order": 1,
+        "name": "Leo Irushi Abeygunawardane",
+        "img": "leo_club_of_matara_marians/president.jpeg"
+      },
+      {
+        "designation": "Vice President",
+        "visibility_order": 2,
+        "name": "Leo Subanya Dayawasa",
+        "img": "leo_club_of_matara_marians/vice_president.jpeg"
+      },
+      {
+        "designation": "Secretary",
+        "visibility_order": 4,
+        "name": "Leo Chanika Rumeshi",
+        "img": "leo_club_of_matara_marians/secretary.jpeg"
+      },
+      {
+        "designation": "Treasurer",
+        "visibility_order": 5,
+        "name": "Leo Hashma Humam",
+        "img": "leo_club_of_matara_marians/treasurer.jpeg"
+      },
+      {
+        "designation": "Leo Advisor",
+        "visibility_order": 6,
+        "name": "Mr. Themiya Wijesena",
+        "img": "leo_club_of_matara_marians/advisor.jpeg"
       }
     ]
   },
@@ -100,68 +282,9 @@
       "instagram": "https://www.instagram.com/sltcleos/?hl=en",
       "linkedin": "https://www.linkedin.com/company/sltcleos/",
       "youtube": "https://www.youtube.com/channel/UC-Rlcq4JyGRF88ndVvkGFQA",
-      "web": "https://sites.google.com/view/sltcleos"
-    },
-    "logo": "leo_club_of_sri_lanka_technological_campus/logo.png",
-    "newsletter": {
-      "name": "The Leo Times",
-      "library_link": "https://anyflip.com/bookcase/cpbbq"
-    },
-    "officers": [
-      {
-        "designation": "President",
-        "visibility_order": 1,
-        "name": "Leo Nisal Samarasinghe",
-        "img": "leo_club_of_sri_lanka_technological_campus/president.png"
-      },
-      {
-        "designation": "Vice President",
-        "visibility_order": 2,
-        "name": "Leo Lahiru Sandaruwan",
-        "img": "leo_club_of_sri_lanka_technological_campus/vice_president.png"
-      },
-      {
-        "designation": "Second Vice President",
-        "visibility_order": 3,
-        "name": "Leo Nirmal Gunaratne",
-        "img": "leo_club_of_sri_lanka_technological_campus/vice_president_2.png"
-      },
-      {
-        "designation": "Secretary",
-        "visibility_order": 4,
-        "name": "Leo Thilina Dananjaya",
-        "img": "leo_club_of_sri_lanka_technological_campus/secretary.png"
-      },
-      {
-        "designation": "Treasurer",
-        "visibility_order": 5,
-        "name": "Leo Lahiru Thilakarathne",
-        "img": "leo_club_of_sri_lanka_technological_campus/treasurer.png"
-      },
-      {
-        "designation": "Leo Advisor",
-        "visibility_order": 6,
-        "name": "Lion Noel Palliyaguru",
-        "img": "leo_club_of_sri_lanka_technological_campus/advisor.png"
-      },
-      {
-        "designation": "Staff Advisor",
-        "visibility_order": 7,
-        "name": "Ms. Pabasara Amarawardane",
-        "img": "leo_club_of_sri_lanka_technological_campus/staff_advisor.png"
-      }
-    ]
-  },
-  "Leo Club of Werahera": {
-    "clubName": "Leo Club of Werahera",
-    "social_media": {
-      "facebook": "https://www.facebook.com/WeraheraLeos",
-      "instagram": "https://www.instagram.com/leos_of_werahera/?hl=en",
-      "linkedin": "",
-      "youtube": "",
       "web": ""
     },
-    "logo": "default_data/logo.png",
+    "logo": "leo_club_of_sri_lanka_technological_campus/logo.png",
     "newsletter": {
       "name": "",
       "library_link": ""
@@ -170,32 +293,38 @@
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Hasala Gathsara",
-        "img": "leo_club_of_werahera/president.png"
+        "name": "Leo Lehan Randitha",
+        "img": "leo_club_of_sri_lanka_technological_campus/president.png"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Prasad Prasanjith Senadeera",
-        "img": "leo_club_of_werahera/vice_president.png"
+        "name": "Leo Miyuru Sankalpa Gamage",
+        "img": "leo_club_of_sri_lanka_technological_campus/vice_president.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Eshani Panamulla",
-        "img": "leo_club_of_werahera/secretary.png"
+        "name": "Leo Hansini Jayasinghe",
+        "img": "leo_club_of_sri_lanka_technological_campus/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Dewmi Thilakarathne",
-        "img": "leo_club_of_werahera/treasurer.png"
+        "name": "Leo Duvindu Rajapaksha",
+        "img": "leo_club_of_sri_lanka_technological_campus/treasurer.png"
       },
       {
         "designation": "Leo Advisor",
         "visibility_order": 6,
-        "name": "Lion Dayani Chandrika Amaradasa",
-        "img": "leo_club_of_werahera/advisor.png"
+        "name": "Lion Noel Palliyaguru (A.A.L.) L/L Asoka",
+        "img": "leo_club_of_sri_lanka_technological_campus/advisor.png"
+      },
+      {
+        "designation": "Staff Advisor",
+        "visibility_order": 7,
+        "name": "Dr. Chamodh Hettiarachchi",
+        "img": "leo_club_of_sri_lanka_technological_campus/staff_advisor.png"
       }
     ]
   },
@@ -210,44 +339,38 @@
     },
     "logo": "leo_club_of_godigamuwa/logo.png",
     "newsletter": {
-      "name": "Hola",
-      "library_link": "http://anyflip.com/bookcase/mqssn"
+      "name": "",
+      "library_link": ""
     },
     "officers": [
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Irushini Alahakoon",
+        "name": "Leo Senuja Keheliya Perera",
         "img": "leo_club_of_godigamuwa/president.png"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Minul Wijayasekara",
+        "name": "Leo Enuk Dabare",
         "img": "leo_club_of_godigamuwa/vice_president.png"
-      },
-      {
-        "designation": "Second Vice President",
-        "visibility_order": 3,
-        "name": "Leo Denesha Ramanayek",
-        "img": "default_data/default_female_user.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Sithmini Bandara",
+        "name": "Leo Dulya Nethmini",
         "img": "leo_club_of_godigamuwa/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Hashini Kumarasiri",
+        "name": "Leo Abhimani Fernando",
         "img": "leo_club_of_godigamuwa/treasurer.png"
       },
       {
         "designation": "Leo Advisor",
         "visibility_order": 6,
-        "name": "Lion Missaka Weliwita",
+        "name": "Mr. Lal Manage",
         "img": "leo_club_of_godigamuwa/advisor.png"
       }
     ]
@@ -270,31 +393,31 @@
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Natasha Gunatilleke",
+        "name": "Leo Theeksha Dumini Gamage",
         "img": "leo_club_of_kalubowila/president.png"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Januki Sihara Wijesekara",
+        "name": "Leo Chirathi Devindi Premarathna",
         "img": "leo_club_of_kalubowila/vice_president.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Hansika Nirmani",
+        "name": "Leo Shenali Rumena",
         "img": "leo_club_of_kalubowila/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Januki Sihara Wijesekara",
+        "name": "Leo Gimanthi Tharushika",
         "img": "leo_club_of_kalubowila/treasurer.png"
       },
       {
         "designation": "Leo Advisor",
         "visibility_order": 6,
-        "name": "Lion Dimantha Thenuwara",
+        "name": "Mrs. Delrusha Senevirathe",
         "img": "leo_club_of_kalubowila/advisor.png"
       }
     ]
@@ -320,38 +443,38 @@
     "social_media": {
       "facebook": "https://www.facebook.com/saegisleo",
       "instagram": "https://www.instagram.com/saegisleos/?hl=en",
-      "linkedin": "",
+      "linkedin": "https://www.linkedin.com/in/leo-club-of-saegis-campus-65a413203/",
       "youtube": "",
       "web": ""
     },
     "logo": "leo_club_of_saegis_campus/logo.png",
     "newsletter": {
-      "name": "Pulse of Leos",
-      "library_link": "https://anyflip.com/bookcase/wzljp"
+      "name": "",
+      "library_link": ""
     },
     "officers": [
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Thisuri Nisalya",
+        "name": "Leo G.K.Kanishka Jayanath Jaya Sri",
         "img": "leo_club_of_saegis_campus/president.png"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Hesanduni Wijesekara",
+        "name": "Leo M.M.Dinethmi Lashinika",
         "img": "leo_club_of_saegis_campus/vice_president.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Mevan Yohan",
+        "name": "Leo Ishara Hemachandra",
         "img": "leo_club_of_saegis_campus/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Omali Radhika",
+        "name": "Leo S.M.Nalin Kavinda",
         "img": "leo_club_of_saegis_campus/treasurer.png"
       },
       {
@@ -363,7 +486,7 @@
       {
         "designation": "Staff Advisor",
         "visibility_order": 7,
-        "name": "Thomas Benjamin Jeganathan",
+        "name": "Ms. Paramitha Herath",
         "img": "leo_club_of_saegis_campus/staff_advisor.png"
       }
     ]
@@ -379,44 +502,38 @@
     },
     "logo": "leo_club_of_dehiwala_east/logo.png",
     "newsletter": {
-      "name": "Intention",
-      "library_link": "https://anyflip.com/bookcase/vrrui"
+      "name": "",
+      "library_link": ""
     },
     "officers": [
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Buddhika Abenayake",
+        "name": "Leo Madusanka Vimukthi",
         "img": "leo_club_of_dehiwala_east/president.png"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Devinda Perera",
+        "name": "Leo Shavika Parami",
         "img": "leo_club_of_dehiwala_east/vice_president.png"
-      },
-      {
-        "designation": "Second Vice President",
-        "visibility_order": 3,
-        "name": "Leo Shavika Malimbadage",
-        "img": "leo_club_of_dehiwala_east/2nd_vice_president.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Tharushi Sansala",
+        "name": "Leo Umayangi de silva",
         "img": "leo_club_of_dehiwala_east/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Umayangi De Silva",
+        "name": "Leo Prabash de silva",
         "img": "leo_club_of_dehiwala_east/treasurer.png"
       },
       {
         "designation": "Leo Advisor",
         "visibility_order": 6,
-        "name": "Lion Hansika Prasadini",
+        "name": "Leo Lion Buddhi Isurujith",
         "img": "leo_club_of_dehiwala_east/advisor.png"
       }
     ]
@@ -426,8 +543,8 @@
     "social_media": {
       "facebook": "https://www.facebook.com/pepiliyanawoodlandleos",
       "instagram": "https://www.instagram.com/woodlands_leos/?hl=en",
-      "linkedin": "",
-      "youtube": "",
+      "linkedin": "https://www.linkedin.com/company/leo-club-of-pepiliyana-woodlands/",
+      "youtube": "https://www.youtube.com/@leoclubofpepiliyanawoodlan6381",
       "web": ""
     },
     "logo": "leo_club_of_pepiliyana_woodlands/logo.png",
@@ -439,38 +556,32 @@
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Divanjana Ratnadurai",
+        "name": "Leo Anjana Rangashan",
         "img": "leo_club_of_pepiliyana_woodlands/president.png"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Tharindu Dananjaya Warnapura",
+        "name": "Leo Zahra Zuhri",
         "img": "leo_club_of_pepiliyana_woodlands/vice_president.png"
-      },
-      {
-        "designation": "Second Vice President",
-        "visibility_order": 3,
-        "name": "Leo Amandi Pabasara Siriwardhana",
-        "img": "leo_club_of_pepiliyana_woodlands/2nd_vice_president.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Heshani Kaushalya Hettiarachchi",
+        "name": "Leo Rahma Zuhri",
         "img": "leo_club_of_pepiliyana_woodlands/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Ramith Nekmal Perukanda Gamage",
+        "name": "Leo Heshara Senuri",
         "img": "leo_club_of_pepiliyana_woodlands/treasurer.png"
       },
       {
         "designation": "Leo Advisor",
         "visibility_order": 6,
-        "name": "Lion Gamini Amarasinghe",
-        "img": "default_data/default_male_user.png"
+        "name": "Lion Navodya Perera",
+        "img": "leo_club_of_pepiliyana_woodlands/advisor.png"
       }
     ]
   },
@@ -485,32 +596,32 @@
     },
     "logo": "leo_club_of_piliyandala/logo.png",
     "newsletter": {
-      "name": "Inspire",
-      "library_link": "https://anyflip.com/bookcase/rgcqb"
+      "name": "",
+      "library_link": ""
     },
     "officers": [
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Isuru Gayan Sapuarachchi",
+        "name": "Leo Kanisa Mafaza Wahid",
         "img": "leo_club_of_piliyandala/president.png"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Bhanuka Perera",
+        "name": "Leo Tasindu Degallawaduge",
         "img": "leo_club_of_piliyandala/vice_president.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 3,
-        "name": "Leo Kalhari Rajapaksha",
+        "name": "Leo Maheeka Ranawaka",
         "img": "leo_club_of_piliyandala/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Sanju Ashan",
+        "name": "Leo Navindu Thenuka",
         "img": "leo_club_of_piliyandala/treasurer.png"
       },
       {
@@ -521,12 +632,65 @@
       }
     ]
   },
+  "Leo Club of Piliyandala Cental College": {
+    "clubName": "Leo Club of Piliyandala Cental College",
+    "social_media": {
+      "facebook": "https://www.facebook.com/leosofccp",
+      "instagram": "https://www.instagram.com/leoclubof_piliyandalacentral/",
+      "linkedin": "",
+      "youtube": "",
+      "web": ""
+    },
+    "logo": "leo_club_of_piliyandala_central_college/logo.jpeg",
+    "newsletter": {
+      "name": "",
+      "library_link": ""
+    },
+    "officers": [
+      {
+        "designation": "President",
+        "visibility_order": 1,
+        "name": "Leo Anjana Nirmal Gunathilake",
+        "img": "leo_club_of_piliyandala_central_college/president.png"
+      },
+      {
+        "designation": "Vice President",
+        "visibility_order": 2,
+        "name": "Leo P.A. Chanithu Sesanda",
+        "img": "leo_club_of_piliyandala_central_college/vice_president.png"
+      },
+      {
+        "designation": "Secretary",
+        "visibility_order": 3,
+        "name": "Leo Vinudi Vihansa Athapaththu",
+        "img": "default_data/default_female_user.png"
+      },
+      {
+        "designation": "Treasurer",
+        "visibility_order": 4,
+        "name": "Leo Dasindu Sasviru Thilakawardhana",
+        "img": "leo_club_of_piliyandala_central_college/treasurer.png"
+      },
+      {
+        "designation": "Leo Advisor",
+        "visibility_order": 5,
+        "name": "Lion Nuwan Indunil Ballanthudawa MJF",
+        "img": "leo_club_of_piliyandala_central_college/advisor.jpg"
+      },
+      {
+        "designation": "Leo Staff Advisor",
+        "visibility_order": 6,
+        "name": "Mr.Gayan Dhanushka",
+        "img": "leo_club_of_piliyandala_central_college/staff_advisor.jpg"
+      }
+    ]
+  },
   "Leo Club of Rattanapitiya": {
-    "clubName": "Leo Club of Rattanapitiya",
+    "clubName": "Leo Club of Raththanapitiya",
     "social_media": {
       "facebook": "https://www.facebook.com/leoclubofrattanapitiya",
       "instagram": "https://www.instagram.com/rattanapitiya_leos/?hl=en",
-      "linkedin": "",
+      "linkedin": "https://www.linkedin.com/in/leo-club-of-raththanapitiya-a8a494217/",
       "youtube": "",
       "web": ""
     },
@@ -539,25 +703,25 @@
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Chathura Supun Bandara",
+        "name": "Leo I.M. Aditha Udara Mihiraj",
         "img": "leo_club_of_rattanapitiya/president.png"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Lasindu Peiris",
+        "name": "Leo D.S.Maheesha Sandamini Wimalasena",
         "img": "leo_club_of_rattanapitiya/vice_president.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Priyam Bhashitha",
+        "name": "Leo Pallage Gavesha Thathsarani Silva",
         "img": "leo_club_of_rattanapitiya/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Vidusha Fernando",
+        "name": "Leo E.Dasun Piyumantha",
         "img": "leo_club_of_rattanapitiya/treasurer.png"
       }
     ]
@@ -573,38 +737,38 @@
     },
     "logo": "leo_club_of_kesbawa/logo.png",
     "newsletter": {
-      "name": "Crescendo",
-      "library_link": "https://anyflip.com/bookcase/jlvtn"
+      "name": "",
+      "library_link": ""
     },
     "officers": [
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Ravindu Thaksara",
+        "name": "Leo Sheranki Nichola Maryann",
         "img": "leo_club_of_kesbawa/president.png"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Nayana Dilrukshi",
+        "name": "Leo Shehara Wanniarachchi",
         "img": "leo_club_of_kesbawa/vice_president.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Ushani Randima",
+        "name": "Leo Siththi Sakeena Marikkar",
         "img": "leo_club_of_kesbawa/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Sashinka Rodrigo",
+        "name": "Leo Nirmana Dakshitha Ranasinghe",
         "img": "leo_club_of_kesbawa/treasurer.png"
       },
       {
         "designation": "Leo Advisor",
         "visibility_order": 6,
-        "name": " Lion L. Premakumara Rodrigo",
+        "name": "Mr. Amal Ravinaththa",
         "img": "leo_club_of_kesbawa/advisor.jpg"
       }
     ]
@@ -620,32 +784,32 @@
     },
     "logo": "leo_club_of_matara_nilwala/logo.png",
     "newsletter": {
-      "name": "Nilwala Chronicle",
-      "library_link": "https://anyflip.com/bookcase/tllza"
+      "name": "",
+      "library_link": ""
     },
     "officers": [
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Lohan Devasurendra",
+        "name": "Leo Sathira Wellapuli",
         "img": "leo_club_of_matara_nilwala/president.png"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Rushen Samodya",
+        "name": "Leo Uvindu Kodikara",
         "img": "leo_club_of_matara_nilwala/vice_president.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Nishangi Liyanage",
+        "name": "Leo Nadun Wijesinghe",
         "img": "leo_club_of_matara_nilwala/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Pasan Erathna",
+        "name": "Leo Nadil Hasitha Gunawardane",
         "img": "leo_club_of_matara_nilwala/treasurer.png"
       },
       {
@@ -656,16 +820,16 @@
       }
     ]
   },
-  "Leo Club of Centennial Richmond College": {
-    "clubName": "Leo Club of Centennial Richmond College",
+  "Leo Club of Uragasmanhandiya": {
+    "clubName": "Leo Club of Uragasmanhandiya",
     "social_media": {
-      "facebook": "https://www.facebook.com/RCGLC",
-      "instagram": "https://www.instagram.com/richmond_leos/?hl=en",
+      "facebook": "https://www.facebook.com/Leo-Club-Of-Uragasmanhandiya-680932518969438",
+      "instagram": "https://www.instagram.com/leo_club_of_uragasmanhandiya/?hl=en",
       "linkedin": "",
-      "youtube": "",
+      "youtube": "https://www.youtube.com/@LeoClubOfUragasmanhandiya",
       "web": ""
     },
-    "logo": "leo_club_of_richmond_college/logo.png",
+    "logo": "leo_club_of_uragasmanhandiya/logo.png",
     "newsletter": {
       "name": "",
       "library_link": ""
@@ -674,84 +838,31 @@
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Gamitha Senaratna",
-        "img": "default_data/default_male_user.png"
-      },
-      {
-        "designation": "Vice President",
-        "visibility_order": 2,
-        "name": "Leo Kulith Sathnidu",
-        "img": "default_data/default_male_user.png"
-      },
-      {
-        "designation": "Secretary",
-        "visibility_order": 3,
-        "name": "Leo Sachith Nimthaka",
-        "img": "default_data/default_male_user.png"
-      },
-      {
-        "designation": "Treasurer",
-        "visibility_order": 4,
-        "name": "Leo Lehan Liyanage",
-        "img": "default_data/default_male_user.png"
-      },
-      {
-        "designation": "Leo Advisor",
-        "visibility_order": 5,
-        "name": "Leo Hasitha Anuradha Jayarathne",
-        "img": "default_data/default_male_user.png"
-      },
-      {
-        "designation": "Staff Advisor",
-        "visibility_order": 6,
-        "name": "Mrs.Prasangi Kiringoda",
-        "img": "leo_club_of_richmond_college/staff_advisor.png"
-      }
-    ]
-  },
-  "Leo Club of Uragasmanhandiya": {
-    "clubName": "Leo Club of Uragasmanhandiya",
-    "social_media": {
-      "facebook": "https://www.facebook.com/Leo-Club-Of-Uragasmanhandiya-680932518969438",
-      "instagram": "https://www.instagram.com/leo_club_of_uragasmanhandiya/?hl=en",
-      "linkedin": "",
-      "youtube": "",
-      "web": ""
-    },
-    "logo": "leo_club_of_uragasmanhandiya/logo.png",
-    "newsletter": {
-      "name": "The Lead",
-      "library_link": "http://anyflip.com/bookcase/bhmar"
-    },
-    "officers": [
-      {
-        "designation": "President",
-        "visibility_order": 1,
-        "name": "Leo Radeesh Laksitha Kumarasinghe",
+        "name": "Leo Shanika Lakshani",
         "img": "leo_club_of_uragasmanhandiya/president.png"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Kithulgoda Kohombage Prabhath Chamli Leelananda",
+        "name": "Leo Gayan thiwanka",
         "img": "leo_club_of_uragasmanhandiya/vice_president.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Nethmi Jayasekara",
+        "name": "Leo Yashoda Maduwanthi",
         "img": "leo_club_of_uragasmanhandiya/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo I.D.Shanika Lakshani",
+        "name": "Leo Prageeth Nirmal",
         "img": "leo_club_of_uragasmanhandiya/treasurer.png"
       },
       {
         "designation": "Leo Advisor",
         "visibility_order": 6,
-        "name": "Lion Hasitha Indra Wijewardana",
+        "name": "Dr.Hasitha Indra Wijewardhana",
         "img": "leo_club_of_uragasmanhandiya/advisor.png"
       }
     ]
@@ -777,38 +888,38 @@
     "social_media": {
       "facebook": "https://www.facebook.com/Leo-Club-Of-Panadura-Alubomulla-200407600046719",
       "instagram": "https://www.instagram.com/panadura_alubomulla_leos/?hl=en",
-      "linkedin": "",
+      "linkedin": "https://www.linkedin.com/in/leo-club-of-panadura-alubomulla-b83514206/",
       "youtube": "",
       "web": ""
     },
     "logo": "leo_club_of_panadura_alubomulla/logo.png",
     "newsletter": {
-      "name": "The Beacon",
-      "library_link": "https://anyflip.com/bookcase/wmiwd"
+      "name": "",
+      "library_link": ""
     },
     "officers": [
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Naveen Madhusanka",
+        "name": "Leo Tharindu Darshana",
         "img": "leo_club_of_panadura_alubomulla/president.png"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Ravindu Poornajith",
+        "name": "Leo Kisal Senanayake",
         "img": "leo_club_of_panadura_alubomulla/vice_president.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Minidu Wickramaarachchi",
+        "name": "Leo Bhashini Amarathunge",
         "img": "leo_club_of_panadura_alubomulla/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Nadini Dinethya Amarakoon",
+        "name": "Leo Githmi Wickramaarachchi",
         "img": "leo_club_of_panadura_alubomulla/treasurer.png"
       },
       {
@@ -824,44 +935,38 @@
     "social_media": {
       "facebook": "https://www.facebook.com/leoclubofrahulacollege",
       "instagram": "https://www.instagram.com/rahula.leos/?hl=en",
-      "linkedin": "",
+      "linkedin": "https://www.linkedin.com/company/leo-club-of-rahula-college/about/",
       "youtube": "https://www.youtube.com/channel/UCcNorGIQi4Qut-QNbHmVerA",
       "web": ""
     },
     "logo": "leo_club_of_rahula_college/logo.png",
     "newsletter": {
-      "name": "Rahal Tētarto",
-      "library_link": "https://anyflip.com/bookcase/xaugq"
+      "name": "",
+      "library_link": ""
     },
     "officers": [
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Visith Rathnayaka",
+        "name": "Leo Pramukha Wageesha",
         "img": "leo_club_of_rahula_college/president.png"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Sandika Ranasinghe",
+        "name": "Leo Sasiru Virajith",
         "img": "leo_club_of_rahula_college/vice_president.png"
-      },
-      {
-        "designation": "Second Vice President",
-        "visibility_order": 3,
-        "name": "Leo Vidun Menula",
-        "img": "leo_club_of_rahula_college/second_vice_president.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Shehara Wickramasinghe",
+        "name": "Leo Binupa Chenul Lakvin",
         "img": "leo_club_of_rahula_college/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Chathum Batagoda",
+        "name": "Leo Sathil Nethmira Punchihewa",
         "img": "leo_club_of_rahula_college/treasurer.png"
       },
       {
@@ -889,32 +994,32 @@
     },
     "logo": "leo_club_of_university_of_moratuwa/logo.png",
     "newsletter": {
-      "name": "It's Us",
-      "library_link": "https://anyflip.com/bookcase/bdsuh"
+      "name": "",
+      "library_link": ""
     },
     "officers": [
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Sachintha Kapuge",
+        "name": "Leo K W Hasitha Viduranga",
         "img": "leo_club_of_university_of_moratuwa/president.png"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Hiran Keshara",
+        "name": "Leo K M J Darshika Prabhashwara",
         "img": "leo_club_of_university_of_moratuwa/vice_president.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Sandani Asha",
+        "name": "Leo K M Hiruni Kulathunga",
         "img": "leo_club_of_university_of_moratuwa/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Sithum Bandara",
+        "name": "Leo J M Janath Maduranga",
         "img": "leo_club_of_university_of_moratuwa/treasurer.png"
       },
       {
@@ -951,7 +1056,7 @@
     "clubName": "Leo Club of Millaniya",
     "social_media": {
       "facebook": "https://www.facebook.com/MillaniyaLeos",
-      "instagram": "",
+      "instagram": "https://www.instagram.com/millaniyaleos__/",
       "linkedin": "",
       "youtube": "",
       "web": ""
@@ -965,25 +1070,31 @@
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Pasindu Jayasinghe",
+        "name": "Leo Pavithra Jayasinghe",
         "img": "leo_club_of_milleniya/president.png"
+      },
+      {
+        "designation": "Vice President",
+        "visibility_order": 2,
+        "name": "Leo Devwandi Yasanayake",
+        "img": "leo_club_of_milleniya/vice_president.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Durga Hashini Aushadharathna",
+        "name": "Leo Pawani Nethali Shakya",
         "img": "leo_club_of_milleniya/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Sasanka Harshan Udugahapaththuwa",
+        "name": "Leo Amanda Gunathilake",
         "img": "leo_club_of_milleniya/treasurer.png"
       },
       {
         "designation": "Leo Advisor",
         "visibility_order": 6,
-        "name": "Lion P.G.K. Nidhani",
+        "name": "Lady Lion P.G.K. Nidhani MJF",
         "img": "leo_club_of_milleniya/advisor.png"
       }
     ]
@@ -1015,141 +1126,52 @@
     },
     "logo": "leo_club_of_polgasowita/logo.png",
     "newsletter": {
-      "name": "Icon",
-      "library_link": "https://anyflip.com/bookcase/fxtmx"
+      "name": "",
+      "library_link": ""
     },
     "officers": [
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Chanya Ranatunga",
+        "name": "Leo Dinari Buwanaji Munasinghe",
         "img": "leo_club_of_polgasowita/president.png"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Chanakya Ranasinghe",
+        "name": "Leo Savindee Thimansa Tennakoon",
         "img": "leo_club_of_polgasowita/vice_president.png"
-      },
-      {
-        "designation": "Second Vice President",
-        "visibility_order": 3,
-        "name": "Leo Gayami Weerasinghe",
-        "img": "leo_club_of_polgasowita/second_vice_president.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Disali Gunasekara",
+        "name": "Leo Morawakkoralage Sachini Sewwandi Fonseka",
         "img": "leo_club_of_polgasowita/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Mahela Ruwan Tharindu Perera",
+        "name": "Leo Hasini Pamoda Hettiarachchi",
         "img": "leo_club_of_polgasowita/treasurer.png"
       },
       {
         "designation": "Leo Advisor",
         "visibility_order": 6,
-        "name": "Lion Wijayasena Attygalle",
-        "img": "default_data/default_male_user.png"
+        "name": "Lion Noel Palliyaguru (A.A.L.) L/L Asoka",
+        "img": "leo_club_of_polgasowita/default_male_user.jpeg"
       }
     ]
   },
-  "Leo Club of Christ Church Boys College": {
-    "clubName": "Leo Club of Christ Church Boys' College",
-    "social_media": {
-      "facebook": "",
-      "instagram": "",
-      "linkedin": "",
-      "youtube": "",
-      "web": ""
-    },
-    "logo": "default_data/logo.png",
-    "newsletter": {
-      "name": "",
-      "library_link": ""
-    },
-    "officers": [
-      {
-        "designation": "President",
-        "visibility_order": 1,
-        "name": "Leo Lahiru Sadavinna",
-        "img": "default_data/default_male_user.png"
-      },
-      {
-        "designation": "Vice President",
-        "visibility_order": 2,
-        "name": "Leo Yasas Bimsara",
-        "img": "default_data/default_male_user.png"
-      },
-      {
-        "designation": "Secretary",
-        "visibility_order": 4,
-        "name": "Leo Janidu Hansana",
-        "img": "default_data/default_male_user.png"
-      },
-      {
-        "designation": "Treasurer",
-        "visibility_order": 5,
-        "name": "Leo Rasindu Rasanjana",
-        "img": "default_data/default_male_user.png"
-      }
-    ]
-  },
-  "Leo Club of Christ Church Girls College": {
-    "clubName": "Leo Club of Christ Church Girls' College",
-    "social_media": {
-      "facebook": "",
-      "instagram": "",
-      "linkedin": "",
-      "youtube": "",
-      "web": ""
-    },
-    "logo": "default_data/logo.png",
-    "newsletter": {
-      "name": "",
-      "library_link": ""
-    },
-    "officers": [
-      {
-        "designation": "President",
-        "visibility_order": 1,
-        "name": "Leo Kaveesha Rashmindi",
-        "img": "default_data/default_female_user.png"
-      },
-      {
-        "designation": "Vice President",
-        "visibility_order": 2,
-        "name": "Leo Sethini Dahamsa",
-        "img": "default_data/default_female_user.png"
-      },
-      {
-        "designation": "Secretary",
-        "visibility_order": 4,
-        "name": "Leo Sanie Withanachchi",
-        "img": "default_data/default_female_user.png"
-      },
-      {
-        "designation": "Treasurer",
-        "visibility_order": 5,
-        "name": "Leo Isurindi Malsha",
-        "img": "default_data/default_female_user.png"
-      }
-    ]
-  },
-
   "Leo Club of Southern Metro": {
     "clubName": "Leo Club of Southern Metro",
     "social_media": {
-      "facebook": "",
-      "instagram": "",
-      "linkedin": "",
-      "youtube": "",
+      "facebook": "https://www.facebook.com/SouthernMetroLeos",
+      "instagram": "https://www.instagram.com/southernmetro_leos/",
+      "linkedin": "https://www.linkedin.com/company/southernmetroleos/",
+      "youtube": "https://www.youtube.com/@leoclubofsouthernmetro4261",
       "web": ""
     },
-    "logo": "default_data/logo.png",
+    "logo": "leo_club_of_southern_metro/logo.jpeg",
     "newsletter": {
       "name": "",
       "library_link": ""
@@ -1158,26 +1180,32 @@
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Sandul Siriwardana",
-        "img": "default_data/default_male_user.png"
+        "name": "Leo Mesith Rathnayake",
+        "img": "leo_club_of_southern_metro/president.jpeg"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Danushka Matteo",
-        "img": "default_data/default_male_user.png"
+        "name": "Leo Kaushalya Liyanage",
+        "img": "leo_club_of_southern_metro/vice_president.jpg"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Amandi Madanayake",
-        "img": "default_data/default_female_user.png"
+        "name": "Leo Sasandi Fonseka",
+        "img": "leo_club_of_southern_metro/secretary.jpg"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Sanusha Hiruditha",
-        "img": "default_data/default_male_user.png"
+        "name": "Leo Chamelie Epa",
+        "img": "leo_club_of_southern_metro/treasurer.jpg"
+      },
+      {
+        "designation": "Leo Advisor",
+        "visibility_order": 6,
+        "name": "Mr. Sarath Neela kumara",
+        "img": "leo_club_of_southern_metro/advisor.jpg"
       }
     ]
   },
@@ -1192,44 +1220,38 @@
     },
     "logo": "leo_club_of_university_of_sri_jayewardenepura/logo.png",
     "newsletter": {
-      "name": "J'pura Leo Reader",
-      "library_link": "https://anyflip.com/bookcase/skjxg"
+      "name": "",
+      "library_link": ""
     },
     "officers": [
       {
         "designation": "President",
         "visibility_order": 1,
-        "name": "Leo Vidma Shanali Abeysinghe",
+        "name": "Leo Bimsara Alawathugoda",
         "img": "leo_club_of_university_of_sri_jayewardenepura/president.png"
       },
       {
         "designation": "Vice President",
         "visibility_order": 2,
-        "name": "Leo Dinusha Sandaruwan Gunasinghe",
+        "name": "Leo Asanka Lilan Abeysinghe",
         "img": "leo_club_of_university_of_sri_jayewardenepura/vice_president.png"
-      },
-      {
-        "designation": "Second Vice President",
-        "visibility_order": 3,
-        "name": "Leo Dulmi Sasanka Udage",
-        "img": "leo_club_of_university_of_sri_jayewardenepura/second_vice_president.png"
       },
       {
         "designation": "Secretary",
         "visibility_order": 4,
-        "name": "Leo Anjalika Madhuwanthi Gunawardhana",
+        "name": "Leo Chamudini Fernando",
         "img": "leo_club_of_university_of_sri_jayewardenepura/secretary.png"
       },
       {
         "designation": "Treasurer",
         "visibility_order": 5,
-        "name": "Leo Nethmi Pathegama",
+        "name": "Leo Nethuli Nimhara",
         "img": "leo_club_of_university_of_sri_jayewardenepura/treasurer.png"
       },
       {
         "designation": "Leo Advisor",
         "visibility_order": 6,
-        "name": "Lion Don Gamini Shantha",
+        "name": "Lion Gamini Wanniarachchi MJF",
         "img": "leo_club_of_university_of_sri_jayewardenepura/advisor.png"
       },
       {
