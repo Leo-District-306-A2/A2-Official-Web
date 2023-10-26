@@ -237,7 +237,7 @@
       "youtube": "",
       "web": ""
     },
-    "logo": "leo_club_of_matara_marians/logo.jpeg",
+    "logo": "leo_club_of_matara_marians/logo.jpg",
     "newsletter": {
       "name": "",
       "library_link": ""
@@ -463,7 +463,7 @@
         "designation": "Vice President",
         "visibility_order": 2,
         "name": "Leo M.M.Dinethmi Lashinika",
-        "img": "leo_club_of_saegis_campus/vice_president.png"
+        "img": "leo_club_of_saegis_campus/vice_president.jpg"
       },
       {
         "designation": "Secretary",
@@ -632,7 +632,7 @@
       }
     ]
   },
-  "Leo Club of Piliyandala Cental College": {
+  "Leo Club of Piliyandala Central College": {
     "clubName": "Leo Club of Piliyandala Cental College",
     "social_media": {
       "facebook": "https://www.facebook.com/leosofccp",
@@ -902,7 +902,7 @@
         "designation": "President",
         "visibility_order": 1,
         "name": "Leo Tharindu Darshana",
-        "img": "leo_club_of_panadura_alubomulla/president.png"
+        "img": "leo_club_of_panadura_alubomulla/president.jpg"
       },
       {
         "designation": "Vice President",
@@ -1077,7 +1077,7 @@
         "designation": "Vice President",
         "visibility_order": 2,
         "name": "Leo Devwandi Yasanayake",
-        "img": "leo_club_of_milleniya/vice_president.png"
+        "img": "leo_club_of_milleniya/vice_president.jpg"
       },
       {
         "designation": "Secretary",
@@ -1098,22 +1098,6 @@
         "img": "leo_club_of_milleniya/advisor.png"
       }
     ]
-  },
-  "Leo Club of Piliyandala Central College": {
-    "clubName": "Leo Club of Piliyandala Central College",
-    "social_media": {
-      "facebook": "https://www.facebook.com/leosofccp",
-      "instagram": "",
-      "linkedin": "",
-      "youtube": "",
-      "web": ""
-    },
-    "logo": "default_data/logo.png",
-    "newsletter": {
-      "name": "",
-      "library_link": ""
-    },
-    "officers": []
   },
   "Leo Club of Polgasowita": {
     "clubName": "Leo Club of Polgasowita",
@@ -1158,7 +1142,7 @@
         "designation": "Leo Advisor",
         "visibility_order": 6,
         "name": "Lion Noel Palliyaguru (A.A.L.) L/L Asoka",
-        "img": "leo_club_of_polgasowita/default_male_user.jpeg"
+        "img": "leo_club_of_polgasowita/advisor.jpeg"
       }
     ]
   },
@@ -1171,7 +1155,7 @@
       "youtube": "https://www.youtube.com/@leoclubofsouthernmetro4261",
       "web": ""
     },
-    "logo": "leo_club_of_southern_metro/logo.jpeg",
+    "logo": "leo_club_of_southern_metro/logo.jpg",
     "newsletter": {
       "name": "",
       "library_link": ""
