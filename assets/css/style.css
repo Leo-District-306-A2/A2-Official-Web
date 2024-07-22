@@ -111,20 +111,20 @@ A2 CLUBS SECTION
 #preloader:before {
   content: "";
   position: fixed;
-  top: calc(50% - 40px);
-  left: calc(50% - 40px);
-  border: 6px solid #46d1bf;
+  top: calc(50% - 50px);
+  left: calc(50% - 46px);
+  border: 6px solid #cb6ce6;
   border-top-color: darkgray;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
 }
 
 #preloader-image {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 80px;
   position: fixed;
   top: calc(50% - 35px);
   left: calc(50% - 35px);
@@ -377,8 +377,8 @@ A2 CLUBS SECTION
 }
 
 .nav-menu a:hover, .nav-menu .active>a, .nav-menu li:hover>a {
-  color: #2bb673;
-  border-color: #2bb673;
+  color: #cb6ce6;
+  border-color: #cb6ce6;
 }
 
 .nav-menu .drop-down ul {
@@ -416,7 +416,7 @@ A2 CLUBS SECTION
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active>a, .nav-menu .drop-down ul li:hover>a {
-  color: #2bb673;
+  color: #cb6ce6;
 }
 
 .nav-menu .drop-down>a:after {
@@ -1229,7 +1229,7 @@ section {
 --------------------------------------------------------------*/
 .why-us .content {
   padding: 30px;
-  background: linear-gradient(to bottom, #141542, #2bb673);
+  background: linear-gradient(to bottom, #3a0a64, #cb6ce6);
   border-radius: 4px;
   color: #fff;
 }
@@ -1828,7 +1828,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #cb6ce6;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
