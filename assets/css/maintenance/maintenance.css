@@ -7,7 +7,7 @@
   --parColour: #f8f8f2;
 }
 body {
-  background: #272822;
+  background: #181818;
 }
 .loader-container {
   width: 400px;
@@ -349,8 +349,8 @@ body {
 }
 
 .main-logo {
-  width: 25vh;
-  margin: 20vh auto 50px auto;
+  width: 45vh;
+  margin: 5vh auto 30px auto;
   display: block;
 }
 
