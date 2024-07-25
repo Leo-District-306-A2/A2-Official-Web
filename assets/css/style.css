@@ -352,6 +352,7 @@ A2 CLUBS SECTION
 .nav-menu ul {
   margin: 0;
   padding: 0;
+  padding-right: 50px;
   list-style: none;
 }
 
@@ -473,7 +474,7 @@ A2 CLUBS SECTION
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #46d1bf;
+  color: #cb6ce6;
 }
 
 #contact .contact-info address, #contact .contact-info p {
@@ -634,7 +635,7 @@ A2 CLUBS SECTION
 }
 
 .join-now {
-  background: linear-gradient(to right, #141542, #2bb673);
+  background: linear-gradient(to right, #3a0a64, #cb6ce6);
   border-radius: 50px 0 0 50px;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -651,16 +652,16 @@ A2 CLUBS SECTION
 
 .sign-in, .signed-user {
   border-radius: 0 50px 50px 0;
-  background: linear-gradient(to left, #141542, #2bb673);
+  background: linear-gradient(to left, #3a0a64, #cb6ce6);
   border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .join-now:hover {
-  background: linear-gradient(to left, #141542, #2bb673);
+  background: linear-gradient(to left, #3a0a64, #cb6ce6);
 }
 
 .sign-in:hover, .signed-user:hover {
-  background: linear-gradient(to right, #141542, #2bb673);
+  background: linear-gradient(to right, #3a0a64, #cb6ce6);
 }
 
 .appointment-btn:hover {
@@ -933,7 +934,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #46d1bf;
+  color: #cb6ce6;
 
 }
 
@@ -958,7 +959,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #46d1bf;
+  background: #cb6ce6;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -1647,7 +1648,7 @@ section {
   font-size: 48px;
   display: block;
   font-weight: 700;
-  color: #46d1bf;
+  color: #cb6ce6;
 }
 
 .counts2 .counters span {
@@ -2428,7 +2429,7 @@ section {
 #footer .social-links a , .view-club-social-link a{
   font-size: 18px;
   display: inline-block;
-  background: #46d1bf;
+  background: #cb6ce6;
   color: #fff;
   line-height: 1;
   padding: 9px 0;
@@ -2537,7 +2538,7 @@ section {
 }
 
 .nav-pills .nav-link.active {
-  background-color: #2bb673!important;
+  background-color: #6a1cb0!important;
   font-weight: bold;
 }
 
@@ -2548,19 +2549,19 @@ section {
 .nav-tabs .nav-link {
   color: white;
   border: none;
-  border-bottom: 1px solid #2bb673;
+  border-bottom: 1px solid #6a1cb0;
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   background-color: transparent!important;
-  border: 1px solid #2bb673;
+  border: 1px solid #6a1cb0;
   border-bottom: none!important;
   font-weight: bold;
   color: white;
 }
 
 .nav-tabs .nav-link:hover {
-  border-bottom-color: #2bb673;
+  border-bottom-color: #6a1cb0;
 }
 
 .club-list ul li {
@@ -2642,7 +2643,7 @@ section {
   height: 36px;
   font-size: 12px;
   font-weight: bold;
-  background-color: #46d1bf;
+  background-color: #cb6ce6;
   border-radius: 50%;
   border: none;
   color: white;
