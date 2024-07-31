@@ -198,13 +198,13 @@ A2 CLUBS SECTION
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background: #46d1bf;
+  background: #cb6ce6;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #2bb673;
+  background: #6a1cb0;
   color: #fff;
 }
 
@@ -2442,7 +2442,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #141542;
+  background: #6a1cb0;
   color: #fff;
   text-decoration: none;
 }
@@ -2526,7 +2526,7 @@ section {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #2bb673;
+  background: #6a1cb0;
 }
 
 /* Handle on hover */
